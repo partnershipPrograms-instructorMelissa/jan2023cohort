@@ -1,1 +1,3 @@
-# jan2023cohort
+# January - April 2023 Workforce Cohort
+- Welcome to Coding Dojo.
+
