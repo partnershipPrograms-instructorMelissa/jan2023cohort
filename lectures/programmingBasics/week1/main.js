@@ -95,10 +95,11 @@ var cities = ["Birmingham", "Austin", "Seattle", "Orlando"]
 
 // === means match data type string for string int for int
 // == means are they equal can cross data types
+// booleans and case differences doesn't matter 2 or 3 if different will fail
 
-var num = 'Hi'
+var num = '2'
 
-if (num == 'hi') {
+if (num == 2) {
     console.log('conditional 1: they are the same')
 } else {
     console.log('not the same')
@@ -113,4 +114,11 @@ for(var i = 0; i < cities.length; i++) {
     }else {
         console.log('4th loop 1st conditional', cities[i],"You have left the great state of Texas")
     }
+}
+
+var playing = true
+
+while (playing) {
+    console.log('hi')
+    playing = false
 }
