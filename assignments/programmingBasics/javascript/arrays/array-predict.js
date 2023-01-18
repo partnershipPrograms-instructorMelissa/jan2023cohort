@@ -1,21 +1,21 @@
 //! PREDICT
 
 //PREDICT 1
-// var arr = [8, 6, 7, 5, 3, 0, 9];
-// for (var i = 0; i < arr.length; i++) {
-//   console.log(arr[i]);
-// }
-// Prediction: [8, 6, 7, 5, 3, 0, 9]
+var arr = [8, 6, 7, 5, 3, 0, 9];
+for (var i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+Prediction: [8, 6, 7, 5, 3, 0, 9]
 
 //PREDICT 2
-// var arr = [7, 3, 8, 4, 2, 0, 1];
-// for (var i = 0; i < arr.length; i++) {
-//   if (arr[i] % 2 == 0) {
-//     console.log(arr[i]);
-//   } else {
-//     console.log("That is odd!");
-//   }
-// }
+var arr = [7, 3, 8, 4, 2, 0, 1];
+for (var i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 == 0) {
+    console.log(arr[i]);
+  } else {
+    console.log("That is odd!");
+  }
+}
 //  Prediction: [That is odd, That is odd, 8, 4, 2, 0, That is odd]
 
 //PREDICT 3
@@ -35,5 +35,5 @@ console.log(arr);
 console.log(newArr);
 
 // Prediction:
-// arr = [-1, -3, -8, 0, -4]
-// newArr = [5, 2, 1]
+// arr = [-1, -3, -8, 5, zero, 2, -4, 1]
+// newArr = [-5, -2, -1]
