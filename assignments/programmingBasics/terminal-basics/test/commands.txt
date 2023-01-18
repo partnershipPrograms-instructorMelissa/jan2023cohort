@@ -1,0 +1,28 @@
+cd desktop
+mkdir test
+cd test
+touch index.html
+touch style.css
+touch commands.txt
+copy index.html index_2.html
+cd ..
+mkdir destination
+cd test
+move index_2.html ../destination
+del style.css
+dir
+cd ..
+rmdir destination
+cd test
+"commands.txt"
+
+mkdir 
+dir
+cd
+copy
+move
+del
+type
+touch
+cls
+more
