@@ -59,5 +59,5 @@ for (var i = 0; i < arr.length; i++) {
     arr[i] = arr[i] * -1;
   }
 }
-//console.log(arr);
-//console.log(newArr);
+console.log(arr);
+console.log(newArr);
