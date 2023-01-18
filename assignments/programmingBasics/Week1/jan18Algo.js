@@ -6,7 +6,7 @@ for(let i = 0; i < testArr.length; i++){
     //console.log(`Num: ${testArr[i]}, Sum: ${sum}`)
 }
 
-var total = 1
+var total = 0
 let newArr = []
 
 for(let i = 0; i < testArr.length; i++){
