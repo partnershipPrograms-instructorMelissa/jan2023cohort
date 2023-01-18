@@ -1,17 +1,29 @@
 //! ARRAY NOTES
 //! arrays are indexed always beginning with an indeed position of 0
 
-//* ADD - push method used to add to the end of the array
+//* ADD - PUSH used to add to the end of the array
 var user = ["Dwight", "Schrute", "beetsbears@battlestar.com"];
 user.push("jello");
 console.log(user); // ["Dwight", "Schrute", "beetsbears@battlestar.com", "jello"]
-// in this case adds "jello" to the array
+// in this case adds "jello" to end of array
 
-//* REMOVE - pop method removes from the end of an array
+//* ADD - UNSHIFT used to add to the beginning of the array
+var user = ["Dwight", "Schrute", "beetsbears@battlestar.com"];
+user.unshift("jello");
+console.log(user); // ["jello", "Dwight", "Schrute", "beetsbears@battlestar.com"]
+// in this case adds "jello" to the beginning of array
+
+//* REMOVE - POP removes from the end of an array
 var user = ["Dwight", "Schrute", "beetsbears@battlestar.com"];
 user.pop();
 console.log(user); // ["Dwight", "Schrute"]
 // removes "beetsbears@battlestar.com" from array
+
+//* REMOVE - SHIFT removes from the beginning of an array
+var user = ["Dwight", "Schrute", "beetsbears@battlestar.com"];
+user.shift();
+console.log(user); // ["Schrute", beetsbears@battlestar.com"]]
+// removes "Dwight" from array
 
 //* ACCESS/UPDATE - access name of array & item wanted from within it
 var user = ["Dwight", "Schrute", "beetsbears@battlestar.com"];
@@ -25,6 +37,7 @@ var user = ["Dwight", "Schrute", "beetsbears@battlestar.com"];
 console.log(user.length); // 3
 user.pop();
 console.log(user.length); // 2
+
 
 //! ARRAYS + LOOPS
 
