@@ -1,5 +1,8 @@
 # Links
 
+Js loops
+https://dev.to/sylwiavargas/cheatsheet-js-loops-foreach-for-in-for-of-3hj2
+
 ## Codepen
 [JS Playground](https://codepen.io/WolfsVeteran/pen/mdmpbNK)
 [Variables 101](https://codepen.io/WolfsVeteran/pen/VwLjEzw?editors=0010)
