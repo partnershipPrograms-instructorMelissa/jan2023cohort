@@ -59,6 +59,7 @@ for(let i = 0; i < arr04.length; i++){
         console.log(arr04[i])
 }
 
+// can u compare strings and numbers?
 var num = "12"
 if (num > 10)
     console.log("YAY!")
