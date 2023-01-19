@@ -37,3 +37,12 @@ console.log(newArr);
 
 // The newArr will output the negative numbers in the original arr. For arr it will out put the opposite integer of original array such as [-1, -3, -8, 5, 0, 2, -4, 1].
 
+
+
+//***NOTES 
+//Line 1: a variable called arr that is an array of numbers 
+//line 2: var called newArr with an empty array
+//line 3: start for loop i starts at 0 go through length of the array increasing i by 1 each loop
+//line 4: start if = value of i < 0 do lines 5 and 6
+//lines 5: add current value of i to the newArr
+//line 6: current index will now equal current value times -1
