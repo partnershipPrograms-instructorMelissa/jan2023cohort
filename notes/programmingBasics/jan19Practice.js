@@ -73,49 +73,20 @@ let desk = [
 //console.log(desk[0].items[1].type[0].name);
 
 // Print 1 location items
-//console.log(desk[0].items[1].item);
+//console.log(desk[0].items);
 
 // Print item object
-for (let i = 0; i < desk.length; i++) {
-  let stuff = desk[i].items;
-  for(let j = 0; j < stuff.length; j++){
-    let arr = stuff[j].item
-    //console.log(arr);
-  }
-}
+//console.log(desk[0].items[1].item);
 
 // print the item object count
-for (let i = 0; i < desk.length; i++) {
-  let stuff = desk[i].items;
-  for (let j = 0; j < stuff.length; j++) {
-    let obj1 = stuff[j].count;
-    //console.log(obj1);
-  }
-}
+//console.log(desk[0].items[1].count);
+
 
 // print the item object name
-for (let i = 0; i < desk.length; i++) {
-  let result = desk[i].items;
-  for (let j = 0; j < result.length; j++) {
-    let res = result[j].type;
-    for (let k = 0; k < res.length; k++) {
-      let results = res[k].name;
-      //console.log(results);
-    }
-  }
-}
+//console.log(desk[0].items[1].type[0].name);
 
 // print the colors of the object
-for (let i = 0; i < desk.length; i++) {
-  let result = desk[i].items;
-  for (let j = 0; j < result.length; j++) {
-    let res = result[j].type;
-    for (let k = 0; k < res.length; k++) {
-      let obj2 = res[k].colors;
-      //console.log(obj2);
-    }
-  }
-}
+//console.log(desk[0].items[1].type[0].colors);
 
 // print 1 color of the item
 //console.log(desk[0].items[0].type[0].colors[0])
@@ -144,13 +115,13 @@ for (let i = 0; i < desk.length; i++) {
 
 // Print all the item names if they have a color of white in the list of colors
 for (let i = 0; i < desk.length; i++) {
-  let result = desk[i].items;
-  for (let j = 0; j < result.length; j++) {
-    let res = result[j].type;
-    for (let k = 0; k < res.length; k++){
-        if(res[k].colors === ''){
-            console.log(res[k].colors)
+  for (let j = 0; j < desk[i].items.length; j++) {
+    for (let k = 0; k < desk[i].items[j].type.length; k++) {
+      for (let l = 0; l < desk[i].items[j].type[k].colors.length; l++) {
+        if (desk[i].items[j].type[k].colors[l] == 'white') {
+          //console.log(desk[i].items[j].type[k].name);
         }
+      }
     }
   }
 }
