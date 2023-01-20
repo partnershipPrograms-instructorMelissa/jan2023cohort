@@ -23,19 +23,22 @@ var result2 = add(4, 7);
 console.log(result1);
 console.log(result2);
 // Prediction:
-// 
+// The function will print 
+// Summing Numbers! num1 is: 3  num2 is: 5 
+// 8
+// Summing Numbers! num1 is: 3  num2 is: 5 
+// 11
 
 //* Predict 3
-// function highFive(num) {
-//   for (var i = 0; i < num; i++) {
-//     if (i == 5) {
-//       console.log("High Five!");
-//     } else {
-//       console.log(i);
-//     }
-//   }
-// }
+function highFive(num) {
+  for (var i = 0; i < num; i++) {
+    if (i == 5) {
+      console.log("High Five!");
+    } else {
+      console.log(i);
+    }
+  }
+}
 
 // Prediction:
-// since the function has not been called it will not return anything 
-
+// since the function has not been called it will not return anything
