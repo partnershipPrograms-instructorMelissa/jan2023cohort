@@ -109,7 +109,7 @@ for (let i = 0; i < desk.length; i++) {
 console.log('**********************************************************')
 
 // Print all the item names if they have a color of white in the list of colors
-
+// Liannys
 for(let i = 0; i < desk.length; i++){
     for(let j = 0; j < desk[i].items.length; j++){
         for(let k = 0; k < desk[i].items[j].type.length; k++)
@@ -124,7 +124,7 @@ for(let i = 0; i < desk.length; i++){
         }
     }
 }
-
+// Kaitlynn
 for(let i = 0; i < desk.length; i++){
     for(let j = 0; j < desk[i].items.length; j++){
             for(let k = 0; k < desk[i].items[j].type.length; k++){
@@ -137,6 +137,7 @@ for(let i = 0; i < desk.length; i++){
             }
     }
 }
+// Brianna
 for (let i = 0; i < desk.length; i++) {
     // console.log('lo1', desk[i])
     
@@ -156,5 +157,20 @@ for (let i = 0; i < desk.length; i++) {
         }
         }
         }
+        }
+    }
+    // Ubin
+    for (let i = 0; i < desk.length; i++) {
+        var items = desk[i].items
+        for (let j = 0; j < items.length; j++) {
+            var types = items[j].type
+            for (let k = 0; k < types.length; k++) {
+                var colors = types[k].colors
+                for (let l = 0; l < colors.length; l++) {
+                    if (colors[l] === 'white') {
+                        console.log(types[k].name)
+                    }
+                }
+            }
         }
     }
