@@ -37,3 +37,6 @@ function returnArray(num){
 }
 
 var y = returnArray(6)  //  now y contains the newArr data
+
+
+// i want to push new things
