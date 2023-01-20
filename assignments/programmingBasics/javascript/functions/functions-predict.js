@@ -7,7 +7,8 @@ function greeting() {
 }
 var word = greeting();
 console.log(word);
-
+// Prediction:
+// The function will print out "Hello" but not "World" because it is placed after a return statement in the function so it never actually gets reached
 
 //* Predict 2
 function add(num1, num2) {
@@ -21,15 +22,20 @@ var result1 = add(3, 5);
 var result2 = add(4, 7);
 console.log(result1);
 console.log(result2);
-
+// Prediction:
+// 
 
 //* Predict 3
-function highFive(num) {
-  for (var i = 0; i < num; i++) {
-    if (i == 5) {
-      console.log("High Five!");
-    } else {
-      console.log(i);
-    }
-  }
-}
+// function highFive(num) {
+//   for (var i = 0; i < num; i++) {
+//     if (i == 5) {
+//       console.log("High Five!");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
+
+// Prediction:
+// since the function has not been called it will not return anything 
+
