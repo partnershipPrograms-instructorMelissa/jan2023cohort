@@ -133,3 +133,25 @@ function testing(a, b, c) {
 testing(2, 'The answer is:', 4)
 
 //hello
+let x = 10
+let y = 20
+let a = 0
+let results = []
+console.log('a',a)
+
+// Create a function that adds, subtracts, multiplies and divides 2 numbers prints the results and pushes the results of each into the results array and prints that array and each answer
+function asmd(num1, num2) {
+    theAdd = num1 + num2
+    results.push(theAdd)
+    theSub = num1 - num2
+    results.push(theSub)
+    theMult = num1 * num2
+    results.push(theMult)
+    theDiv = num1 / num2
+    results.push(theDiv)
+    console.log(theAdd, theSub, theMult, theDiv, results)
+    a = results
+    // return a
+}
+asmd(x, y)
+console.log('a',a)
