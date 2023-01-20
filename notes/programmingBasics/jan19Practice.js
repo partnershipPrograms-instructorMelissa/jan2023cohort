@@ -118,15 +118,39 @@ for (let i = 0; i < desk.length; i++) {
 }
 
 // print 1 color of the item
+//console.log(desk[0].items[0].type[0].colors[0])
 
 // console.log('**********************************************************')
 
 // Print the names of all the locations
+for(let i = 0; i < desk.length; i++){
+    //console.log(desk[i].location);
+}
 
 // console.log('**********************************************************')
 
 // print the array of types for any item that has a count more than 1
+for (let i = 0; i < desk.length; i++) {
+  let arr1 = desk[i].items;
+  for (let j = 0; j < arr1.length; j++) {
+    let obj3 = arr1[j].count;
+    if(obj3 > 1){
+       //console.log(arr1[j].type)
+    }
+  }
+}
 
 // console.log('**********************************************************')
 
 // Print all the item names if they have a color of white in the list of colors
+for (let i = 0; i < desk.length; i++) {
+  let result = desk[i].items;
+  for (let j = 0; j < result.length; j++) {
+    let res = result[j].type;
+    for (let k = 0; k < res.length; k++){
+        if(res[k].colors === ''){
+            console.log(res[k].colors)
+        }
+    }
+  }
+}
