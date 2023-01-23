@@ -51,6 +51,7 @@ function intsSum(arr) {
         sum = sum + arr[i]
         console.log(`Current Index Value: ${arr[i]}, Current Sum: ${sum}`)
     }
+    return sum
 }
 
 
@@ -71,6 +72,7 @@ function printMax(arr) {
         }
     }
     console.log(max)
+    return max
 }
 // printMax([1,2,3,4,5,6,7,8,9])
 
@@ -81,6 +83,7 @@ function printAvg(arr) {
         sum += arr[i] // sum = sum + arr[i]
     }
     console.log(sum/arr.length)
+    return sum/arr.length
 }
 // printAvg([1,2,3,4,5,6,7,8,9])
 
@@ -132,8 +135,35 @@ function greaterThanY(arr, y) {
 }
 // greaterThanY([1,2,3,4,5,6,7,8,9], 4)
 
-// 10. Zero out negative numbers arr  Muriel
+// 10. Zero out negative numbers arr change any neg numbers to 0 print arr Muriel
+function zeroNum(a) {
+    for(let i = 0; i < a.length; i++) {
+        if(a[i] < 0) {
+            a[i] = 0
+        }
+    }
+    console.log(a)
+}
+// zeroNum([1,5,-99,-2,0,3,-4,5,8,9])
+
+
 // 11. Max, Min, Avg   Dana
+function maxMinAvg(arr) {
+    let max = printMax(arr)
+    let avg = printAvg(arr)
+    let min = arr[0]
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i]< min) {
+            min = arr[i]
+        }
+    }
+    let result = {max: max, min: min, avg: avg}
+    console.log(`Max: ${max}, Min: ${min}, Avg: ${avg}`)
+    return result
+}
+
+// maxMinAvg([1,5,-99,-2,0,3,-4,5,8,9])
+
 // 12. Shift Array Values - move to left by 1 index loosing index 0 adding 0 to last  Ashunti & Jackie
 function shiftArr(arr) {
     for(let i = 0; i < arr.length; i++) {
@@ -173,9 +203,17 @@ function shiftArray(arr){
     arr.push(0)
     return arr
 }
-console.log(shiftArray([1,2,3]))
+// console.log(shiftArray([1,2,3]))
 
 
-// 13. Swap string for array Negative numbers (Dojo')  Adriana
+// 13. Swap string for array Negative numbers ('Dojo')  Adriana
+function swapDojo(arr) {
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] < 0) {
+            arr[i] = 'Dojo'
+        }
+    }
+    console.log(arr)
+}
 
-
+swapDojo([1,5,-99,-2,0,3,-4,5,8,9])
