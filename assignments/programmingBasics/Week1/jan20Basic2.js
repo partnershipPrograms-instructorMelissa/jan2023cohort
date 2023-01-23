@@ -83,27 +83,31 @@ function countPositives(arr){
 //Evens and Odds - Create a function that accepts an array.  Every time that array has three odd values in a row, print "That's odd!".  Every time the array has three evens in a row, print "Even more so!".
 function EvenOdd(arr){
 
+    let count = 0
     let streak = 0;
-    let flag = false
-    
    
-
     for(let i = 0; i < arr.length; i++){
         if(arr[i] % 2 == 0){
             streak = 0;
         } else {
             streak++
+            //console.log(`streak is: ${streak}`)
         }
-        if(streak === 3){
-            flag = true
+        if (arr[i] % 2 != 0) {
+            count = 0;
+        } else {
+            count++;
+            //console.log(`count is: ${count}`)
         }
-
-        if(flag){
-            return "That's odd!"
+        if(count == 3 && count > streak){
+            console.log("Even more so!")
+        }
+        if(streak == 3 && streak > count){
+            console.log("That's odd!")
         }
     }
 }
-//console.log(EvenOdd(arr03))
+//console.log(EvenOdd(arr02))
 
 //Increment the Seconds - Given an array of numbers arr, add 1 to every other element, specifically those whose index is odd (arr[1], arr[3], arr[5], etc).  Afterward, console.log each array value and return arr.
 function incrementSecond(arr){
@@ -117,3 +121,4 @@ function incrementSecond(arr){
 //incrementSecond(arr03)
 
 // Previous Lengths - You are passed an array (similar to saying 'takes in an array' or 'given an array') containing strings.  Working within that same array, replace each string with a number - the length of the string at the previous array index - and return the array.  For example, previousLengths(["hello", "dojo", "awesome"]) should return ["hello", 5, 4]. Hint: Can for loops only go forward?
+
