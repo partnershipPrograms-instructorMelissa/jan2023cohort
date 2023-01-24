@@ -121,9 +121,15 @@ function incrementSecond(arr){
 //incrementSecond(arr03)
 
 //Previous Lengths - You are passed an array (similar to saying 'takes in an array' or 'given an array') containing strings.  Working within that same array, replace each string with a number - the length of the string at the previous array index - and return the array.  For example, previousLengths(["hello", "dojo", "awesome"]) should return ["hello", 5, 4]. Hint: Can for loops only go forward?
-function previousLengths(str){
+let arr06 = ["Home", "hello", "Dojo"];
 
+function previousLengths(arr){
+  for(let i = arr.length - 1; i > 0; i--){
+    arr[i] = arr[i -1].length
+  }
+  return arr
 }
+console.log(previousLengths(arr06))
 
 //Add Seven - Build a function that accepts an array. Return a new array with all the values of the original, but add 7 to each. Do not alter the original array.  Example, addSeven([1,2,3]) should return [8,9,10] in a new array.
 function addSeven(arr){
@@ -151,7 +157,7 @@ function swapArray(arr){
     }
     console.log(arr)
 }
-swapArray(arr03)
+//swapArray(arr03)
 
 //Outlook: Negative - Given an array, create and return a new one containing all the values of the original array, but make them all negative (not simply multiplied by -1). Given [1,-3,5], return [-1,-3,-5].
 function negativeNum(arr){
