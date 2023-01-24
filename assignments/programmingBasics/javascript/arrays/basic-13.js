@@ -67,11 +67,30 @@ function arrayMax(arr) {
 //* 6. Get and Print Average
 // printAverageOfArray(arr)
 // Analyze an array’s values and print the average.
-
+function printAverageOfArray(arr) {
+  if (arr.length == 0) {
+    console.log("No average value");
+  }
+  var sum = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  var avg = sum / arr.length;
+  console.log("Average value is:", avg);
+}
+// printAverageOfArray([0, 1, 2, 3, 4, 5, 6]);
 
 //* 7. Array with Odds
 // returnOddsArray1To255()
 // Create an array with all the odd integers between 1 and 255 (inclusive).
+function returnOddsArray1To255() {
+  let i = 1;
+  while (i <= 255) {
+    console.log(i);
+    i += 2;
+  }
+}
+// returnOddsArray1To255();
 
 //* 8. Square the Values
 // squareArrayVals(arr)
@@ -153,3 +172,11 @@ function shiftArrayValsLeft(arr) {
 //* 13. Swap String For Array Negative Values
 // swapStringForArrayNegativeVals(arr)
 // Given an array of numbers, replace any negative values with the string 'Dojo'.
+function swapStringForArrayNegativeVals(arr) { //start function
+  for (let i = 0; i < arr.length; i++) { // begin for loop start @ 0
+    if (arr[i] < 0); //if 
+    arr[i] = "Dojo";
+  }
+  console.log(arr);
+}
+swapStringForArrayNegativeVals([-10, -11, -2, -23, 4, 5, 6, 58]);
