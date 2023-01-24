@@ -151,3 +151,41 @@ function MaxMinAvg(arr){
 }
 console.log('the max, min and avg');
 MaxMinAvg(arr02);
+
+function classAvg(arr) {
+    let sum = 0
+    let max = 0
+    let min = 0
+    let avg = 0
+    let oneS = []
+    let theClass = []
+    for(let i = 0; i < arr.length; i++) {
+        if(Array.isArray(arr[i])) {
+            let student = arr[i]
+            console.log(student)
+            for(let s = 0; s < student.length; s++) {
+                if(max < student[s]) {
+                    max = student[s]
+                }
+                if(min > student[s]) {
+                    min = student[s]
+                }
+                sum += student[s]
+            }
+            let newSum = {sum: sum}
+            let newMax = {max: max}
+            let newMin = {min: min}
+            avg = sum/student.length
+            let newAvg = {avg: avg}
+            console.log(newSum)
+            // oneS.push(newMax)
+            // oneS.push(newMin)
+            // oneS.push(newAvg)
+            oneS.push(newSum)
+            theClass.push(oneS)
+            
+        }
+    } 
+    console.log(theClass)
+}
+// classAvg(arr02)

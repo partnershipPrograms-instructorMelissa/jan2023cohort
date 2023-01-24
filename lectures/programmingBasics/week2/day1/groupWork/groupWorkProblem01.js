@@ -71,3 +71,27 @@ function evenNegPop(arr){
     console.log(`original array: ${arr} even array: ${even} negative array: ${negative}`)
 }
 evenNegPop(arr01)
+
+console.log('\n========= Problem 1 Version 4 =========')
+
+function evenNeg(arr) {
+    let negArr = []
+    let evenArr = []
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] < 0 && arr[i] % 2 == 0) {
+            negArr.push(arr[i])
+            evenArr.push(arr[i])
+            arr[i] = 'pop'
+        }
+        else if(arr[i] < 0) {
+            negArr.push(arr[i])
+            arr[i] = 'pop'
+        }
+        else if(arr[i] % 2 == 0) {
+            evenArr.push(arr[i])
+            arr[i] = 'pop'
+        }
+    }
+    console.log(`Negative Array: ${negArr}, Even Array: ${evenArr}, Original Array: ${arr}`)
+}
+// evenNeg(arr01)
