@@ -34,6 +34,58 @@ let arr02 = [
   [100, 90, 95, 87],
   [40, 80, 70, 76],
 ];
+function findMax(arr) {
+  let max = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  //console.log(max);
+  return max
+}
+
+function findMin(arr) {
+  let min = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  //console.log(min);
+  return min
+}
+
+function findAvg(arr) {
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  let avg = sum / arr.length;
+  //console.log(avg);
+  return avg
+}
+
+function multipleArray(arr){
+  let res = []
+
+  for(let i = 0; i < arr.length; i++){
+    let result = { min: findMin(arr[i]), max: findMax(arr[i]), avg: findAvg(arr[i]) };
+    res.push(result)
+  }
+  let sum = res[0].avg;
+  for (let i = 1; i < res.length; i++){
+    sum += res[i].avg;
+  }
+  let total = sum / res.length
+  console.log('Average:', total.toFixed(2));
+
+  return res
+}
+console.log(multipleArray(arr02))
 
 // Create a function that takes an array of Objects and prints back the names of each pet and their age
 let arr03 = [
@@ -54,5 +106,5 @@ function printObjects(arr){
         console.log(arr[i].name, arr[i].stats[0].age);    
     }
 }
-printObjects(arr03)
+//printObjects(arr03)
 
