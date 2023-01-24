@@ -41,7 +41,7 @@ function mMA_2D(arr){
     
     return results
 }
-console.log(mMA_2D(arr02))
+// console.log(mMA_2D(arr02))
 
 console.log('\n========= Problem 2 Version 2 =========')
 
@@ -69,7 +69,7 @@ function innerArrays(arr) {
     console.log(`total average: ${totalSum / totalCount}`)
 }
 
-innerArrays(arr02)
+// innerArrays(arr02)
 
 
 console.log('\n========= Problem 2 Version 3 =========')
@@ -149,43 +149,68 @@ function MaxMinAvg(arr){
     }
 
 }
-console.log('the max, min and avg');
-MaxMinAvg(arr02);
+// console.log('the max, min and avg');
+// MaxMinAvg(arr02);
+
+console.log('\n========= Problem 2 Version 4 =========')
 
 function classAvg(arr) {
-    let sum = 0
-    let max = 0
-    let min = 0
-    let avg = 0
-    let oneS = []
     let theClass = []
-    for(let i = 0; i < arr.length; i++) {
-        if(Array.isArray(arr[i])) {
-            let student = arr[i]
-            console.log(student)
-            for(let s = 0; s < student.length; s++) {
-                if(max < student[s]) {
-                    max = student[s]
-                }
-                if(min > student[s]) {
-                    min = student[s]
-                }
-                sum += student[s]
+
+    function theMax(arr) {
+        let max = arr[0]
+        for(let s = 0; s < arr.length; s++) {
+            if(max < arr[s]) {
+                max = arr[s]
             }
-            let newSum = {sum: sum}
-            let newMax = {max: max}
-            let newMin = {min: min}
-            avg = sum/student.length
-            let newAvg = {avg: avg}
-            console.log(newSum)
-            // oneS.push(newMax)
-            // oneS.push(newMin)
-            // oneS.push(newAvg)
-            oneS.push(newSum)
-            theClass.push(oneS)
-            
         }
-    } 
-    console.log(theClass)
+        // console.log(`The Max: ${max}`)
+        return max
+    }
+
+    function theMin(arr) {
+        let min = arr[0]
+        for(let s = 0; s < arr.length; s++) {
+            if(arr[s] < min) {
+                min = arr[s]
+            }
+        }
+        // console.log(`The Min: ${min}`)
+        return min
+    }
+
+    function theSum(arr) {
+        let sum = 0
+        for(let s = 0; s < arr.length; s++) {
+            sum += arr[s]
+        }
+        // console.log(`The Sum: ${sum}`)
+        return sum
+    }
+
+    function theAvg(arr) {
+        let avg = 0
+        let sum = theSum(arr)
+        avg = sum / arr.length
+        // console.log(`The Avg: ${avg}`)
+        return avg
+    }
+
+    for(let i = 0; i < arr.length; i++) {
+        let r = {student: i+1, max: theMax(arr[i]), min: theMin(arr[i]), sum: theSum(arr[i]), avg: theAvg(arr[i])}
+        theClass.push(r)
+        // console.log(theClass)
+    }
+    let finalSum = 0
+    let finalAvg = 0
+    for(let i = 0; i < theClass.length; i++) {
+        finalSum += theClass[i].avg
+        // console.log(`curr Sum: ${finalSum}`)
+    }
+    finalAvg = {classAvg: finalSum/theClass.length}
+    // console.log(theClass.length)
+    theClass.push(finalAvg)
+    console.log('The final answer:', theClass)
+
 }
-// classAvg(arr02)
+classAvg(arr02)

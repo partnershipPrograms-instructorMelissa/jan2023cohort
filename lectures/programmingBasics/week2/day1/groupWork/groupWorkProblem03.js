@@ -36,3 +36,15 @@ function petNameAge(arr){
         console.log(arr[i].stats[0].age)
     }
 }
+
+console.log('\n========= Problem 3 Version 3 =========')
+
+function nameAgePets(arr) {
+    for(let i = 0; i < arr.length; i++) {
+        let name = arr[i].name
+        let age = arr[i].stats[0].age
+        let pet = i+1
+        console.log(`Pet #${pet}: ${name} is ${age} years old`)
+    }
+}
+nameAgePets(arr03)
