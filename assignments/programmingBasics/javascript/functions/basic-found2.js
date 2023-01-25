@@ -41,8 +41,8 @@ function printOneReturnOne(arr) {
     // console.log(arr[i]);
   }
 }
-// // printOneReturnOne([0, 1, 2, 3, 4, 5, 6]);
-// var a = [0, 1, 2, 3, 4, 5, 6]
+// printOneReturnOne([0, 1, 2, 3, 4, 5, 6]);
+var a = [0, 1, 2, 3, 4, 5, 6]
 // console.log(printOneReturnOne(a));
 
 //* 4. Double Vision
@@ -53,7 +53,7 @@ function double(arr) {
   }
   return arr;
 }
-// var b = [0, 1, 2, 3, 4];
+var b = [0, 1, 2, 3, 4];
 // console.log(double(b));
 
 //* 5. Count Positives
@@ -67,7 +67,7 @@ function countPositives(arr) {
   return arr;
 }
 
-// var c = [-1,1,1,1]
+var c = [-1,1,1,1]
 // console.log(countPositives(c));
 
 //* 6. Evens and Odds
@@ -92,7 +92,7 @@ function evenAndOdd(arr) {
   }
 }
 
-// var d = [2 ,4 ,6 ,1 ,5 ,7, 8, 0, 6];
+var d = [2 ,4 ,6 ,1 ,5 ,7, 8, 0, 6];
 // evenAndOdd(d);
 
 //* 7. Increment the Seconds
@@ -107,14 +107,19 @@ function incSec(arr) {
   return arr;
 }
 
-// var e = [0, 1, 2, 3, 4, 5, 6]
+var e = [0, 1, 2, 3, 4, 5, 6]
 // console.log(incSec(e));
 
 //* 8. Previous Lengths
 // You are passed an array (similar to saying 'takes in an array' or 'given an array') containing strings.  Working within that same array, replace each string with a number - the length of the string at the previous array index - and return the array.  For example, previousLengths(["hello", "dojo", "awesome"]) should return ["hello", 5, 4]. Hint: Can for loops only go forward?
-function name(params) {
-  
+function previousLengths(arr) {
+  for (let i = arr.length - 1; i > 0; i-- ) {
+    arr[i] = arr[i - 1].length;
+  }
+  return arr;
 }
+var f = ["hello", "dojo", "awesome"]
+// console.log(previousLengths(f));;
 
 //* 9. Add Seven to Most
 //Build a function that accepts an array. Return a new array with all the values of the original, but add 7 to each. Do not alter the original array.  Example, addSeven([1,2,3]) should return [8,9,10] in a new array.
