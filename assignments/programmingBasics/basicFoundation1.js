@@ -186,7 +186,7 @@ function maxMinAvg(arr) {
 function swapNums(arr) {
     for(let i = 0; i < arr.length; i++) {
         if(arr[i] < 0) {
-            [arr[0], arr[3]] = [arr[3], arr[0]];
+            [arr[0], arr[arr.length -1]] = [arr[arr.length-1], arr[0]];
         }
     }
     console.log(arr)
