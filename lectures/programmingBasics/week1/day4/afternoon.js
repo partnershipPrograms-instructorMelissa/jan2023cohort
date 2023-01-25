@@ -113,6 +113,28 @@ function betterNum(arr){
     results.push(avgNum(arr))
     console.log('the results array:', results)
 }
-betterNum(arr03)
+//betterNum(arr03)
 
 // Create a function that finds the min, max, sum, and average of an array and puts those results into a new array.  Takes any negative numbers and puts them in a new array, Then the positive odd numbers into an array and the positive even numbers into another array.  Print each array
+
+function positiveOdd(arr) {
+    let allResults = betterNum(arr);
+    let negNum = [];
+    let posNum = [];
+    let oddNum = [];
+    for(let i = 0; i < allResults.length; i++) {
+        if(allResults[i] < 0) {
+            negNum.push(allResults[i]);
+        } else if (allResults[i] > 0 && allResults[i] % 2 === 0) {
+            posNum.push(allResults[i]);
+        }else if(allResults[i] > 0 && allResults[i] % 2 === 1) {
+            oddNum.push(allResults[i]);
+        }
+    }
+    console.log('Whole array:', allResults);
+    console.log('Negative nums:', negNum);
+    console.log('Positive nums:', posNum);
+    console.log('Positive odds:', oddNum);
+}
+
+positiveOdd(arr01);
