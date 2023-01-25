@@ -8,23 +8,29 @@ function seperateArray(arr){
     let negArr = []
     let bool = false
 
+    /* Creating 3 vars.  1st an empty array for the even numbers, 2nd an empty array for the negative numbers and 3rd a variable set to false */
+
     for(let i=0; i<arr.length; i++){
         if(arr[i]%2 == 0){
             evenArr.push(arr[i])
             bool = true
         }
+        /* Inside the loop if the value of i is divisible by 2 with no remainder (even) push that number to the even array and set bool to true */
 
         if(arr[i] < 0){
             negArr.push(arr[i])
             bool = true
         }  
+        /* Inside the same loop still if the value of I is less than 0 (negative) push that number to the negative array and set bool to treu */
 
         if(bool){
             arr[i] = 'pop'
             bool = false
         }
+        /* If bool was set to true by any of the above if statements change the value of i in original array to 'pop */
     }
     console.log(`Array: ${arr}\nEvens: ${evenArr}\nNegative: ${negArr}`)
+    /* Outside the loop print the 3 arrays */
 }
 seperateArray(arr01)
 
@@ -33,23 +39,36 @@ console.log('\n========= Problem 1 Version 2 =========')
 function threeArrs(arr) {
     let even = []
     let negative = []
+
+    /* Creating 2 empty arrays */
+    
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] % 2 === 0) {
             even.push(arr[i])
+
+            /* Inside teh loop if the value of i divided by 2 has no remainder push that number to even array */
+
             if (arr[i] < 0) {
                 negative.push(arr[i])
             }
+
+            /* Inside the loop if the value of i is less than 0 push that number to the negative array */
         } else if (arr[i] < 0) {
             negative.push(arr[i])
             arr[i] = "pop"
+            
+            /* If the value of i is less than 0 push the number to the negative array and change the original value to 'pop */
         }
     }
     console.log(arr)
     console.log(even)
     console.log(negative)
+
+    /* Print the 3 arrays */
 }
 
 threeArrs(arr01)
+
 
 console.log('\n========= Problem 1 Version 3 =========')
 
