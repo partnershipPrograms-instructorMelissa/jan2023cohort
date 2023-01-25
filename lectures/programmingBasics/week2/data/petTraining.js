@@ -429,3 +429,5 @@ let enrolled = [
     {id: 3, startDate: 'Feb 20, 2023'},
     {id: 4, startDate: 'Feb 17, 2023'}
 ]
+
+module.exports = {petTrainingOwner, users, owners, trainers, pets, cohorts, enrolled}

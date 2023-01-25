@@ -30,3 +30,5 @@ let meals = [
         }
     }
 ]
+
+module.exports = {meals}
