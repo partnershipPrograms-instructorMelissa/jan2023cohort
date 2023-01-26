@@ -19,6 +19,7 @@ insert into owner (firstName, lastName, user_id) values
 delete from owner where id=3;
 delete from owner where id=4;
 
+-- Next we created our pet objects and connected them to their owners
 SELECT * FROM pet;
 insert into pet (petName, species, owner_id) values ('Cicilly', 'Dog', 2), ('Bill', 'Horse', 2), ('Zebra', 'Cat', 1), ('Clifford', 'Dog',2);
 
