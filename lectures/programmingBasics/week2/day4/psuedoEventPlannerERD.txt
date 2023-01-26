@@ -36,8 +36,9 @@ as a user i can also attend events as I am always learning myself and someone el
 
 Dasbhboard
 
-tables = user, description
+tables = user, message
 
 
-user table = username, password, first, last, level=0, createdat
-description table = content, user_id
+user table = username, password, first, last, level=0, createdat, description
+message table = content, messageLeaver(user_id), createdat, messageReciever(user_id)
+
