@@ -5,7 +5,12 @@ function prevLen(arr){
         let prevCount = count
         count = arr[i].length
         arr[i] = prevCount
+
+        // Equivalent too
+        // arr[i] = count
+        // count = arr[i].length
     }
+    console.log(count)
     return arr
 }
 console.log(prevLen(["hello", "dojo", "awesome"]))

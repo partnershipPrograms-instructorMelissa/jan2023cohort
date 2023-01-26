@@ -1,0 +1,9 @@
+C - create
+R - read
+U - update
+D - delete
+
+- Create -
+INSERT INTO table (column1, column2, column2) VALUE ('value1', value2, value3);
+
+- Read - 
