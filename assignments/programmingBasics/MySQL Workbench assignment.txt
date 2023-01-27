@@ -1,0 +1,22 @@
+
+//This is where I created an insert of user information. Basic info with name, id , and email. 
+
+INSERT INTO randomtable.users (id, firstName, lastName, email) VALUES (3, "Joslyn", "Shumard", "joslyn@email.com");
+INSERT INTO randomtable.users (id, firstName, lastName, email) VALUES (1, "Liannys", "Sanchez", "liannys@email.com");
+INSERT INTO randomtable.users (id, firstName, lastName, email) VALUES (2, "Sierra", "Brown", "sierra@email.com");
+INSERT INTO randomtable.users (id, firstName, lastName, email) VALUES (4, "Emily", "Vazquez", "emily@email.com");
+
+//I used this SELECT query to pull my table and make sure my table had all of this information I inserted.
+
+SELECT * FROM randomtable.users;
+
+//I then updated my own information to my nickname and my previous last name with this query. This then updated my table successfully to the updated names given. 
+
+UPDATE randomtable.users SET firstName = "Jay", lastName = "Pieters" WHERE id = 3;
+
+//I now am using the delete query to delete the last id on the table which would be Emily id=4
+
+DELETE FROM randomtable.users WHERE id = 4;
+
+
+
