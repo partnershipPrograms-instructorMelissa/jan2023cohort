@@ -1,0 +1,52 @@
+-- create 5 authors
+insert into authors (name) values ('Jane Austen'), ('Emily Dickinson'), ('Fyodor Dostoevsky'), ('William Shakespeare'), ('Lau Tzu');
+
+-- create 5 books
+insert into books (title) values ('C Sharp'), ('Java'), ('Python'), ('PHP'), ('Ruby');
+
+-- change C Sharp to C#
+update books
+set title="C#"
+where title="C Sharp";
+
+-- change first name if id=4 author to Bill
+update authors
+set name='Bill Shakespeare'
+where id=4;
+
+-- create favorites
+insert into favorites (author_id, book_id) values
+(1, 1), (1, 2);
+
+insert into favorites (author_id, book_id) values
+(2, 1), (2, 2), (2, 3);
+
+insert into favorites (author_id, book_id) values
+(3, 1), (3, 2), (3, 3), (3, 4);
+
+insert into favorites (author_id, book_id) values
+(4, 1), (4, 2), (4, 3), (4, 4), (4, 5);
+
+-- retrieve all authors who favorited the 3rd book
+select * from authors
+join favorites on authors.id=favorites.author_id
+join books on favorites.book_id=books.id
+where books.id=3;
+
+-- remove the first author of the the 3rd book's favorites
+delete from favorites where author_id=2 and book_id=3;
+
+-- add 5th author as one who favors the second book
+insert into favorites (author_id, book_id) values
+(5, 2);
+
+-- find all the books that the 3rd author favorited
+select * from books
+join favorites on books.id=favorites.book_id
+join authors on favorites.author_id=authors.id
+where authors.id=3;
+
+-- find all authors that favorited the 5th bookselect * from authors
+join favorites on authors.id=favorites.author_id
+join books on favorites.book_id=books.id
+where books.id=5;
