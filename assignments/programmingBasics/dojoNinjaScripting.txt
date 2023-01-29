@@ -1,0 +1,46 @@
+SELECT * FROM dojos;
+//Creating the dojos 
+INSERT INTO dojos (id, name) VALUES (1, "Class 1");
+SELECT * FROM dojos;
+INSERT INTO dojos (id, name) VALUES (2, "Class 2");
+INSERT INTO dojos (id, name) VALUES (3, "Class 3");
+SELECT * FROM dojos;
+
+//Deleting all dojos 
+DELETE FROM dojos;
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM dojos;
+SELECT * FROM dojos;
+
+//Creating all dojos again 
+INSERT INTO dojos (id, name) VALUES (1, "Class 1");
+INSERT INTO dojos (id, name) VALUES (2, "Class 2");
+INSERT INTO dojos (id, name) VALUES (3, "Class 3");
+SELECT * FROM dojos;
+
+//Adding 3 ninjas to the first dojo 
+INSERT INTO ninjas (id, firstName, lastName, age, dojo_id) VALUES (1, "Joslyn", "Shumard", 21, 1);
+SELECT * FROM ninjas;
+SELECT * FROM ninjas WHERE dojo_id = 1;
+INSERT INTO ninjas (id, firstName, lastName, age, dojo_id) VALUES (2, "Drake", "Shumard", 21, 1);
+INSERT INTO ninjas (id, firstName, lastName, age, dojo_id) VALUES (3, "Cain", "Shumard", 1, 1);
+
+//adding 3 ninjas to second dojo
+INSERT INTO ninjas (id, firstName, lastName, age, dojo_id) VALUES (4, "Elijah", "Galaviz", 7, 2);
+SELECT * FROM ninjas WHERE dojo_id = 2;
+INSERT INTO ninjas (id, firstName, lastName, age, dojo_id) VALUES (5, "Victoria", "Galaviz", 11, 2);
+INSERT INTO ninjas (id, firstName, lastName, age, dojo_id) VALUES (6, "Amanda", "Galaviz", 40, 2);
+
+adding 3 ninjas to 3rd dojo
+INSERT INTO ninjas (id, firstName, lastName, age, dojo_id) VALUES (7, "Shannon", "Shumard", 40, 3);
+INSERT INTO ninjas (id, firstName, lastName, age, dojo_id) VALUES (8, "Corey", "Shumard", 41, 3);
+INSERT INTO ninjas (id, firstName, lastName, age, dojo_id) VALUES (9, "Sarah", "Shumard", 20, 3);
+
+//printing all ninjas in 1st dojo 
+SELECT * FROM ninjas WHERE dojo_id = 1;
+
+//printing all ninjas in 3rd dojo 
+SELECT * FROM ninjas WHERE dojo_id = 3;
+
+//printing last ninja and what dojo they belong to 
+SELECT dojo_id FROM ninjas WHERE id = 9;
