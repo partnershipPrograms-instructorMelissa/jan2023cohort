@@ -1,0 +1,54 @@
+-- What query would you run to get all the countries that speak Slovene? Your query should return the name of the country, language and language percentage. Your query should arrange the result by language percentage in descending order.
+
+select name, language, percentage from country
+join countrylanguage on country.Code=countrylanguage.CountryCode
+where countrylanguage.Language='Slovene'
+order by countrylanguage.Percentage DESC;
+
+-- What query would you run to display the total number of cities for each country? Your query should return the name of the country and the total number of cities. Your query should arrange the result by the number of cities in descending order.
+
+select country.name, count(city.name) as cities
+from country
+join city on country.Code=city.CountryCode
+group by country.name
+order by cities DESC;
+
+-- What query would you run to get all the cities in Mexico with a population of greater than 500,000? Your query should arrange the result by population in descending order.
+
+select city.name, city.population, city.CountryCode from city
+where city.CountryCode='MEX' and city.Population > 500000
+order by population DESC;
+
+-- What query would you run to get all languages in each country with a percentage greater than 89%? Your query should arrange the result by percentage in descending order.
+
+select country.name, countrylanguage.Language, countrylanguage.Percentage from country
+join countrylanguage on country.Code=countrylanguage.CountryCode
+where countrylanguage.Percentage > 89.0
+order by countrylanguage.Percentage DESC;
+
+-- What query would you run to get all the countries with Surface Area below 501 and Population greater than 100,000?
+
+select country.name, country.SurfaceArea
+from country
+where country.SurfaceArea < 501 and country.population > 100000;
+
+-- What query would you run to get countries with only Constitutional Monarchy with a capital greater than 200 and a life expectancy greater than 75 years?
+
+select country.name, country.GovernmentForm, country.Capital, country.LifeExpectancy
+from country
+where GovernmentForm='Constitutional Monarchy' and Capital > 200 and LifeExpectancy>75;
+
+-- What query would you run to get all the cities of Argentina inside the Buenos Aires district and have the population greater than 500, 000? The query should return the Country Name, City Name, District and Population.
+
+select country.name as city_name, city.Name as city_name, city.District, city.Population from country
+join city on country.Code=city.CountryCode
+where country.name='Argentina' 
+and city.District='Buenos Aires'
+and city.Population>500000;
+
+-- What query would you run to summarize the number of countries in each region? The query should display the name of the region and the number of countries. Also, the query should arrange the result by the number of countries in descending order.
+
+select country.region, count(country.name) as countries
+from country
+group by country.region
+order by countries DESC;
