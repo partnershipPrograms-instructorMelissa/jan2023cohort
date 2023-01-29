@@ -1,0 +1,75 @@
+//Creating 5 different authors 
+INSERT INTO authors (id, name) VALUES (1, "Jane Austen");
+INSERT INTO authors (id, name) VALUES (2, "Emily Dickinson");
+INSERT INTO authors (id, name) VALUES (3, "Fyodor Dostoevsky");
+INSERT INTO authors (id, name) VALUES (4, "William Shakespeare");
+INSERT INTO authors (id, name) VALUES (5, "Lau Tzu");
+SELECT * FROM authors;
+
+//Creating five different books 
+
+INSERT INTO books (id, title, num_of_pages) VALUES (1, "C Sharp", 200);
+INSERT INTO books (id, title, num_of_pages) VALUES (2, "Java", 174);
+INSERT INTO books (id, title, num_of_pages) VALUES (3, "Python", 310);
+INSERT INTO books (id, title, num_of_pages) VALUES (4, "PHP", 220);
+INSERT INTO books (id, title, num_of_pages) VALUES (5, "Ruby", 115);
+SELECT * FROM books;
+
+//Changing the name of C Sharp to C#
+
+UPDATE books SET title = "C#" WHERE id = 1;
+SELECT * FROM books;
+
+//Changing first name of 4th author to "Bill"
+
+UPDATE authors SET name = "Bill" WHERE id = 4;
+SELECT * FROM authors;
+UPDATE authors SET name = "Bill Shakespeare" WHERE id = 4;
+
+//Adding first authors favorite books. (first 2 books)
+
+INSERT INTO favorites (book_id, author_id) VALUES (1 , 1);
+SELECT * FROM favorites;
+INSERT INTO favorites (book_id, author_id) VALUES (2 , 1);
+
+//Adding first 3 books to second authors favorites 
+
+INSERT INTO favorites (book_id, author_id) VALUES (1 , 2);
+INSERT INTO favorites (book_id, author_id) VALUES (2 , 2);
+INSERT INTO favorites (book_id, author_id) VALUES (3 , 2);
+SELECT * FROM favorites;
+
+//Adding first 4 books to third authors favorites 
+
+INSERT INTO favorites (book_id, author_id) VALUES (1 , 3);
+INSERT INTO favorites (book_id, author_id) VALUES (2 , 3);
+INSERT INTO favorites (book_id, author_id) VALUES (3 , 3);
+INSERT INTO favorites (book_id, author_id) VALUES (4 , 3);
+
+//Adding all books to fourth authors favorites 
+
+INSERT INTO favorites (book_id, author_id) VALUES (1 , 4);
+INSERT INTO favorites (book_id, author_id) VALUES (2 , 4);
+INSERT INTO favorites (book_id, author_id) VALUES (3 , 4);
+INSERT INTO favorites (book_id, author_id) VALUES (4 , 4);
+INSERT INTO favorites (book_id, author_id) VALUES (5 , 4);
+
+//retrieving all authors whos favorite is the 3rd book 
+
+SELECT author_id FROM favorites WHERE book_id = 3;
+
+//Removing first author from list of 3rd books favorites 
+
+DELETE FROM favorites WHERE author_id = 2;
+
+//adding fifth author as a favorite for 2nd book 
+
+INSERT INTO favorites (book_id, author_id) VALUES (2, 5);
+
+//finding all books 3rd author favorited 
+
+SELECT book_id FROM favorites WHERE author_id = 3;
+
+//finding all authors tha favorited the 5th book 
+
+SELECT author_id FROM favorites WHERE book_id = 5;
