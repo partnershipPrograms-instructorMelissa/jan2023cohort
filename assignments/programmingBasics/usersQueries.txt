@@ -1,0 +1,33 @@
+// Creating three new users I used my families names and used queries 
+
+INSERT INTO users (id, firstName, lastName, email) VALUES (1, "Drake", "Shumard", "drake@email.com");
+INSERT INTO users (id, firstName, lastName, email) VALUES (2, "Joslyn", "Shumard", "joslyn@email.com");
+INSERT INTO users (id, firstName, lastName, email) VALUES (3, "Cain", "Shumard", "cain@email.com");
+
+//To retrieve all users I used query 
+
+SELECT * FROM users;
+
+//To retrieve the first user by email address I used query 
+
+SELECT email FROM users WHERE id=1; 
+
+//To retrieve the last user from their ID I used 
+
+SELECT * FROM users WHERE id = 3;
+
+//To update the last users last name to pancakes I used query 
+
+UPDATE users SET lastName = 'Pankcakes' WHERE id = 3;
+
+//Deleting the user with id = 2 
+
+DELETE FROM users WHERE id = 2;
+
+//Calling all users and sorting by their first name 
+
+SELECT firstName FROM users ORDER BY firstName;
+
+//BONUS QUESTION: Get all users sorted by first name in descending order 
+
+SELECT firstName FROM users ORDER BY firstName DESC;
