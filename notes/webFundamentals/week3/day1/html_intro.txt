@@ -1,0 +1,38 @@
+Exam: css, html, js
+    - Friday
+    - Build a webpage
+    - Prep for exam: DojoWeather
+
+HyperText Markup Language (HTML)
+    - Like: the bones, structure of a building
+    - how it is going to look like
+    - tells you what is going to be there
+        ~ can also tell kind of where it is
+    - altercations are NOT HTML, that is css
+
+    - URL: https://     blog.        yourname    .com    /contact-us
+        [protocol]    [subdomain]      [SLD]     [TLD]  [page path]
+        s means secure                  [Domain name]   [index is always name of root page]
+    
+    - HTML page structure
+        <!DOCTYPE html> <-- tells version of html
+        <html>  <-- html root element
+
+        <head>  <-- user to contain page html metadata
+            <title>Page Title</title>   <-- title of html page
+        </head>
+
+        <body>
+            <h2>Heading Content</h2>    <-- html headling tag, default styling h1 (largest) - h6 (smallest)
+            <p>Pargraph Content</p>     <-- html paragraph tag
+        </body>
+
+        </html>
+
+    - metadata
+        ~ Language
+        ~ CSS tags
+
+    - VS shortcut: ! then tab
+
+    - emmet abreviation are coder's best friend
