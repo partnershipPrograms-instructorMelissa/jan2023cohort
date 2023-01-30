@@ -7,7 +7,7 @@ insert into farm (name, annual_revenue) values ('Beech Ranch', 650000);
 insert into farm (name, annual_revenue) values ('Morton Farms', 450000);
 insert into farm (name, annual_revenue) values ('Beech Ranch', 750000);
 
-update farm set 
+--update farm set 
 
 -- animals second
 select * from animal;
