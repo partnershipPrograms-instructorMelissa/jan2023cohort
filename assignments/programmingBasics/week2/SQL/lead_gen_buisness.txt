@@ -55,7 +55,14 @@ group by sites.client_id;
 
 -- 7. What query would you run to get a list of client names and the total # of leads we've generated for each client each month between months 1 - 6 of Year 2011?
 
-
+select CONCAT(clients.first_name , ' ' , clients.last_name) as client, 
+count(leads.site_id) as number_of_leads, 
+date_format(registered_datetime,'%M') as month_generated
+from clients
+left join sites on sites.client_id = clients.client_id
+left join leads on leads.site_id = sites.site_id
+where year(registered_datetime) = 2011 AND month(registered_datetime) >= 1 AND month(registered_datetime) <= 6
+group by CONCAT(clients.first_name , ' ' , clients.last_name), month(leads.registered_datetime);
 
 -- 8. What query would you run to get a list of client names and the total # of leads we've generated for each of our clients' sites between January 1, 2011 to December 31, 2011? Order this query by client id.  Come up with a second query that shows all the clients, the site name(s), and the total number of leads generated from each site for all time.
 
