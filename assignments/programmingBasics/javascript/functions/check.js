@@ -1,19 +1,24 @@
 //  Return the second-to-last element of an array. Given [42, true, 4, "Liam", 7], return "Liam".  If array is too short, return null.
 
-function secMax(arr) {
-  var max = arr[0];
-  var sec = arr[0];
-  for (var i = 0; i < arr.length; i++) {
-    if (arr.length < 2) {
-      return null;
-    } else if (arr[i] > max) {
-      sec = max;
-      max = arr[i];
-    } else if (arr[i] > sec && arr[i] < max) sec = arr[i];
+function evenAndOdd(arr) {
+  for (let i = 0; i < arr.length - 2; i++) {
+    if (arr[i] % 2 !== 0) {
+      if (arr[i + 1] % 2 !== 0) {
+        if (arr[i + 2] % 2 !== 0) {
+          console.log(`That's odd!`);
+        }
+      }
+    }
+
+    if (arr[i] % 2 == 0) {
+      if (arr[i + 1] % 2 == 0) {
+        if (arr[i + 2] % 2 == 0) {
+          console.log(`Even more so!`);
+        }
+      }
+    }
   }
-  return sec;
 }
-console.log(secMax([1, 9, 5, 4]));
-console.log(secMax([2, 10, 15, 4]));
-console.log(secMax([1]));
-console.log(secMax([]));
+
+var d = [2, 4, 6, 1, 5, 7, 8, 0, 6, 5];
+evenAndOdd(d);
