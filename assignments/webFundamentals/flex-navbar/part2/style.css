@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  width: auto;
+  height: 150px;
+  background-color: #6495ed;
+  margin: 20px;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  color: white;
+  font-family: "Montserrat";
+  /* padding: 15px; */
+}
+
+.nav h1 {
+  font-weight: normal;
+  margin: 60px;
+}
+.nav img {
+  height: 75px;
+  margin-left: 25px;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.nav a {
+  margin-left: 25px;
+  padding: 100px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav a:hover {
+  padding: 100px;
+  text-decoration: none;
+  color: #2a57aa;
+}

@@ -1,0 +1,18 @@
+.center-box{
+  display: flex;
+  width: auto;
+  height: 300px;
+  background-color: #190080;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  /* padding: 15px; */
+}
+
+.center-item {
+  /* display: flex; */
+  background-color: #f9e4b6;
+  width: 100px;
+  height: 100px;
+  /* align-items: center; */
+}
