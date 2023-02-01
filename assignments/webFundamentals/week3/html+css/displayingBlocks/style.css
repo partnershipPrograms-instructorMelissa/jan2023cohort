@@ -1,0 +1,50 @@
+*{
+    /* border: 2px dotted  mediumspringgreen;  use wild card border to help */
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 675px;
+    margin: 0px auto;
+    overflow: hidden;
+    height: auto;
+    background-color: white;
+}
+header{
+    min-height: 70px;
+    display: inline-block;
+    padding: 20px 73.25px 0 73.25px;
+    background-color: bisque;
+}
+h1{
+    display: inline;
+    background-color: bisque;
+}
+main{
+    display: block;
+    padding: 20px;
+    background-color: bisque;
+}
+div{
+    display: inline-block;
+}
+img.headers{
+    width: 120px;
+    height: 70px;
+    display: inline-block;
+    background-color: white;
+}
+img.display{
+    width: 100px;
+    height: 100px;
+    display: block;
+    padding: 10px; 
+    margin: 5px 0; 
+    border: 2px solid black;
+}
+img.blue{
+    background-color: #3676c0;
+}
+img.red{
+    background-color: #c52424;
+}
