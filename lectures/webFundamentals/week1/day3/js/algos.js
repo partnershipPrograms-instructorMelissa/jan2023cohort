@@ -1,7 +1,7 @@
 console.log('js connected')
-// function runAlert() {
-//     alert("Warning you are about to collect names and grades")
-// }
+function runAlert() {
+    alert("Warning you are about to collect names and grades")
+}
 // runAlert()
 
 // Global variables that can be used by any function on the file
