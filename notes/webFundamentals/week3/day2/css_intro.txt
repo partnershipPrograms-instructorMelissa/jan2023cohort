@@ -1,0 +1,12 @@
+Cascading Style Sheet (CSS)
+    - how fluffy and where a couch is in the room
+
+    - 3 ways to add styling
+        ~ External: least prioritized
+            - a linked style sheet
+            - best practice to use
+        ~ Internal  
+            - style tag in head
+        ~ Inline: the most prioritized
+            - makes code look sloppy/long
+            - 

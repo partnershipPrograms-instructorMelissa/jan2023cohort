@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header >
+        <h1>DojoWeather</h1>
+        <div>
+            <button onclick="setAlert()">Burbank</button>
+            <button onclick="setAlert()">Chicago</button>
+            <button onclick="setAlert()">Dallas</button>
+        </div>
+    </header>
+    <main>
+        <div class="row top">
+            <h2>San Jose</h2>
+            <form>
+                <label for="tempChange">show temperature in</label>
+                <select name="tempChange" id="tempChange" onchange="changeTemp()">
+                    <option value="c">&#8451;</option>
+                    <option value="f">&#8457</option>
+                </select>
+            </form>
+        </div>
+        <hr>
+        <div class="bottom">
+            <div>
+                <h3>
+                    <img src="" alt="">
+                        <div>
+                            <p class="high"></p>
+                            <p class="low"></p>
+                        </div>
+                    </img>
+                </h3>
+            </div>
+            <div>
+                <h3>
+                    <img src="" alt="">
+                        <div>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </img>
+                </h3>
+            </div>
+            <div>
+                <h3>
+                    <img src="" alt="">
+                        <div>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </img>
+                </h3>
+            </div>
+            <div>
+                <h3>
+                    <img src="" alt="">
+                        <div>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </img>
+                </h3>
+            </div>
+        </div>
+    </main>
+    <footer id="cookie" >
+        <img src="./images/cookie.png" alt="cookie">
+        <div>
+            <h3>Stop! Cookie time</h3>
+            <p>Laudantium nemo placeat voluptatem repellendus tenetur, dolor esse ex sequi alias ipsum, blanditiis, non hic natus molestiae sit quam pariatur accusantium. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="setHidden()">I accept</button>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
