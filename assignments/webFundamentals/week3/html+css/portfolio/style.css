@@ -1,0 +1,117 @@
+/* *{
+    border: 2px dotted mediumspringgreen;
+} */
+body{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(199, 197, 197);
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header h3{
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgb(63, 8, 8), rgba(72, 64, 64, 0.24), rgb(63, 8, 8));
+}
+main .top{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+main .top img{
+    max-height: 280px;
+    border: 5px solid rgb(199, 197, 197);
+}
+main .info{
+    min-height: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 20px;
+    background-color: rgb(199, 197, 197);
+}
+main h3{
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    background-image: linear-gradient(rgb(171, 169, 169), rgb(118, 117, 117), rgb(171, 169, 169));
+}
+main p{
+    margin: 0;
+}
+main a{
+    padding-top: 7px;
+    color: black;
+}
+main .bottom{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+main .sites{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(199, 197, 197);
+}
+main .sites img {
+    max-width: 100%;
+}
+main .images{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+main .images img{
+    max-height: 50px;
+    margin: 5px;
+}
+main .sites button{
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(39, 73, 39);
+}
+
+footer{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer hr{
+    border: 1px solid black;
+    margin: 0 5px;
+}
+footer .contact{
+    display: flex;
+}
+footer p{
+    margin: 0;
+}
+footer .links{
+    display: flex;
+}
+footer img{
+    max-height: 20px;
+}
+footer a{
+    color: black;
+}
