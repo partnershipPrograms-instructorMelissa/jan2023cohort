@@ -1,0 +1,196 @@
+/* *{
+    border: 2px dotted mediumspringgreen;
+} */
+
+body{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, sans-serif;
+}
+header img{
+    position: absolute;
+    max-height: 80px;
+    z-index: 2;
+}
+header h1{
+    margin: 10px 0 2px 85px;
+    font-size: 2.5em;
+    font-weight: 100;
+    color: rgb(67, 67, 67);
+}
+header span{
+    color: rgb(55, 116, 196);
+}
+header h2{
+    margin: 0;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: 500;
+    background-color: rgb(55, 116, 196);
+    background-image: linear-gradient(rgb(55, 116, 196), rgba(206, 205, 205, 0.46), rgb(55, 116, 196));
+    color: white;
+}
+
+main{
+    width: 100%;
+    display: flex;
+}
+main div.left{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+main div.left span{
+    color: rgb(55, 116, 196);
+}
+main div.left span.red{
+    color: red;
+}
+main div.left button{
+    margin: 2px 10px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(39, 38, 38, 0.336);
+    color: white;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.701), rgba(3, 187, 211, 0));
+}
+main div.left button#blue{
+    background-color: rgb(55, 116, 196);
+}
+main div.left button#orange{
+    background-color: rgb(223, 146, 3);
+}
+main div.left hr{
+    width: 100%;
+    margin: 15px 0;
+    border: 1px solid rgba(69, 68, 68, 0.726);
+}
+main div.ad{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px rgba(39, 38, 38, 0.336);
+    background-image: url(./images/ad_background.png);
+}
+main div.ad h3{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Verdana, sans-serif;
+    font-weight: 300;
+}
+main div.ad img{
+    max-width: 100px;
+}
+main div.ad button{
+    margin-top: 10px;
+    background-color: rgb(3, 187, 211);
+}
+main div.ad span{
+    color: white;
+    font-weight: bolder;
+}
+main div.ad span#tans1{
+    opacity: .65;
+}
+main div.ad span#tans2{
+    opacity: .45;
+}
+main div.right{
+    width: 80%;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+main div.right .top{
+    display: flex;
+    justify-content: space-between;
+}
+main div.right #home{
+    display: flex;
+    align-items: flex-start;
+    color: rgb(55, 116, 196);
+}
+main div.right #home img{
+    max-height: 30px;
+}
+main div.right #home h5{
+    font-size: 1.25em;
+    margin: 0;
+    margin-top: 5px;
+}
+main div.phone{
+    display: flex;
+    align-items: center;
+}
+main div.phone img{
+    max-height: 70px;
+}
+main div.phone .number h2{
+    color: rgb(63, 170, 236);
+    size: 2em;
+    margin: 0;
+}
+main div.phone .number h6{
+    margin: 0;
+}
+main div.right hr{
+    width: 100%;
+    border: 1px solid rgba(7, 7, 7, 0.51);
+}
+main div.right .content{
+    display: flex;
+    flex-direction: column;
+}
+main div.right .content h3{
+    margin: 0;
+    color: rgb(55, 116, 196);
+}
+main div.right .content p{
+    margin: 0;
+}
+main div.right .content ul{
+    margin: 0;
+}
+main div.right .content li{
+    margin: 5px 0;
+}
+main div.right .content img{
+    max-width: 300px;
+    margin-left: 30%;
+}
+main div.right .content ol{
+    margin: 0;
+}
+main div.right span{
+    color: rgb(49, 208, 232);
+}
+main div.right .bottom{
+    margin-top: 10px;
+    padding: 7px;
+    display: flex;
+    border: 5px solid rgb(55, 116, 196);
+    box-shadow: 2px 2px rgba(39, 38, 38, 0.336);
+}
+main div.right .bottom img{
+    max-height: 180px;
+    margin-right: 10px;
+}
+main div.right .bottom h3{
+    color: rgb(55, 116, 196);
+    font-size: 1.5em;
+    margin: 10px 0 0 0;
+}
+main div.right .bottom p{
+    margin: 0 0 10px 0;
+}
