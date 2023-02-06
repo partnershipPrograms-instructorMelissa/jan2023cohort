@@ -1,0 +1,38 @@
+/* COLORS */
+/* bg gradient 1  -  #6f5964 */
+/* bg gradient 2  -  #1d0c11 */
+/* card gradient  -  #dbccda */
+/* image border   -  #c0c0c0 */
+/* button         -  #407d61 */
+/* button border  -  #193e2d */
+
+body {
+  background-color: #6f5964;
+  margin: auto;
+}
+
+/*! HEADER STYLING ******************/
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5em;
+}
+
+/*! MAIN STYLING ******************/
+
+/** temporary height */
+.jayne {
+  max-height: 20em;
+}
+
+/*! FOOTER STYLING ******************/
+footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1em;
+  /* justify-content: center;  */
+}
