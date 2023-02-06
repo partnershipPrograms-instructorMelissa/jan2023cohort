@@ -1,0 +1,121 @@
+/* TEAL BG- #14a7a2 */
+/* gray BG- #2c322c */
+
+* {
+  /* border: 1px dotted red; */
+  margin: auto;
+}
+h1 {
+  color: white;
+}
+img {
+  max-height: 200px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  max-width: 50%;
+}
+header {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #14a7a2;
+  width: 100%;
+}
+header .row {
+  width: 100%;
+}
+header .row img {
+  border-radius: 50%;
+  height: 80%;
+}
+#cart {
+  color: black;
+  font-size: 1.2em;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.2em;
+}
+header div a {
+  text-decoration: none;
+  padding: 1em;
+  color: white;
+}
+
+.navbar {
+  background-color: #2c322c;
+  width: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+.squishyRow {
+  display: flex;
+  /* width: 100%; */
+  margin: 1em;
+}
+
+.miniSquish {
+  border: solid 2px purple;
+  margin: 2em;
+  margin-top: 0%;
+}
+main .row .column {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+main .row .column .row .column img {
+  border-radius: 50%;
+  max-width: 95%;
+}
+
+h3 {
+    text-align: center;
+    background-color: #2c322c;
+    color: white;
+    /* width: 100%; */
+}
+
+p {
+  margin: 0.5em;
+  font-size: 1.1em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  border-radius: 50%;
+  max-width: 75px;
+}
+
+#sale {
+  padding: 1em;
+  margin: 1em;
+}
+
+#sale h3 {
+  max-width: 40%;
+}

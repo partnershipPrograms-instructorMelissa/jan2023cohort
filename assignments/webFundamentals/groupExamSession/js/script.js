@@ -22,6 +22,15 @@ function addToCart(element) {
 
 function salePrices(element) {
     // console.log('button click')
-    document.getElementById('sale')
 
+    // making the div disappear 
+    document.getElementById('sale').style.display = 'none'
+
+    // reduce the price of each squishy by 20%
+    console.log(sale); 
+ 
+    // var price = document.getElementsByClassName('price').value;
+    // var salePrice = price * .2;
+    // document.getElementById('sale').value = salePrice;
+    
 }
