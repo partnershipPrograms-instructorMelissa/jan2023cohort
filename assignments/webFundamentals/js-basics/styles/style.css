@@ -28,7 +28,7 @@
 
 header h1 {
   background-color: #cf3036;
-  width: 98%;
+  width: 97%;
   height: auto;
   color: #c2d6eb;
   border-radius: 10px;
@@ -36,11 +36,13 @@ header h1 {
 }
 
 aside {
+  /* display: flex;
+  flex-direction: column; */
   background-color: #297d8c;
   border-radius: 15px;
   padding: 20px;
   color: #5cdbe4;
-  width: 40%;
+  width: 90%;
   height: fit-content;
   margin-right: 10px;
 }
@@ -50,7 +52,6 @@ aside * {
   margin: 0;
   font-weight: bold;
   line-height: 1.35em;
-  /* list-style-position: outside; */
 }
 
 aside ul {
@@ -80,7 +81,6 @@ footer * {
 
 footer {
   display: flex;
-
 }
 
 footer p {
@@ -91,7 +91,10 @@ footer p {
   color: #c2d6eb;
 }
 
-
 footer a:hover {
   color: #1b959e;
+}
+
+.purple {
+  color: #7577ff;
 }
