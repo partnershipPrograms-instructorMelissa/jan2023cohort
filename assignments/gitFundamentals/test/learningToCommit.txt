@@ -1,0 +1,20 @@
+cd Desktop
+mkdir test
+cd test
+touch index.html
+touch styles.css
+
+git add .
+git commit -m "update html"
+git push
+
+git add .
+git commit -m "update css"
+git push
+
+git log
+git revert HEAD --no-edit
+
+git add .
+git commit -m "made changes after revert"
+git push
