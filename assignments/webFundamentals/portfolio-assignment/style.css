@@ -34,5 +34,9 @@ footer {
   flex-direction: column;
   align-items: center;
   padding-bottom: 1em;
-  /* justify-content: center;  */
+}
+
+.handle {
+  font-style: italic;
+  color: black;
 }
