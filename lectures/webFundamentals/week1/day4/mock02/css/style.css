@@ -104,4 +104,5 @@ button {
     box-shadow: 3px 3px black;
     font-size: 1.2em;
     padding: 1em;
+    border: solid black 1px;
 }

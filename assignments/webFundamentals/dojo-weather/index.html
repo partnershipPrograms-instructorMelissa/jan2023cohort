@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand:regular" rel="stylesheet" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <header>
+      <h1>DojoWeather</h1>
+      <ul>
+        <li><a href="#">Burbank</a></li>
+        <li><a href="#">Chicago</a></li>
+        <li><a href="#">Dallas</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="small-head">
+        <h3>San Jose</h3>
+        <div class="select">
+          <p>show temperature in</p>
+          <select name="temperature" id="temp">
+            <option value="celsius">°C</option>
+            <option value="fahrenheit">°F</option>
+          </select>
+        </div>
+      </div>
+      <hr />
+      <div class="forecast">
+        <div class="card">
+          <h3>Today</h3>
+          <img src="./styles/assets/some_rain.png" alt="small rain cloud" />
+          <p>some rain</p>
+          <div class="hi-low">
+            <p class="high">24°</p>
+            <p class="low">18°</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Tomorrow</h3>
+          <img src="./styles/assets/some_sun.png" alt="" />
+          <p>some sun</p>
+          <div class="hi-low">
+            <p class="high">27°</p>
+            <p class="low">19°</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Friday</h3>
+          <img src="./styles/assets/some_clouds.png" alt="" />
+          <p>some clouds</p>
+          <div class="hi-low">
+            <p class="high">21°</p>
+            <p class="low">16°</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Saturday</h3>
+          <img src="./styles/assets/some_sun.png" alt="" />
+          <p>some sun</p>
+          <div class="hi-low">
+            <p class="high">26°</p>
+            <p class="low">21°</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <img src="./styles/assets/cookie.png" alt="cookie picture" />
+      <h4>Stop! Cookie time</h4>
+      <p>
+        We use cookies (sadly not the edible ones) top personalize content and
+        ads, to provide social media features and to analyze our traffic
+        <a href="#">Read more...</a>
+      </p>
+      <button>I accept</button>
+    </footer>
+  </body>
+</html>
