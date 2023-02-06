@@ -1,0 +1,140 @@
+body {
+    background-color: rgba(9, 86, 134, 0.819);
+}
+.white {
+    margin-bottom: 0;
+    color: white;
+}
+.yellow {
+    color: goldenrod;
+}
+#black {
+    color: black;
+    padding: 3px 3px;
+}
+.top-nav {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+#gobutton {
+    margin-left: -22px;
+    padding: 10px 10px;
+    border-radius: .5rem;
+}
+#python {
+    width: 18%;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+header {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.gray {
+    background-color: gray;
+    width: 15%;
+    border-radius: 1rem;
+    margin-bottom: 50px;
+}
+#searchbar {
+    margin: 20px 20px;
+    padding: 10px 10px;
+}
+.nav {
+    width: 85%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    border-radius: .25rem;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+.card-row {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.para {
+    width: 65%;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.whitepython {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.sidebar li{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    list-style-type: circle;
+    padding: 2px;
+}
+.gold {
+    text-align: center;
+    color: goldenrod;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 2px;
+}
+.column {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 20px;
+    background-color: white;
+    text-align: center;
+}
+.card {
+    border-top: lightblue;
+    padding: 10px 10px;
+}
+.card li {
+    color: lightblue;
+    text-align: center;
+    font-size: 18px;
+    padding-right: 200px;
+}
+.column h4 {
+    border-top: 5px solid lightblue;
+    margin-top: 0;
+    padding-top: 10px;
+}
+.footer-nav {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45px;
+    font-size: 18px;
+}
+.footer-nav a {
+    color: lightblue;
+    text-decoration: none;
+}
+h6 {
+    text-align: center;
+    color: lightblue;
+}
+ul.myUL {
+    list-style-position: inside;
+}
+.ul {
+    margin-left: 80px;
+
+}

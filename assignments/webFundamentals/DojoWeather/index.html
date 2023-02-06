@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>DojoWeather</h1>
+        <div class="nav">
+          <a class="alert" onclick="cityAlert(this)" href="#">Burbank</a>
+          <a class="alert" onclick="cityAlert(this)" href="#">Chicago</a>
+          <a class="alert" onclick="cityAlert(this)" href="#">Dallas</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="cityNav">
+          <h2>San Jose</h2>
+          <div class="temp">
+            <label for="degrees">show temperature in</label>
+            <select name="degrees" id="">
+              <option value="c">°C</option>
+              <option value="f">°F</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <h2>Today</h2>
+            <img src="./images/some_rain.png" alt="" />
+            <h3>some rain</h3>
+            <div class="degrees">
+              <h2 id="red">24°</h2>
+              <h2 id="blue">18°</h2>
+            </div>
+          </div>
+          <div class="card">
+            <h2>Tomorrow</h2>
+            <img src="./images/some_sun.png" alt="" />
+            <h3>some sun</h3>
+            <div class="degrees">
+              <h2 id="red">27°</h2>
+              <h2 id="blue">19°</h2>
+            </div>
+          </div>
+          <div class="card">
+            <h2>Friday</h2>
+            <img src="./images/some_clouds.png" alt="" />
+            <h3>some clouds</h3>
+            <div class="degrees">
+              <h2 id="red">21°</h2>
+              <h2 id="blue">16°</h2>
+            </div>
+          </div>
+          <div class="card">
+            <h2>Saturday</h2>
+            <img src="./images/some_sun.png" alt="" />
+            <h3>some sun</h3>
+            <div class="degrees">
+              <h2 id="red">26°</h2>
+              <h2 id="blue">21°</h2>
+            </div>
+          </div>
+        </div>
+        <div class="cookie" onclick="hideMe(this)">
+          <img src="./images/cookie.png" alt="" />
+          <div class="cookieText">
+            <h3>Stop! Cookie time</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate aut tempore saepe modi? Voluptate deleniti et odio,
+              pariatur cumque laboriosam consectetur adipisicing!
+              <span><a href="#">Read more...</a></span>
+            </p>
+          </div>
+          <button>I Accept</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

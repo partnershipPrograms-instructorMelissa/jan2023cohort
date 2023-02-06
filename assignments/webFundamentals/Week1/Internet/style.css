@@ -1,0 +1,184 @@
+body {
+    margin-left: 75px;
+}
+header {
+    display: flex;
+    padding-left: 30px;
+}
+header img {
+    width: 8%;
+    margin-bottom: -20px;
+}
+.container {
+    width: 95%;
+   
+}
+.net {
+    color: rgb(24, 95, 119);
+    font-size: 45px;
+    padding-top: 30px;
+}
+header h1 {
+    font-size: 45px;
+    font-weight: lighter;
+}
+#www {
+    width: 93.7%;
+    padding: 10px 10px;
+    background-color: rgba(24, 130, 172, 0.816);
+    color: white;
+    font-weight: lighter;
+    margin: 0;
+  
+}
+.column{
+    display: flex;
+    width: 100%;   
+}
+.column img {
+    width: 100px;
+}
+li {
+    width: 50%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 75px;
+    width: 25%;
+}
+.card-2 {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid gray;
+
+
+}
+#red {
+    color: red;
+}
+.lightblue {
+    color: rgb(24, 95, 119);
+}
+.video {
+    background-color: rgb(32, 139, 174);
+    color: white;
+    font-size: 18px;
+    padding: 5px 5px;
+    width: 80%;
+    border-radius: .5rem;
+    margin-top: 10px;
+}
+#border {
+    border-bottom: 2px solid gray;
+    width: 75%;
+}
+#orange {
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+    padding: 5px 5px;
+    width: 107%;
+    border-radius: .5rem;
+    margin-top: 2px;
+    margin-bottom: 30px;
+}
+#ninja {
+    background-color: blue;
+    width: 40%;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  
+}
+.ninjaimage {
+    margin-top: 30px;
+    width: 75%;
+    background-color: blue;
+    padding: 10px 10px;
+    color: white;
+}
+.ninjaimage h3 {
+    text-align: center;
+    font-weight: lighter;
+}
+.learn {
+    background-color: rgb(32, 139, 174);
+    color: white;
+    font-size: 18px;
+    padding: 5px 5px;
+    width: 80%;
+    border-radius: .5rem;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.footer-card {
+    display: flex;
+    width: 55%;
+    border: 5px solid rgba(24, 130, 172, 0.816);
+    margin: 0 auto;
+}
+#home {
+    margin-top: 20px;
+    width: 2%;
+    margin-right: 800px;
+}
+
+#phone {
+    width: 4%;
+    margin-right: 10px;
+}
+#htmlimage {
+    width: 15%;
+}
+.html {
+    width: 50%;
+}
+#server {
+    width: 30%;
+    padding-left: 100px;
+    margin: 0;
+}
+.servers {
+    margin: 0;
+    font-weight: lighter;
+    font-size: 16px;
+}
+.client_server {
+    margin: 0;
+    margin-bottom: 5px;
+}
+.aqua {
+    color: rgb(60, 179, 179);
+}
+li h4{
+    font-weight: lighter;
+}
+.so {
+    margin: 0;
+    margin-top: 10px;
+}
+#olli {
+    margin: 0;
+    margin-bottom: 20px;
+}
+#li {
+    margin-bottom: 8px;
+}
+#dnsid {
+   margin-left: -890px;
+   color: rgb(24, 95, 119);
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+   
+    
+}
+.contact h6, h4 {
+    margin: 0;
+    margin-right: 100px;
+    width: 100%;
+}
