@@ -5,10 +5,12 @@
 /* image border   -  #c0c0c0 */
 /* button         -  #407d61 */
 /* button border  -  #193e2d */
+/* title gradient -  #878593 */
 
 body {
-  background-color: #6f5964;
+  background-image: radial-gradient(#8a737f, #1d0c11);
   margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*! HEADER STYLING ******************/
@@ -17,14 +19,128 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5em;
+  padding: 0.5em 1.5em;
+}
+
+h1 {
+  font-family: “Comic Sans MS”, “Comic Sans”, cursive;
+  /* font-family: 'Comic Neue'; */
+  font-weight: 900;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 21px;
+  margin-right: 1em;
 }
 
 /*! MAIN STYLING ******************/
 
-/** temporary height */
+.top {
+  display: flex;
+  margin: 0 1em;
+}
+
 .jayne {
-  max-height: 20em;
+  max-width: 40%;
+  border: solid 5px #c0c0c0;
+  margin: 1em;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  background-image: linear-gradient(to right, white, #dbccda);
+  margin: 1em;
+  /* padding: 0 1em; */
+}
+
+.about h3 {
+  /* background-color: #878593; */
+  background-image: linear-gradient(#bbbbc0, #848292, #bbbbc0);
+  margin: 0;
+  padding: 0.75em;
+  color: white;
+}
+
+.about-me {
+  padding: 0 1em;
+}
+
+a {
+  color: black;
+}
+
+/*?  *********************************/
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1em;
+}
+
+.single-card {
+  background-color: white;
+  background-image: linear-gradient(to right, white, #dbccda);
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  width: 100%;
+}
+.single-card h3 {
+  color: white;
+  padding: 0.5em 0 0.5em 0.5em;
+  background-color: #878593;
+  background-image: linear-gradient(#bbbbc0, #848292, #bbbbc0);
+  margin: 0%;
+}
+
+.single-card img {
+  max-width: 100%;
+}
+
+.single-card p {
+  min-height: 12.25em;
+  padding: 0 1em;
+  margin-top: 0.5em;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 10em;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5em;
+}
+
+.tech-logo {
+  display: flex;
+  width: 15%;
+  padding: 0.351em;
+  margin: 0 0.05em;
+}
+
+.tech {
+  font-size: 1em;
+}
+
+/* TODO FIX THE CARDS ⬆️ */
+
+button {
+  width: auto;
+  border-radius: 0.6em;
+  font-weight: bold;
+  color: white;
+  background-color: #407d61;
+  border: solid 1px #193e2d;
+  padding: 0.35em;
+  margin-bottom: 1.75em;
+  box-shadow: 0.25em 0.25em 5px rgb(107, 107, 107);
 }
 
 /*! FOOTER STYLING ******************/
@@ -36,7 +152,17 @@ footer {
   padding-bottom: 1em;
 }
 
+.socials {
+  display: flex;
+  align-items: center;
+}
+
 .handle {
   font-style: italic;
-  color: black;
+  padding-right: 1em;
+}
+
+.logo {
+  max-width: 1.25em;
+  padding-right: 0.2em;
 }

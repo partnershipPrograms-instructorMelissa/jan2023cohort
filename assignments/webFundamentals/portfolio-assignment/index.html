@@ -17,21 +17,29 @@
 
     <main>
       <div class="top">
-        <img src="./assets/photo_of_me.jpg" alt="photo of Jayne Doe" class="jayne"/>
+        <img
+          src="./assets/photo_of_me.jpg"
+          alt="photo of Jayne Doe"
+          class="jayne"
+        />
         <!--* ABOUT SECTION  -->
         <div class="about">
-          <p>
-            About... Hello! I'm an extremely driven and creative Full Stack
-            Developer who is currently open for career opportunities as a
-            front-end or back-end web developer in the Greater Seattle Area.
-          </p>
-          <p>
-            I'm a recent graduate of Coding Dojo, a coding school located in
-            Bellevue, WA that teaches 3 full stacks in 3 months. I'm capable of
-            learning new technologies very quickly, and am always looking for
-            opportunities to further expand my skills and grow as a developer.
-          </p>
-          <a href="#">Continue reading...</a>
+          <h3>About...</h3>
+          <div class="about-me">
+            <p>
+              Hello! I'm an extremely driven and creative Full Stack Developer
+              who is currently open for career opportunities as a front-end or
+              back-end web developer in the Greater Seattle Area.
+            </p>
+            <p>
+              I'm a recent graduate of Coding Dojo, a coding school located in
+              Bellevue, WA that teaches 3 full stacks in 3 months. I'm capable
+              of learning new technologies very quickly, and am always looking
+              for opportunities to further expand my skills and grow as a
+              developer.
+            </p>
+            <a href="#">Continue reading...</a>
+          </div>
         </div>
       </div>
 
@@ -39,35 +47,56 @@
 
       <div class="cards">
         <!--* CARD 1 -->
-        <div class="card-1">
-          <h2>La Mode</h2>
-          <img src="" alt="" />
+        <div class="single-card">
+          <h3>La Mode</h3>
+          <img src="./assets/lamode.png" alt="La Mode website screenshot" />
           <p>
             La Mode is an Ecommerce website for designed to market various
             clothing products. Users are able to view the available garments,
             select their desired quantity, and compile a shopping cart for
             making a final purchase.
           </p>
-          <h3>Technologies</h3>
-          <div class="tech-stack">
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
+          <h3 class="tech">Technologies:</h3>
+          <div class="container">
+            <div class="tech-stack">
+              <img src="./assets/php.png" alt="PHP logo" class="tech-logo" />
+              <img
+                src="./assets/codeigniter.png"
+                alt="Code Igniter logo"
+                class="tech-logo"
+              />
+              <img
+                src="./assets/jQuery.png"
+                alt="jQuery logo"
+                class="tech-logo"
+              />
+              <img src="./assets/ajax.png" alt="Ajax logo" class="tech-logo" />
+              <img
+                src="./assets/mysql.png"
+                alt="MySQL logo"
+                class="tech-logo"
+              />
+              <img src="./assets/HTML.png" alt="HTML logo" class="tech-logo" />
+              <img src="./assets/CSS.png" alt="CSS logo" class="tech-logo" />
+              <img
+                src="./assets/bootstrap.png"
+                alt="Bootstrap logo"
+                class="tech-logo"
+              />
+            </div>
+            <button>La Mode</button>
           </div>
-          <button>La Mode</button>
         </div>
 
         <!--? **********************************************************  -->
 
         <!--* CARD 2 -->
-        <div class="card-2">
-          <h2>Family Contacts</h2>
-          <img src="" alt="" />
+        <div class="single-card">
+          <h3>Family Contacts</h3>
+          <img
+            src="./assets/familycontacts.png"
+            alt="Family Contacts website screenshot"
+          />
           <p>
             Family Contacts is a free application for managing, sharing, and
             visualizing your family relationships for both extended and
@@ -75,26 +104,55 @@
             log-in information determines who you can see and reveals how people
             are related to you.
           </p>
-          <h3>Technologies</h3>
-          <div class="tech-stack">
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
+          <h3 class="tech">Technologies:</h3>
+          <div class="container">
+            <div class="tech-stack">
+              <img
+                src="./assets/JavaScript.png"
+                alt="JavaScript logo"
+                class="tech-logo"
+              />
+              <img
+                src="./assets/mongodb.png"
+                alt="Mongo DB logo"
+                class="tech-logo"
+              />
+              <img
+                src="./assets/expressjs.png"
+                alt="Express logo"
+                class="tech-logo"
+              />
+              <img
+                src="./assets/angular.png"
+                alt="Angular logo"
+                class="tech-logo"
+              />
+              <img
+                src="./assets/nodejs.png"
+                alt="Node js logo"
+                class="tech-logo"
+              />
+              <img src="./assets/HTML.png" alt="HTML logo" class="tech-logo" />
+              <img src="./assets/CSS.png" alt="CSS logo" class="tech-logo" />
+              <img
+                src="./assets/socket.png"
+                alt="Socket logo"
+                class="tech-logo"
+              />
+            </div>
+            <button>Family Contacts</button>
           </div>
-          <button>Family Contacts</button>
         </div>
 
         <!--? **********************************************************  -->
 
         <!--* CARD 3 -->
-        <div class="card-3">
-          <h2>Five Eleven</h2>
-          <img src="" alt="" />
+        <div class="single-card">
+          <h3>fiveEleven</h3>
+          <img
+            src="./assets/fiveEleven.png"
+            alt="Five Eleven website screenshot"
+          />
           <p>
             Five Eleven is a data visualization project built on the Python
             software stack. The application transforms the developer job- hunt
@@ -103,19 +161,45 @@
             visualize the varying sizes and concentrations of the junior
             developer job market across the nation.
           </p>
-          <h3>Technologies</h3>
-          <div class="tech-stack">
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
-            <img src="" alt="" class="tech-logo" />
+          <h3 class="tech">Technologies:</h3>
+          <div class="container">
+            <div class="tech-stack">
+              <img
+                src="./assets/python.png"
+                alt="Python logo"
+                class="tech-logo"
+              />
+              <img
+                src="./assets/django.png"
+                alt="Django logo"
+                class="tech-logo"
+              />
+              <img src="./assets/d3.png" alt="d3 logo" class="tech-logo" />
+              <img
+                src="./assets/angular.png"
+                alt="Angular logo"
+                class="tech-logo"
+              />
+              <img
+                src="./assets/sqlite.png"
+                alt="SQLite logo"
+                class="tech-logo"
+              />
+              <img src="./assets/HTML.png" alt="HTML logo" class="tech-logo" />
+              <img src="./assets/CSS.png" alt="CSS logo" class="tech-logo" />
+              <img
+                src="./assets/JavaScript.png"
+                alt="JavaScript logo"
+                class="tech-logo"
+              />
+              <img
+                src="./assets/materialize.png"
+                alt="Materialize logo"
+                class="tech-logo"
+              />
+            </div>
+            <button>fiveEleven</button>
           </div>
-          <button>Five Eleven</button>
         </div>
 
         <!--? **********************************************************  -->
@@ -129,22 +213,44 @@
 
       <div class="socials">
         <!--* GITHUB  -->
-        <img src="./assets/github.png" alt="" />
-        <a href="http://" target="_blank" rel="noopener noreferrer" class="handle">jaynedev</a>
+        <img src="./assets/github.png" alt="" class="logo" />
+        <a
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="handle"
+          >jaynedev</a
+        >
 
         <!--* LINKEDIN  -->
-        <img src="./assets/linkedin.png" alt="" />
-        <a href="http://" target="_blank" rel="noopener noreferrer" class="handle"
+        <img src="./assets/linkedin.png" alt="" class="logo" />
+        <a
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="handle"
           >jayne-doe</a
         >
 
         <!--* TWITTER  -->
-        <img src="./assets/twitter.png" alt="" />
-        <a href="http://" target="_blank" rel="noopener noreferrer" class="handle">jdtweets</a>
+        <img src="./assets/twitter.png" alt="" class="logo" />
+        <a
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="handle"
+          >jdtweets</a
+        >
 
         <!--* CODEPEN  -->
-        <img src="./assets/codepen.png" alt="" />
-        <a href="http://" target="_blank" rel="noopener noreferrer" class="handle">jaynedev</a>
+        <img src="./assets/codepen.png" alt="" class="logo" />
+        <a
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="handle"
+          >jaynedev</a
+        >
       </div>
     </footer>
   </body>
