@@ -1,0 +1,98 @@
+// *{
+//     border: 2px dotted mediumspringgreen;
+// }
+
+.columnPreset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rowPreset{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    height: fit-content;
+    margin: 10px;
+    padding: 5px;
+    border: @border;    
+    box-shadow: 2px 2px;     
+}
+
+@blue: rgb(39, 80, 191);
+@yellow: rgb(220, 220, 74);
+@green: rgb(63, 162, 83);
+@gray: rgb(146, 146, 146);
+@border: 2px solid black;
+
+body{
+    width: 90%;
+    margin: auto;
+    header{
+        .rowPreset();
+        background-color: @gray;
+        padding: 0 15px;
+        justify-content: space-between;
+
+        button{
+            .button();
+            background-color: @blue;
+        }
+
+        input{
+            width: 40%;
+            border: @border;
+            padding: 5px 10px;
+        }
+    }
+    main{
+        .rowPreset();
+        align-items: flex-start;
+
+        .left{
+            .columnPreset();
+            padding: 0;
+            align-items: flex-start;
+
+            .ninja{
+                width: 90%;
+                margin: 15px;
+                .rowPreset();
+                border: @border;
+
+                span{
+                    font-style: italic;
+                }
+
+                button{
+                    .button();
+                    background-color: @yellow;
+                }
+
+                p{
+                    width: 70%;
+                }
+            }
+        }
+
+        .right{
+            .columnPreset();
+            margin: 15px;
+            padding: 20px;
+            border: @border;
+            h3{
+                font-weight: 300;
+            }
+            span{
+                font-weight: 1000;
+            }
+            button{
+                .button();
+                background-color: @green;
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.columnPreset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rowPreset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  height: fit-content;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  box-shadow: 2px 2px;
+}
+body {
+  width: 90%;
+  margin: auto;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #929292;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+body header button {
+  height: fit-content;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  box-shadow: 2px 2px;
+  background-color: #2750bf;
+}
+body header input {
+  width: 40%;
+  border: 2px solid black;
+  padding: 5px 10px;
+}
+body main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+body main .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  align-items: flex-start;
+}
+body main .left .ninja {
+  width: 90%;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+body main .left .ninja span {
+  font-style: italic;
+}
+body main .left .ninja button {
+  height: fit-content;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  box-shadow: 2px 2px;
+  background-color: #dcdc4a;
+}
+body main .left .ninja p {
+  width: 70%;
+}
+body main .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 20px;
+  border: 2px solid black;
+}
+body main .right h3 {
+  font-weight: 300;
+}
+body main .right span {
+  font-weight: 1000;
+}
+body main .right button {
+  height: fit-content;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  box-shadow: 2px 2px;
+  background-color: #3fa253;
+}
