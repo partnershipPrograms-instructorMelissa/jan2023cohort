@@ -1,9 +1,173 @@
-header{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+body {
     align-items: center;
-    border: 2px solid black;
+    justify-content: center;
+    margin: 0 auto;
+    border: 8px;
+    background-color: #6f5964;
 }
 
+header {
+    display: flex;
+    background-color: white;
+    width: 55%;
+    padding: .5em;
+    margin-left: 22%;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .firstRow {
+    display: flex;
+    justify-content: center;
+}
+
+/* .topHead h1{
+    margin-left: 3%;
+    margin-right: 40%;
+} */
+
+.topHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.firstRow {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.firstRow .about {
+    width: 30%;
+    background-color: white;
+}
+
+.photoOfMe img{
+    background-color: #C0C0C0;
+    width: 400px;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.about {
+    background: linear-gradient(to right, #FEFEFE, #E5B9DC);
+    background-color: #E0CDDC;
+    width: 500px;
+    height: 283px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about h3 {
+    background: linear-gradient(#C0C0C6,#898593,#C0C0C6);
+    color: #FFFFFF;
+    background-color: #9A97A2;
+    margin-top: 0px;
+    padding: 15px 10px;
+}
+
+.about p, a {
+    padding: 0px 10px;
+}
+
+.lamode, .familycontacts, .fiveEleven {
+    background: linear-gradient(to right, #FEFEFE, #E5B9DC);
+    width: 15.8%;
+    padding-bottom: 20px;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+    vertical-align: top;
+    margin-top: 20px;
+    margin: 20px;
+}
+.secondRow {
+    display: flex;
+    justify-content: center;
+}
+
+.secondRow h3 {
+    color: #FFFFFF;
+    background: linear-gradient(#C0C0C6,#898593,#C0C0C6);
+    background-color: #9A97A2;
+    margin: 0px;
+    padding: 10px;
+    text-align: initial;
+}
+
+.secondRow #lamode {
+    width: 100%;
+    height: 180px;
+}
+
+.secondRow #familycontacts {
+    width: 100%;
+    height: 180px;
+}
+
+.secondRow #fiveEleven {
+    width: 100%;
+    height: 180px;
+}
+
+.stackImages {
+    margin: 10px 10px 20px 10px;
+    text-align: initial;
+}
+
+.stackImages img {
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+}
+
+footer {
+    display: flex;
+    background-color: white;
+    width: 55%;
+    flex-direction: column;
+    padding: .5em;
+    margin-left: 22%;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    text-align: center;
+    background-color: white;
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer p {
+    margin: 10px;
+}
+
+.footer a {
+    font-style: italic;
+    padding: 0px;
+    color: black;
+}
+
+button {
+    background-color: #519676;
+    border-radius: 10px;
+    color: white;
+    height: 30px;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px grey;
+}
