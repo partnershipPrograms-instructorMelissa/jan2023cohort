@@ -20,7 +20,7 @@ let tools = [
 //     // return tools[i]
 // }
 function siteTools(arr) {
-    var node = document.createElement('div')
+    var node = document.createElement('div') // creating a html div and giving it the variable node 
     node.setAttribute('class', 'node')
     // var img = document.createElement('img')
     // img.src = 

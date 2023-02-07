@@ -35,3 +35,14 @@ https://www.techumber.com/amazing-glitter-star-effect-using-pure-css3
 https://www.w3schools.com/js/js_math.asp
 
 https://css-tricks.com/sass-vs-less/
+
+https://docs.google.com/spreadsheets/d/1YIaENx5aM0RXbQNWeQMt1YfjXQps99IbsNiE7PxZll8/edit#gid=0
+
+https://gradients.shecodes.io/
+
+https://www.transparenttextures.com/
+
+https://www.doozytools.com/dev-tools/css-animation-generator
+
+https://animate.style/
+
