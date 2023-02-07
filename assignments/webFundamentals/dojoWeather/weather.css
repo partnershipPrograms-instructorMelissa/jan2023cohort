@@ -1,0 +1,186 @@
+.header {
+    font-size: larger;
+    display: flex;
+    height: 100px;
+    width: 1850px;
+    background-color: #9fc5f8;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header h1 {
+    color: white;
+    font-family: "Patrick Hand";
+}
+
+.header nav {
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header nav {
+    text-decoration: none;
+    display: flex;
+}
+
+.header a {
+    font-size: 150%;
+    font-family: "Patrick Hand";
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.smallHead{
+    font-family: "Patrick Hand";
+    display: flex;
+    justify-content: space-between;
+}
+
+.tempButton {
+    font-family: "Patrick Hand";
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards p{
+    font-size: large;
+    font-weight: bold;
+    font-family: "Patrick Hand";
+}
+
+.cards h3{
+    font-size: 250%;
+    font-family: "Patrick Hand";
+}
+
+.numTemp{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.numTemp2{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.numTemp3{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.numTemp4{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.card1 {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card1 img {
+    padding: 40px;
+}
+
+.card2 {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card2 img {
+    padding: 40px;
+}
+
+.card3 {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card3 img {
+    padding: 40px;
+}
+
+.card4 {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card4 img {
+    padding: 40px;
+}
+
+footer {
+    left: 465px;
+    bottom: 20px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: auto;
+    width: 900px;
+    font-family: "Patrick Hand";
+}
+
+button {
+    display: flex;
+    font-family: "Patrick Hand";
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    justify-content: center;
+    background-color: #9fc5f8;
+    box-shadow: 0 9px rgb(24, 23, 23);
+}
+
+button:active {
+    background-color: #9fc5f8;
+    box-shadow: 0 5px rgb(26, 24, 24);
+    transform: translateY(4px);
+}
+
+.stop {
+    display: inline;
+    flex-direction: column-reverse;
+
+}
+
+.footerP {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+}
+
+.fahrenheit {
+    color: red;
+}
+
+.celsius {
+    color: blue;
+}

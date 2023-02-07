@@ -3,7 +3,7 @@
     margin: auto;
 }
 img {
-    max-height: 200px;
+    max-height: 75px;
 }
 .row {
     display: flex;
@@ -17,28 +17,50 @@ img {
 }
 header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 header .row {
     width: 100%;
+    background-color: #14a7a2;
 }
+
+header h1 {
+    color: white;
+}
+
 header .row img {
+    max-height: 150px;
     border-radius: 50%;
 }
-#cart {
-    color: black;
-    font-size: 1.2em;
+
+header .column img{
+    height: 40px;
 }
+
+/* #cart {
+    /* color: black;
+    font-size: 1.2em; 
+    max-height: 75px;
+}  */
+
 header div {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 1.2em;    
 }
-header div a {
+nav a{
     text-decoration: none;
     padding: 1em;
+    color: white;
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #2C322C;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -46,6 +68,25 @@ main {
     align-items: center;
     width: 95%;
 }
+
+main .column h3 {
+    background-color: #2C322C;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+main .squishyRow .column {
+    /* border: 2px solid purple; */
+    /* background-color: #2C322C; */
+    color: white;
+}
+
+main .miniSquish {
+    background-color: white;
+    border: 3px solid purple;
+}
+
 .squishyRow {
     width: 100%;
 }
@@ -66,6 +107,23 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+footer .footerRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    width: 70%;
+}
+
+footer .footerRow img {
+    margin: 0;
+}
+
+footer .footerRow h3 {
+    width: fit-content;
+    margin: 0;
+}
+
 footer img {
     border-radius: 50%;
     max-width: 75px;
@@ -73,7 +131,13 @@ footer img {
 #sale {
     padding: 1em;
     margin: 1em;
+    border: 3px solid #14a7a2;
 }
 #sale h3 {
     max-width: 40%;
+}
+
+button {
+    background-color: #7de0ce;
+    border: 3px solid #14a7a2;
 }
