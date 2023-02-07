@@ -31,3 +31,7 @@ https://login.codingdojo.com/m/247/9835/66271
 https://www.geeksforgeeks.org/create-effect-of-particle-animation-uisng-css/
 
 https://www.techumber.com/amazing-glitter-star-effect-using-pure-css3
+
+https://www.w3schools.com/js/js_math.asp
+
+https://css-tricks.com/sass-vs-less/

@@ -84,7 +84,7 @@ setInterval( function() {
     // document.getElementById('hour').style.transform = `rotate(${h}deg)`
 
 
-}, 5000);
+}, 15000);
 // above is how often to run function
 
 // hour hand moves 30 degrees / hour
