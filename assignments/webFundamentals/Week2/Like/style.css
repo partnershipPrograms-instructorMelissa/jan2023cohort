@@ -1,6 +1,9 @@
 .container {
     width: 40%;
-    border: 2px solid black;
+}
+.user-container {
+    border: 5px solid black;
+    margin: 20px 20px;
 }
 .user {
     width: 75%;
