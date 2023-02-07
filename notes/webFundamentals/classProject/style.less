@@ -1,0 +1,85 @@
+// @import: './otherFile.less';
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flexrow{ // generic code to apply
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+@red: rgb(103, 25, 25);
+@blue: rgb(31, 85, 184);
+@border: 4px groove mediumspringgreen;
+// setting screen width
+@400: 'only screen and {max-width: 400px}';
+
+body{
+    .flexcolumn(); // add generic code
+    width: 95%;
+
+    #face {
+        background-color: #f3f3f3;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 6px solid black;
+        position: relative;
+    
+        #minutes, #hour, #seconds {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform-origin: top center;
+        }
+        #hour {
+            background-color: black;
+            height: 100px;
+            width: 8px;
+            // transform: rotate(125deg);
+        }
+        #seconds {
+            background-color: red;
+            height: 130px;
+            width: 2px;
+        }
+        #minutes {
+            background-color: grey;
+            height: 120px;
+            width: 4px;
+            // transform: rotate(255deg);
+        }
+    }
+
+    #tools{
+        background-color: @blue;
+        .flexrow(); // add generic code
+
+        .node {
+            .flexrow();
+        }
+    }
+
+}
+
+// media queries - must be last
+//only add what should change
+// @media @400{
+//     body{
+//         #tools{
+//             .node {
+//                 // flex-wrap: warp; 
+//                 flex-direction: column;
+//             }
+//         }
+//     }
+// }
