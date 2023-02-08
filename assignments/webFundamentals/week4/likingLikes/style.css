@@ -1,0 +1,107 @@
+* {
+  margin: auto;
+}
+.columnPreset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rowPreset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  height: fit-content;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  box-shadow: 2px 2px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  border: 2px solid black;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body header #top {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+body header #bottom {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+body main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+body main .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  margin: 15px 50px;
+}
+body main .left a {
+  margin: 10px 2px 0 2px;
+}
+body main .left h2 {
+  margin: 10px 2px;
+}
+body main .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .right .feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+  margin: 20px;
+}
+body main .right .feed .likes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+body main .right .feed .likes h3 {
+  margin: 0 5px;
+}
+body main .right .feed .likes button {
+  margin: 0 5px;
+}
+body main .right .feed p {
+  margin: 10px 0;
+}
