@@ -1,0 +1,9 @@
+Application Programming Interface (API) https://github.com/public-apis/public-apis
+- dry: Don't Repeat Yourself
+- some are free - only certain amount of times that can be clicked
+- ROOT of api, leads to documentation of api
+- database of information
+
+- CORS: cross origin resource sharing
+    - allows cross secure n non-secure
+    - if not cors friendly, needs modification to work

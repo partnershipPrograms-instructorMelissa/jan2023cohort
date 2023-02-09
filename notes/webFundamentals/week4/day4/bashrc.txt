@@ -1,0 +1,36 @@
+alias name='cd ~path/to/folder'
+
+ex:
+alias back='cd ~/coding/'
+alias workdojo='cd ~/coding/work/CodingDojo'
+alias workclassroom='cd ~/coding/work/_classroom'
+alias worktakelessons='cd ~/coding/work/_classroom/TakeLessons'
+alias dojoialgos='cd ~/coding/work/CodingDojo/instruction/projectAlgos'
+alias dojoiwos='cd ~/coding/work/CodingDojo/instruction/wos'
+alias dojoipy='cd ~/coding/work/CodingDojo/instruction/python'
+alias dojoiwf='cd ~/coding/work/CodingDojo/instruction/webFun'
+alias dojoijava='cd ~/coding/work/CodingDojo/instruction/java'
+alias dojoistudent='cd ~/coding/work/CodingDojo/instruction/Student'
+alias dojotab2='cd ~/coding/work/CodingDojo/private/tab2_frontend'
+alias services='cd ~/coding/business/_services'
+alias cfa='cd ~/coding/business/CFA'
+alias dragons='cd ~/coding/business/dragonsedge'
+alias cfa='cd ~/coding/business/CFA'
+alias generalEnv='source ~/coding/environments/generalEnv/bin/activate'
+
+
+-- can also make functions --
+
+makeDir () {
+ dojoialgos
+ mkdir newClass
+}
+makeCohort () {
+ dojoialgos
+ mkdir $1
+}
+makeDay () {
+ dojoiwos
+ cd jan2023cohort
+ mkdir $1
+}
