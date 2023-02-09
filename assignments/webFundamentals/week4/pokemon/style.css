@@ -1,0 +1,12 @@
+body {
+  width: 100%;
+}
+body #pokemon {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body #pokemon img {
+  max-width: 200px;
+}
