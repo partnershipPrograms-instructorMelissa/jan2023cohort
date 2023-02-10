@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./button.css">
+    <title>Button</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+        <h1>Dojonary</h1>
+        <form class="search">
+            <input type="search" placeholder="Search" name="search">
+            <!-- <button type="submit">Login</button> -->
+        </form>
+        <button type="submit" onclick="changeLogin(this)">Login</button>
+        </div>
+    </header>
+    <main>
+        <div class="leftMain">
+            <div class="ninja1">
+                <h1>ninja</h1>
+                <h2>noun</h2>
+                <h2>Plural: ninjas</h2>
+                <button onclick="alert('ninja was liked')">13 Likes</button>
+                <h3>A practitioner skilled in the <span>Japanese</span> art of <span>ninjitsu</span></h3>
+            </div>
+            <div class="ninja2">
+                <h1>ninja</h1>
+                <h2>noun</h2>
+                <h2>Plural:ninjas</h2>
+                <button onclick="alert('ninja was liked')">37 likes</button>
+                <h3>A <span>programmer</span> who breaks down problems with <span>zen</span>-like focus.</h3>
+            </div>
+        </div>
+        <div class="rightSide">
+            <h1>Dojonary is defined by YOU</h1>
+            <button onclick="hide(this)">Add Definition</button>
+        </div>
+    </main>
+    <script src="./button.js"></script>
+</body>
+</html>
