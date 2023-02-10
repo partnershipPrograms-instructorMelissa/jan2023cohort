@@ -1,0 +1,73 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wholeMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondMain {
+    margin-left: 50px;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(236, 168, 41);
+    border-radius: 100px;
+}
+
+main .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    width: 250px;
+    height: 400px;
+}
+
+main .post {
+    border: 3px solid black;
+    width: 550px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.post button {
+    margin-top: 10px;
+    background-color: rgb(212, 162, 69);
+    width: 80px;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid black;
+    box-shadow: 2px 2px 2px 2px grey;
+}
