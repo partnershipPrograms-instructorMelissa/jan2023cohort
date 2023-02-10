@@ -45,12 +45,14 @@ h1 {
     display: flex;
     justify-content: space-around;
     margin: 2rem;
+   
  }
  .col-2 {
     width: 88%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+   
  }
  .card {
     width: 25%;
