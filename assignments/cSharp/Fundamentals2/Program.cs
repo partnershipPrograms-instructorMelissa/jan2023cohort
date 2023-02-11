@@ -14,9 +14,23 @@ for (int i = 0; i < newBoolArray.Length; i++)
     }else{
         newBoolArray[i]= false;
     }
-    Console.WriteLine(newBoolArray[i]);
+    // Console.WriteLine(newBoolArray[i]);
 }
 
+//Create a string List of ice cream flavors that holds at least 5 different flavors. (Feel free to add more than 5!)
+List<string> myIceCream = new List<string>() {"Chocolate", "Butter Pecan", "Chocolate Chip", "Praline & Cream", "Vanilla"};
+
+//Output the length of the List after you added the flavors.
+// Console.WriteLine(myIceCream.Count);
+
+//Output the third flavor in the List.
+// Console.WriteLine(myIceCream[2]);
+
+//Now remove the third flavor using its index location.
+myIceCream.RemoveAt(2);
+
+//Output the length of the List again. It should now be one fewer.
+Console.WriteLine(myIceCream.Count);
 
 // for(int i = 0; i < newStringArray.Length; i++)
 // {
