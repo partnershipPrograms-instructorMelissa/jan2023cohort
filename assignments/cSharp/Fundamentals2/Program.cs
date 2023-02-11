@@ -32,6 +32,19 @@ myIceCream.RemoveAt(2);
 //Output the length of the List again. It should now be one fewer.
 Console.WriteLine(myIceCream.Count);
 
+//Create a dictionary that will store string keys and string values.
+var myString = new Dictionary<string, string>
+{
+    {"Tim", "Vanilla"},
+    {"Martin", "Chocalate"},
+    {"Nikki", "Butter Pecan"},
+    {"Sara", "Chocolate Chip"}
+};
+foreach(KeyValuePair<string, string> entry in myString)
+{
+    Console.WriteLine($"{entry.Key} - {entry.Value}");
+}
+
 // for(int i = 0; i < newStringArray.Length; i++)
 // {
 //     Console.WriteLine(newStringArray[i]);
