@@ -67,3 +67,56 @@ int[] TestIntArray = new int[] { -1, 2, 3, -4, 5 };
 NonNegatives(TestIntArray);
 
 //Given a dictionary, print the contents of the said dictionary.
+static void PrintDictionary(Dictionary<string, string> MyDictionary)
+{
+    foreach(KeyValuePair<string, string> entry in MyDictionary)
+    {
+        Console.WriteLine($"{entry.Key} - {entry.Value}");
+    }
+}
+Dictionary<string, string> TestDict = new Dictionary<string, string>();
+TestDict.Add("HeroName", "Iron Man");
+TestDict.Add("RealName", "Tony Stark");
+TestDict.Add("Powers", "Money and intelligence");
+// PrintDictionary(TestDict);
+
+//Given a search term, return true or false whether the given term is a key in a dictionary.
+static bool FindKey(Dictionary<string, string> MyDict, string SearchTerm)
+{
+    bool flag = false;
+    foreach (KeyValuePair<string, string> entry in MyDict)
+    {
+        if(SearchTerm != entry.Key){
+            Console.WriteLine(entry.Key);
+            flag = false;
+        }else{
+            flag = true;
+        }
+    }
+    return flag;
+}
+// Console.WriteLine(FindKey(TestDict, "HeroName"));
+
+//Given a List of names and a List of integers, create a dictionary where the key is a name from the List of names and the value is a number from the List of numbers. Assume that the two Lists will be of the same length. Don't forget to print your results to make sure it worked.
+static Dictionary<string, int> GenerateDictionary(List<string> Names, List<int> Numbers)
+{
+    Dictionary<string, int> newDict = new Dictionary<string, int>();
+    for(int i = 0; i < Names.Count; i++)
+    {
+        for(int j = 0; j < Numbers.Count; j++)
+        {
+            newDict.Add(Names[i], Numbers[j]);
+        }
+    }
+    return newDict;
+}
+List<string> Names = new List<string>() {"Jules", "Haro", "Jam", "Moni"};
+List<int> Numbers = new List<int>() { 1, 2, 3, 4};
+GenerateDictionary(TestStringList9, TestIntList9);
+
+
+foreach (KeyValuePair<string, int> entry in newDict)
+{
+    Console.WriteLine($"{entry.Key} - {entry.Value}");
+}
+
