@@ -45,7 +45,7 @@ static List<int> SquareValues(List<int> SquareList)
     List<int> Nums = new List<int>();
     for(int i = 0; i < SquareList.Count; i++)
     {
-        Nums.Add(SquareList[i]);
+        SquareList.Add(i);
     }
     return Nums;
 }
@@ -78,24 +78,21 @@ Dictionary<string, string> TestDict = new Dictionary<string, string>();
 TestDict.Add("HeroName", "Iron Man");
 TestDict.Add("RealName", "Tony Stark");
 TestDict.Add("Powers", "Money and intelligence");
-// PrintDictionary(TestDict);
+PrintDictionary(TestDict);
 
 //Given a search term, return true or false whether the given term is a key in a dictionary.
 static bool FindKey(Dictionary<string, string> MyDict, string SearchTerm)
 {
     bool flag = false;
-    foreach (KeyValuePair<string, string> entry in MyDict)
-    {
-        if(SearchTerm != entry.Key){
-            Console.WriteLine(entry.Key);
-            flag = false;
-        }else{
-            flag = true;
-        }
+    if(MyDict.ContainsKey(SearchTerm)){
+        flag = true;
+    }else{
+        flag = false;
     }
     return flag;
+  
 }
-// Console.WriteLine(FindKey(TestDict, "HeroName"));
+Console.WriteLine(FindKey(TestDict, "HeroName"));
 
 //Given a List of names and a List of integers, create a dictionary where the key is a name from the List of names and the value is a number from the List of numbers. Assume that the two Lists will be of the same length. Don't forget to print your results to make sure it worked.
 static Dictionary<string, int> GenerateDictionary(List<string> Names, List<int> Numbers)
@@ -110,13 +107,9 @@ static Dictionary<string, int> GenerateDictionary(List<string> Names, List<int> 
     }
     return newDict;
 }
-List<string> Names = new List<string>() {"Jules", "Haro", "Jam", "Moni"};
-List<int> Numbers = new List<int>() { 1, 2, 3, 4};
-GenerateDictionary(TestStringList9, TestIntList9);
+List<string> TestStringList9 = new List<string>() {"Jules", "Haro", "Jam", "Moni"};
+List<int> TestIntList9 = new List<int>() { 1, 2, 3, 4};
+// GenerateDictionary(TestStringList9, TestIntList9);
 
 
-foreach (KeyValuePair<string, int> entry in newDict)
-{
-    Console.WriteLine($"{entry.Key} - {entry.Value}");
-}
 
