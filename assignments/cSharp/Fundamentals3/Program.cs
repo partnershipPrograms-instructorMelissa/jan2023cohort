@@ -36,5 +36,34 @@ static int FindMax(List<int> NumList)
     }
     return max;
 }
+List<int> TestIntList2 = new List<int>() { 1, 2, 3, 4, 5 };
+// Console.WriteLine(FindMax(TestIntList2)); 
+
+//Given a List of integers, return the List with all the values squared.
+static List<int> SquareValues(List<int> SquareList)
+{
+    List<int> Nums = new List<int>();
+    for(int i = 0; i < SquareList.Count; i++)
+    {
+        Nums.Add(SquareList[i]);
+    }
+    return Nums;
+}
 List<int> TestIntList3 = new List<int>() { 1, 2, 3, 4, 5 };
-// Console.WriteLine(FindMax(TestIntList3)); 
+// Console.WriteLine(SquareValues(TestIntList3));
+
+//Given an array of integers, return the array with all values below 0 replaced with 0.
+static int[] NonNegatives(int[] IntArray)
+{
+    for(int i = 0; i < IntArray.Length; i++)
+    {
+        if(IntArray[i] < 0) {
+            IntArray[i] = 0;
+        }
+    }
+    return IntArray;
+}
+int[] TestIntArray = new int[] { -1, 2, 3, -4, 5 };
+NonNegatives(TestIntArray);
+
+//Given a dictionary, print the contents of the said dictionary.
