@@ -43,14 +43,18 @@ List<int> TestIntList2 = new List<int>() { 1, 2, 3, 4, 5 };
 static List<int> SquareValues(List<int> SquareList)
 {
     List<int> Nums = new List<int>();
-    for(int i = 0; i < SquareList.Count; i++)
-    {
-        SquareList.Add(i);
+    foreach(int num in SquareList){
+        Nums.Add(num * num);
     }
     return Nums;
 }
 List<int> TestIntList3 = new List<int>() { 1, 2, 3, 4, 5 };
-// Console.WriteLine(SquareValues(TestIntList3));
+SquareValues(TestIntList3);
+
+// foreach (int number in SquareValues(TestIntList3))
+// {
+//     Console.Write(number + " ");
+// }
 
 //Given an array of integers, return the array with all values below 0 replaced with 0.
 static int[] NonNegatives(int[] IntArray)
