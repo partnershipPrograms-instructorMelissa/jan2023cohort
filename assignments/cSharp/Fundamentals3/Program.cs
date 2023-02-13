@@ -105,13 +105,19 @@ static bool FindKey(Dictionary<string, string> MyDict, string SearchTerm)
 //Given a List of names and a List of integers, create a dictionary where the key is a name from the List of names and the value is a number from the List of numbers. Assume that the two Lists will be of the same length. Don't forget to print your results to make sure it worked.
 static Dictionary<string, int> GenerateDictionary(List<string> namesList, List<int> numbersList)
 {
+    string aKey;
+    int aValue;
+
     Dictionary<string, int> newDict = new Dictionary<string, int>();
-    for(int i = 0; i < namesList.Count; i++)
-    {
-        for(int j = 0; j < numbersList.Count; j++)
-        {
-            newDict.Add(namesList[i], numbersList[j]);
-        }
+    for(int i = 0; i < namesList.Count; i++) {
+        aKey = namesList[i];
+        aValue = numbersList[i];
+
+        newDict[aKey] = aValue;
+    }
+    foreach(KeyValuePair<string, int> entry in newDict){
+        namesList.Add(entry.Key);
+        numbersList.Add(entry.Value);
     }
     return newDict;
 }
@@ -119,10 +125,9 @@ List<string> TestStringList9 = new List<string>() {"Jules", "Haro", "Jam", "Moni
 List<int> TestIntList9 = new List<int>() { 1, 2, 3, 4};
 GenerateDictionary(TestStringList9, TestIntList9);
 
-foreach (KeyValuePair<string, int> entry in GenerateDictionary(TestStringList9, TestIntList9))
+foreach(KeyValuePair<string, int> entry in GenerateDictionary(TestStringList9, TestIntList9))
 {
     Console.WriteLine($"{entry.Key} - {entry.Value}");
 }
-
 
 
