@@ -1,0 +1,29 @@
+body {
+  margin: 0 5%;
+}
+
+/** -----------------------------------------HEADER----------------------------------------------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+  padding: .5em 1.5em;
+  align-items: center;
+}
+
+.search-bar {
+  width: 40%;
+  height: 3em;
+}
+
+.login {
+  padding: .5em;
+  font-size: 1.25em;
+  color: white;
+  background-color: dodgerblue;
+}
+
+/** ------------------------------------------MAIN-----------------------------------------------------*/
+/*!---------------------DIV 1---------------------*/
+
+/*!---------------------DIV 2---------------------*/

@@ -1,0 +1,27 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  border: solid pink 2px;
+  width: 90%;
+}
+
+button {
+  margin: 1em;
+}
+
+.words h1 {
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.words p {
+  font-size: 1.25em;
+}
