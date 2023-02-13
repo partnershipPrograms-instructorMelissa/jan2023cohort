@@ -7,10 +7,12 @@ for(int i = 1; i <= 5; i++) {
     // Console.WriteLine(rand.Next(10,21));
 }
 
+
+int sum = 0;
 for (int i = 1; i <= 5; i++) {   
-    i += rand.Next(10, 21);
-    // Console.WriteLine(i); 
-}
+    sum += rand.Next(10, 21);
+    }
+    Console.WriteLine(sum); 
 
 for(int i = 1; i <= 100; i++) {
     // if(i % 3 == 0 || i % 5 == 0){
