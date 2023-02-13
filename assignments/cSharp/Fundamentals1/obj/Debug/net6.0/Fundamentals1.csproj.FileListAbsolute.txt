@@ -1,0 +1,15 @@
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\obj\Debug\net6.0\Fundamentals1.csproj.AssemblyReference.cache
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\obj\Debug\net6.0\Fundamentals1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\obj\Debug\net6.0\Fundamentals1.AssemblyInfoInputs.cache
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\obj\Debug\net6.0\Fundamentals1.AssemblyInfo.cs
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\obj\Debug\net6.0\Fundamentals1.csproj.CoreCompileInputs.cache
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\bin\Debug\net6.0\Fundamentals1.exe
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\bin\Debug\net6.0\Fundamentals1.deps.json
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\bin\Debug\net6.0\Fundamentals1.runtimeconfig.json
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\bin\Debug\net6.0\Fundamentals1.dll
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\bin\Debug\net6.0\Fundamentals1.pdb
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\obj\Debug\net6.0\Fundamentals1.dll
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\obj\Debug\net6.0\refint\Fundamentals1.dll
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\obj\Debug\net6.0\Fundamentals1.pdb
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\obj\Debug\net6.0\Fundamentals1.genruntimeconfig.cache
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals1\obj\Debug\net6.0\ref\Fundamentals1.dll
