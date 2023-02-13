@@ -69,6 +69,10 @@ static int[] NonNegatives(int[] IntArray)
 }
 int[] TestIntArray = new int[] { -1, 2, 3, -4, 5 };
 NonNegatives(TestIntArray);
+// foreach(int arr in NonNegatives(TestIntArray))
+// {
+//     Console.WriteLine(arr);
+// }
 
 //Given a dictionary, print the contents of the said dictionary.
 static void PrintDictionary(Dictionary<string, string> MyDictionary)
@@ -82,7 +86,7 @@ Dictionary<string, string> TestDict = new Dictionary<string, string>();
 TestDict.Add("HeroName", "Iron Man");
 TestDict.Add("RealName", "Tony Stark");
 TestDict.Add("Powers", "Money and intelligence");
-PrintDictionary(TestDict);
+// PrintDictionary(TestDict);
 
 //Given a search term, return true or false whether the given term is a key in a dictionary.
 static bool FindKey(Dictionary<string, string> MyDict, string SearchTerm)
@@ -96,7 +100,7 @@ static bool FindKey(Dictionary<string, string> MyDict, string SearchTerm)
     return flag;
   
 }
-Console.WriteLine(FindKey(TestDict, "HeroName"));
+// Console.WriteLine(FindKey(TestDict, "HeroName"));
 
 //Given a List of names and a List of integers, create a dictionary where the key is a name from the List of names and the value is a number from the List of numbers. Assume that the two Lists will be of the same length. Don't forget to print your results to make sure it worked.
 static Dictionary<string, int> GenerateDictionary(List<string> namesList, List<int> numbersList)
