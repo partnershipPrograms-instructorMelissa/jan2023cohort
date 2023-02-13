@@ -1,0 +1,15 @@
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\bin\Debug\net6.0\Practice.exe
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\bin\Debug\net6.0\Practice.deps.json
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\bin\Debug\net6.0\Practice.runtimeconfig.json
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\bin\Debug\net6.0\Practice.dll
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\bin\Debug\net6.0\Practice.pdb
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\obj\Debug\net6.0\Practice.csproj.AssemblyReference.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\obj\Debug\net6.0\Practice.GeneratedMSBuildEditorConfig.editorconfig
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\obj\Debug\net6.0\Practice.AssemblyInfoInputs.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\obj\Debug\net6.0\Practice.AssemblyInfo.cs
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\obj\Debug\net6.0\Practice.csproj.CoreCompileInputs.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\obj\Debug\net6.0\Practice.dll
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\obj\Debug\net6.0\refint\Practice.dll
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\obj\Debug\net6.0\Practice.pdb
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\obj\Debug\net6.0\Practice.genruntimeconfig.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Practice\obj\Debug\net6.0\ref\Practice.dll

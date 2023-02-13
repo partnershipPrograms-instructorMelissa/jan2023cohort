@@ -1,0 +1,20 @@
+//Running version 
+dotnet --version
+
+//creating new folder 
+dotnet new console -o Practice
+
+//cd to new folder
+cd assignments 
+cd cSharp
+cd Practice
+
+//run dotnet new console
+
+dotnet new console
+
+//running dotnet 
+
+dotnet run
+
+//project successfully runs 
