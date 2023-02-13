@@ -11,8 +11,8 @@ for(int i = 1; i <= 5; i++) {
 int sum = 0;
 for (int i = 1; i <= 5; i++) {   
     sum += rand.Next(10, 21);
-    }
-    Console.WriteLine(sum); 
+}
+// Console.WriteLine(sum); 
 
 for(int i = 1; i <= 100; i++) {
     // if(i % 3 == 0 || i % 5 == 0){
