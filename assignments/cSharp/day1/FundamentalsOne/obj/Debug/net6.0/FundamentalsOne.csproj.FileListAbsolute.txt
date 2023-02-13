@@ -1,0 +1,15 @@
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\bin\Debug\net6.0\FundamentalsOne.exe
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\bin\Debug\net6.0\FundamentalsOne.deps.json
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\bin\Debug\net6.0\FundamentalsOne.runtimeconfig.json
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\bin\Debug\net6.0\FundamentalsOne.dll
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\bin\Debug\net6.0\FundamentalsOne.pdb
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.csproj.AssemblyReference.cache
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.AssemblyInfoInputs.cache
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.AssemblyInfo.cs
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.csproj.CoreCompileInputs.cache
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.dll
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\obj\Debug\net6.0\refint\FundamentalsOne.dll
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.pdb
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.genruntimeconfig.cache
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day1\FundamentalsOne\obj\Debug\net6.0\ref\FundamentalsOne.dll
