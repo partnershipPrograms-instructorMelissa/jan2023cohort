@@ -27,16 +27,16 @@ Random rand = new Random();
 int sum = 0;
 // for(int x=0; x<5; x++){
 //     sum += rand.Next(1, 21);
-//     Console.WriteLine("For new sum: " + sum);
 // }
+// Console.WriteLine("For sum: " + sum);
 
 // sum = 0;
 // int count = 0;
 // while(count < 5){
 //     sum += rand.Next(1, 21);
-//     Console.WriteLine("While new sum: " + sum);
 //     count++;
 // }
+// Console.WriteLine("While sum: " + sum);
 
 // all values 1 - 100 divisible by 3 OR 5 but not both
 // for(int i=1; i<101; i++){
