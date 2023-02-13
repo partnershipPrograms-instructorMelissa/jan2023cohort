@@ -1,9 +1,9 @@
 class Attack
 {
-    string Name;
-    int DamageAmount;
+    public string Name;
+    public int DamageAmount;
 
-    Attack(string name, int damageAmount)
+    public Attack(string name, int damageAmount)
     {
         Name = name;
         DamageAmount = damageAmount;
