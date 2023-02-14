@@ -1,0 +1,15 @@
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\obj\Debug\net6.0\FlavorList.csproj.AssemblyReference.cache
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\obj\Debug\net6.0\FlavorList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\obj\Debug\net6.0\FlavorList.AssemblyInfoInputs.cache
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\obj\Debug\net6.0\FlavorList.AssemblyInfo.cs
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\obj\Debug\net6.0\FlavorList.csproj.CoreCompileInputs.cache
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\bin\Debug\net6.0\FlavorList.exe
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\bin\Debug\net6.0\FlavorList.deps.json
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\bin\Debug\net6.0\FlavorList.runtimeconfig.json
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\bin\Debug\net6.0\FlavorList.dll
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\bin\Debug\net6.0\FlavorList.pdb
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\obj\Debug\net6.0\FlavorList.dll
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\obj\Debug\net6.0\refint\FlavorList.dll
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\obj\Debug\net6.0\FlavorList.pdb
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\obj\Debug\net6.0\FlavorList.genruntimeconfig.cache
+C:\Users\NightKing\Documents\CodingDojo\jan2023cohort\assignments\cSharp\Fundamentals2\FlavorList\obj\Debug\net6.0\ref\FlavorList.dll
