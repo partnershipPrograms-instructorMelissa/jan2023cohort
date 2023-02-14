@@ -7,7 +7,14 @@ Enemy Player1 = new Enemy("Bandit");
 Player1.AttackList.Add(attack.Name);
 Player1.AttackList.Add(attack1.Name);
 Player1.AttackList.Add(attack2.Name);
-// Console.WriteLine(Player1.Health);
+Console.WriteLine(Player1.Health);
 
 foreach(String Attack in Player1.AttackList)
+{
     Console.WriteLine(Attack);
+}
+
+Player1.RandomAttack();
+
+
+
