@@ -11,9 +11,9 @@ class Enemy
    
         List<string> attackChoices = this.AttackList;
 
-         int fIndex = rnd.Next(attackChoices.Count);
+        int fIndex = rnd.Next(attackChoices.Count);
 
-         Console.WriteLine($"Your Attack is: {attackChoices[fIndex]}");
+        Console.WriteLine($"Your Attack is: {attackChoices[fIndex]}");
     }
 
     public Enemy(string name)
