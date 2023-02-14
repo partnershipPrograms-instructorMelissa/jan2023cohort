@@ -109,6 +109,7 @@ static Dictionary<string, int> GenerateDictionary(List<string> namesList, List<i
     int aValue;
 
     Dictionary<string, int> newDict = new Dictionary<string, int>();
+    
     for(int i = 0; i < namesList.Count; i++) {
         aKey = namesList[i];
         aValue = numbersList[i];

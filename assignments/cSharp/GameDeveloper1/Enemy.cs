@@ -23,6 +23,11 @@ class Enemy
 
         Console.WriteLine($"Your Attack is: {attackChoices[fIndex]}");
     }
+    public void PerformAttack(Enemy Target, Attack ChosenAttack)
+    {
+        string target = this.Name;
+        
+    }
 
     public Enemy(string name)
     {
