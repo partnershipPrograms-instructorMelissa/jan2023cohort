@@ -1,6 +1,6 @@
-class Enemy 
+class Enemy : Attack
 {
-    public string Name;
+    public string EnemyName;
     private int Health;
   
     public List<string> AttackList {get; set;}
@@ -17,21 +17,22 @@ class Enemy
     {
         Random rnd = new Random();
    
-        List<string> attackChoices = this.AttackList;
+        List<string> attackChoices = AttackList;
 
         int fIndex = rnd.Next(attackChoices.Count);
 
         Console.WriteLine($"Your Attack is: {attackChoices[fIndex]}");
     }
-    public void PerformAttack(Enemy Target, Attack ChosenAttack)
+    public void PerformAttack(Enemy Target, Attack DamageAmount)
     {
-        string target = this.Name;
+        string target = EnemyName;
+        string chosenAttack = AttackName;
         
     }
 
-    public Enemy(string name)
+    public Enemy(string enemyName, string attackName, int damageAmount) : base(attackName, damageAmount)
     {
-        Name = name;
+        EnemyName = enemyName;
         Health = 100;
         AttackList = new List<string>();
     }

@@ -3,10 +3,10 @@ Attack attack1 = new Attack("punch", 5);
 Attack attack2 = new Attack("throw", 20);
 
 
-Enemy Player1 = new Enemy("Bandit");
-Player1.AttackList.Add(attack.Name);
-Player1.AttackList.Add(attack1.Name);
-Player1.AttackList.Add(attack2.Name);
+Enemy Player1 = new Enemy("Bandit", "throw", 5);
+Player1.AttackList.Add(attack.AttackName);
+Player1.AttackList.Add(attack1.AttackName);
+Player1.AttackList.Add(attack2.AttackName);
 Console.WriteLine(Player1._Health);
 
 foreach(String Attack in Player1.AttackList)
