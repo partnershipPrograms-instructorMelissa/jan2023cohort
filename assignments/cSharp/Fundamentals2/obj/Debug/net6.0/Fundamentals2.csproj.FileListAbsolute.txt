@@ -1,0 +1,15 @@
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\bin\Debug\net6.0\Fundamentals2.exe
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\bin\Debug\net6.0\Fundamentals2.deps.json
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\bin\Debug\net6.0\Fundamentals2.runtimeconfig.json
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\bin\Debug\net6.0\Fundamentals2.dll
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\bin\Debug\net6.0\Fundamentals2.pdb
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\obj\Debug\net6.0\Fundamentals2.csproj.AssemblyReference.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\obj\Debug\net6.0\Fundamentals2.GeneratedMSBuildEditorConfig.editorconfig
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\obj\Debug\net6.0\Fundamentals2.AssemblyInfoInputs.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\obj\Debug\net6.0\Fundamentals2.AssemblyInfo.cs
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\obj\Debug\net6.0\Fundamentals2.csproj.CoreCompileInputs.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\obj\Debug\net6.0\Fundamentals2.dll
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\obj\Debug\net6.0\refint\Fundamentals2.dll
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\obj\Debug\net6.0\Fundamentals2.pdb
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\obj\Debug\net6.0\Fundamentals2.genruntimeconfig.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\Fundamentals2\obj\Debug\net6.0\ref\Fundamentals2.dll
