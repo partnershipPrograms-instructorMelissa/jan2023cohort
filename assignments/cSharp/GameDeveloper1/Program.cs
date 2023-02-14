@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Enemy Player1 = new Enemy("Bandit");
+Player1.AttackList.Add("fireball");
+Console.WriteLine(Player1.AttackList);
