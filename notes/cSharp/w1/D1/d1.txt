@@ -1,0 +1,28 @@
+start new project:
+    mkdir FirstCSharp
+    cd FirstCSharp
+    dotnet new console
+
+    or:
+    dotnet new console -o FirstCSharp
+
+start folder names with all caps: ExampleFolder
+
+run if packages added/removed: 
+    dotnet restore
+
+run application:
+    dotnet run
+
+if console not found:
+    using System;
+this is due to older version of dotnet
+
+datatypes:
+    int 
+    long 
+    float 
+    double 
+    bool 
+    char ('')
+    string ("")

@@ -75,9 +75,10 @@ setInterval( function() {
 
     // seconds
     let seconds = parseInt((time-minutes*60-hours*3600))
-    var s_angle = (180 + seconds)
+    var s_angle = (180 + seconds*6)%360
+    document.getElementById('seconds').style.transform = `rotate(${s_angle}deg)`
 
-    console.log('change minutes ', (m_angle))
+    console.log('change seconds ', seconds,(s_angle))
 
 
 }, 1000);
