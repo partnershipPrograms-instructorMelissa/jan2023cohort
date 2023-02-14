@@ -1,0 +1,119 @@
+/* @import url(./reset.css); */
+/* COLORS */
+/* main blue - #22659e */
+/* light blue - #00b8d4 */
+/* phone # - #00c0df */
+/* dark orange - #f07300 */
+/* light orange - #eaaf58 */
+/* footer border - #0085e0 */
+/* dark grey - #444444 */
+
+* {
+  /* border: dashed 1px darkorchid; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0 9%;
+}
+
+/**----------------------------------------HEADER---------------------------------------- */
+header {
+  margin-bottom: 0;
+}
+.globe {
+  height: 4.1em;
+  margin-top: -0.15em;
+}
+
+.header-title {
+  display: flex;
+  font-size: 2em;
+}
+
+header h1 {
+  margin-top: 0.45em;
+  font-weight: 100;
+  color: #444444;
+}
+
+header h2 {
+  display: flex;
+  background: linear-gradient(#22659e, #5284ad, #22659e);
+  color: white;
+  font-size: 2.7em;
+  font-weight: normal;
+  padding: 0.35em;
+  padding-left: 0.5em;
+  margin: 0;
+  margin-top: -1em;
+}
+
+/**----------------------------------------MAIN---------------------------------------- */
+main {
+  /* margin-top: -1em; */
+  background: linear-gradient(#e4e4e4, white 10%);
+  padding-top: .5em;
+  display: flex;
+}
+
+aside{
+  /* border: dashed 2px purple; */
+  padding: .3em;
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+aside h3 {
+  font-size: 1.35em;
+  margin-bottom: .05em;
+}
+
+aside p {
+  font-size: 1.1em;
+}
+
+aside button{
+  background: #444444; /* temporary color to see */
+  padding: .55em;
+  color: white;
+  font-size: 1.25em;
+  border-radius: .5em;
+  margin-bottom: .25em;
+  box-shadow: #444444 2px 2px 3px;
+}
+
+hr {
+  background-color: #444444;
+  width: 16em;
+  height: .01em;
+  border: none;
+  margin: 1.75em 0;
+}
+
+.ad {
+  background-image: url(./images/ad_background.png);
+}
+
+/**----------------------------------------COLORS---------------------------------------- */
+.blue {
+  color: #22659e;
+}
+
+.title {
+  color: #22659e;
+}
+
+.red {
+  color: red;
+}
+
+.light-blue {
+  color: #00b8d4;
+}
+
+.phone {
+  color: #00c0df;
+}

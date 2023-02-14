@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Internet Assignment</title>
   </head>
   <body>
     <!--*-------------------------------------HEADER--------------------------------------->
     <header>
-      <img src="./assets/images/globe.png" alt="globe logo" />
-      <h1>The Inter<span class="blue">net</span></h1>
+      <div class="header-title">
+        <img src="./assets/images/globe.png" class="globe" alt="globe logo" />
+        <h1>The Inter<span class="blue">net</span></h1>
+      </div>
       <h2>The World Wide Web</h2>
     </header>
 
@@ -25,6 +27,8 @@
         </p>
         <button class="watch">WATCH A VIDEO</button>
         <button class="more">MORE RESOURCES</button>
+
+        <hr>
         <!--*-----------------------------AD------------------------------>
         <div class="ad">
           <h2>Reinvent your career in just 14 weeks</h2>
@@ -52,8 +56,8 @@
         <div class="clients">
           <h4 class="title">Clients and Servers</h4>
           <p>
-            Computers connected to the <span class="light-blue">Web</span> are called
-            <span class="bold">clients</span> and
+            Computers connected to the <span class="light-blue">Web</span> are
+            called <span class="bold">clients</span> and
             <span class="bold">servers</span>.
           </p>
           <ul>
@@ -69,8 +73,8 @@
               <span class="light-blue">Servers</span> are computers that store
               <span class="light-blue">webpages</span>,
               <span class="light-blue">sites</span>, or
-              <span class="light-blue">apps</span>. When a client device wants to
-              access a webpage, a copy of the webpage is downloaded from the
+              <span class="light-blue">apps</span>. When a client device wants
+              to access a webpage, a copy of the webpage is downloaded from the
               server onto the client machine to be displayed in the user's web
               browser.
             </li>
@@ -85,9 +89,10 @@
           <h4 class="title">So What Actually Happens?</h4>
           <ol>
             <li>
-              The browser goes to the <span class="light-blue">DNS server</span> and
-              finds the real address of the
-              <span class="light-blue">server</span> that the website lives on.
+              The browser goes to the
+              <span class="light-blue">DNS server</span> and finds the real
+              address of the <span class="light-blue">server</span> that the
+              website lives on.
             </li>
             <li>
               The browser sends an
@@ -96,9 +101,9 @@
             </li>
             <li>
               If the server approves the client's request, the server sends the
-              client a <span class="light-blue">"200 OK" message</span>, which means
-              "Permission granted! Here you go!", and then starts sending the
-              website's files to the browser as a series of small chunks.
+              client a <span class="light-blue">"200 OK" message</span>, which
+              means "Permission granted! Here you go!", and then starts sending
+              the website's files to the browser as a series of small chunks.
             </li>
             <li>
               The browser assembles the small chunks into a complete website and
@@ -110,15 +115,22 @@
     </main>
 
     <!--*-------------------------------------FOOTER--------------------------------------->
-    <img src="./assets/images/html.png" alt="html, css, and javascript logo" />
-    <div class="text">
-      <h3 class="title">The Big 3 - HTML, CSS, JavaScript</h3>
-      <p>
-        While the server can process information in many different languages,
-        the files that they serve to the client are always going to be some
-        combination of HTML, CSS, and JavaScript!
-      </p>
-      <p>Learn more about the Big 3 <a href="#" class="light-blue">here</a>!</p>
-    </div>
+    <footer>
+      <img
+        src="./assets/images/html.png"
+        alt="html, css, and javascript logo"
+      />
+      <div class="text">
+        <h3 class="title">The Big 3 - HTML, CSS, JavaScript</h3>
+        <p>
+          While the server can process information in many different languages,
+          the files that they serve to the client are always going to be some
+          combination of HTML, CSS, and JavaScript!
+        </p>
+        <p>
+          Learn more about the Big 3 <a href="#" class="light-blue">here</a>!
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
