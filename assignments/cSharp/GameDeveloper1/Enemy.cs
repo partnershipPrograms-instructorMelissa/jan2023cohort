@@ -1,9 +1,17 @@
 class Enemy 
 {
     public string Name;
-    public int Health;
+    private int Health;
   
     public List<string> AttackList {get; set;}
+
+    public int _Health
+    {
+        get
+        {
+            return Health;
+        }
+    }
 
     public void RandomAttack()
     {
