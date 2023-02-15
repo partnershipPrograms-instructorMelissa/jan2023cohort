@@ -3,7 +3,7 @@ Attack attack1 = new Attack("punch", 5);
 Attack attack2 = new Attack("throw", 20);
 
 
-Enemy Player1 = new Enemy("Bandit", "throw", 5);
+Enemy Player1 = new Enemy("Bandit");
 Player1.AttackList.Add(attack.AttackName);
 Player1.AttackList.Add(attack1.AttackName);
 Player1.AttackList.Add(attack2.AttackName);
