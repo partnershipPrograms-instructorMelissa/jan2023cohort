@@ -1,0 +1,15 @@
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\bin\Debug\net6.0\FundamentalsTres.exe
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\bin\Debug\net6.0\FundamentalsTres.deps.json
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\bin\Debug\net6.0\FundamentalsTres.runtimeconfig.json
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\bin\Debug\net6.0\FundamentalsTres.dll
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\bin\Debug\net6.0\FundamentalsTres.pdb
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\obj\Debug\net6.0\FundamentalsTres.csproj.AssemblyReference.cache
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\obj\Debug\net6.0\FundamentalsTres.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\obj\Debug\net6.0\FundamentalsTres.AssemblyInfoInputs.cache
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\obj\Debug\net6.0\FundamentalsTres.AssemblyInfo.cs
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\obj\Debug\net6.0\FundamentalsTres.csproj.CoreCompileInputs.cache
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\obj\Debug\net6.0\FundamentalsTres.dll
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\obj\Debug\net6.0\refint\FundamentalsTres.dll
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\obj\Debug\net6.0\FundamentalsTres.pdb
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\obj\Debug\net6.0\FundamentalsTres.genruntimeconfig.cache
+C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\day2\FundamentalsThree\obj\Debug\net6.0\ref\FundamentalsTres.dll
