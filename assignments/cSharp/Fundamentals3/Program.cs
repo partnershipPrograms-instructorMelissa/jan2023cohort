@@ -126,9 +126,14 @@ List<string> TestStringList9 = new List<string>() {"Jules", "Haro", "Jam", "Moni
 List<int> TestIntList9 = new List<int>() { 1, 2, 3, 4};
 GenerateDictionary(TestStringList9, TestIntList9);
 
-foreach(KeyValuePair<string, int> entry in GenerateDictionary(TestStringList9, TestIntList9))
-{
-    Console.WriteLine($"{entry.Key} - {entry.Value}");
-}
+// foreach(KeyValuePair<string, int> entry in GenerateDictionary(TestStringList9, TestIntList9))
+// {
+//     Console.WriteLine($"{entry.Key} - {entry.Value}");
+// }
+
+
+
+    
+
 
 
