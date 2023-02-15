@@ -25,7 +25,8 @@ class Enemy : Attack
     }
     public void PerformAttack()
     {
-        if(AttackName == "punch"){
+        if(AttackName == "punch")
+        {
             Health -= DamageAmount;
         }
         if (AttackName == "throw")
