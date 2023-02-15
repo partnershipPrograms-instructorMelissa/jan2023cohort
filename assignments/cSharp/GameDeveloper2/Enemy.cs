@@ -25,10 +25,6 @@ class Enemy : Attack
     }
     public void PerformAttack()
     {
-        EnemyName = this.EnemyName;
-        AttackName = this.AttackName;
-        Target = this.Target;
-   
         if(AttackName == "punch"){
             Health -= DamageAmount;
         }
@@ -41,7 +37,7 @@ class Enemy : Attack
             Health -= DamageAmount;
         }
 
-        Console.WriteLine($"{EnemyName} attacks {Target}, dealing {DamageAmount} damage and reducing {Target}'s health to {_Health}!!");
+        Console.WriteLine($"{EnemyName} attacks {Target}, dealing {DamageAmount} damage {AttackName} and reducing {Target}'s health to {_Health}!!");
     }
 
     public Enemy(string enemyName, string attackName, int damageAmount, string target) : base(attackName, damageAmount, target)
