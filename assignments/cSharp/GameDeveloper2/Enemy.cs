@@ -1,4 +1,4 @@
-class Enemy
+class Enemy : Attack
 {
     public string EnemyName;
     private int Health;
@@ -23,18 +23,31 @@ class Enemy
 
         Console.WriteLine($"Your Attack is: {attackChoices[fIndex]}");
     }
-    // public void PerformAttack(Enemy Target, Attack DamageAmount)
-    // {
-    //     string target = EnemyName;
-    //     string chosenAttack = AttackName;
+    public void PerformAttack()
+    {
+        EnemyName = this.EnemyName;
+        AttackName = this.AttackName;
+        Target = this.Target;
+   
+        if(AttackName == "punch"){
+            Health -= DamageAmount;
+        }
+        if (AttackName == "throw")
+        {
+            Health -= DamageAmount;
+        }
+        if (AttackName == "fireball")
+        {
+            Health -= DamageAmount;
+        }
 
-    // }
+        Console.WriteLine($"{EnemyName} attacks {Target}, dealing {DamageAmount} damage and reducing {Target}'s health to {_Health}!!");
+    }
 
-    public Enemy(string enemyName)
+    public Enemy(string enemyName, string attackName, int damageAmount, string target) : base(attackName, damageAmount, target)
     {
         EnemyName = enemyName;
         Health = 100;
         AttackList = new List<string>();
-    }
-
+     }
 }
