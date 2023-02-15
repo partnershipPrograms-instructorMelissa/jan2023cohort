@@ -23,13 +23,6 @@ class Enemy
 
         Console.WriteLine($"Your Attack is: {attackChoices[fIndex]}");
     }
-    // public void PerformAttack(Enemy Target, Attack DamageAmount)
-    // {
-    //     string target = EnemyName;
-    //     string chosenAttack = AttackName;
-
-    // }
-
     public Enemy(string enemyName) 
     {
         EnemyName = enemyName;
