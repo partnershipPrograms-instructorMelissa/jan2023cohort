@@ -28,3 +28,5 @@ key.js
 # class directories
 lectures/
 classProject/
+obj/
+bin/
