@@ -1,9 +1,9 @@
 public class Enemy : Attack
 {
-    public string EnemyName { get; set; }
-    public int Health { get; set; }
-    public string Target { get; set; }
-    public List<string> AttackList { get; set; }
+    public string EnemyName;
+    public int Health; 
+    public string Target; 
+    public List<string> AttackList; 
     public void RandomAttack()
     {
         Random rnd = new Random();

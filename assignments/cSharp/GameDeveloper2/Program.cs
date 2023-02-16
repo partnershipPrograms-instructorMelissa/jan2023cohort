@@ -5,7 +5,9 @@ Attack Player2 = new Attack("Punch", 20);
 // Player1.PerformAttack();
 
 
-Melee player3 = new Melee();
+Melee player3 = new Melee("Sam", "fireball", 25);
+Console.WriteLine(player3.AttackName);
+
 
 
 
