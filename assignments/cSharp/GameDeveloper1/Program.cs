@@ -9,10 +9,10 @@ Player1.AttackList.Add(attack1.AttackName);
 Player1.AttackList.Add(attack2.AttackName);
 Console.WriteLine(Player1._Health);
 
-foreach(String Attack in Player1.AttackList)
-{
-    Console.WriteLine(Attack);
-}
+// foreach(String Attack in Player1.AttackList)
+// {
+//     Console.WriteLine(Attack);
+// }
 
 Player1.RandomAttack();
 

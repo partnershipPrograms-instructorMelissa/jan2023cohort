@@ -1,4 +1,4 @@
-public class Enemy : Attack
+class Enemy : Attack
 {
     public string EnemyName;
     public int Health; 

@@ -1,4 +1,4 @@
-public class Melee : Enemy
+class Melee : Enemy
 {
     public override void RandomAttack()
     {
