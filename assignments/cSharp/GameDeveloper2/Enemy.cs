@@ -1,18 +1,9 @@
-class Enemy : Attack
+public class Enemy : Attack
 {
-    public string EnemyName;
-    private int Health;
-
+    public string EnemyName { get; set; }
+    public int Health { get; set; }
+    public string Target { get; set; }
     public List<string> AttackList { get; set; }
-
-    public int _Health
-    {
-        get
-        {
-            return Health;
-        }
-    }
-
     public void RandomAttack()
     {
         Random rnd = new Random();
@@ -38,13 +29,14 @@ class Enemy : Attack
             Health -= DamageAmount;
         }
 
-        Console.WriteLine($"{EnemyName} attacks {Target}, dealing {DamageAmount} damage {AttackName} and reducing {Target}'s health to {_Health}!!");
+        Console.WriteLine($"{EnemyName} attacks {Target}, dealing {DamageAmount} damage {AttackName} and reducing {Target}'s health to {Health}!!");
     }
 
-    public Enemy(string enemyName, string attackName, int damageAmount, string target) : base(attackName, damageAmount, target)
+    public Enemy(string enemyName, string attackName, int damageAmount) : base(attackName, damageAmount)
     {
         EnemyName = enemyName;
         Health = 100;
         AttackList = new List<string>();
-     }
+        Target = "Sam";
+    }
 }
