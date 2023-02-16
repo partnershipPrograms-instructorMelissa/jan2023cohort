@@ -1,7 +1,6 @@
 class Ranged : Enemy
 {
     public int Distance;
-
     public override void PerformAttack()
     {
         int myDistance = Distance;
@@ -23,6 +22,14 @@ class Ranged : Enemy
             }
             Console.WriteLine($"{EnemyName} dealt {DamageAmount} damage {AttackName} reducing health to {Health}!!");
         }
+    }
+
+    public void DashMethod()
+    {
+        int currentDash = 20;
+        Distance += currentDash;
+
+        Console.WriteLine($"Your dash amount is {currentDash}, you now have a distance of {Distance}");  
     }
 
     public Ranged(string enemyName, string attackName, int damageAmount) : base(enemyName, attackName, damageAmount)
