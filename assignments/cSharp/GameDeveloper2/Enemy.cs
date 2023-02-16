@@ -4,7 +4,7 @@ public class Enemy : Attack
     public int Health; 
     public string Target; 
     public List<string> AttackList; 
-    public void RandomAttack()
+    public virtual void RandomAttack()
     {
         Random rnd = new Random();
 
