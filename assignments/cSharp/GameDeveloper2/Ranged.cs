@@ -20,7 +20,7 @@ class Ranged : Enemy
                 DamageAmount = 15;
                 Target.Health -= DamageAmount;
             }
-            Console.WriteLine($"{EnemyName} dealt {DamageAmount} damage {AttackName} reducing health to {Target.Health}!!");
+            Console.WriteLine($"{EnemyName} dealt {DamageAmount} damage {AttackName} to {Target} reducing health to {Target.Health}!!");
         }
     }
 

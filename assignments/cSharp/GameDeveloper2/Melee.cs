@@ -5,7 +5,7 @@ class Melee : Enemy
     {
         base.PerformAttack(Target);
     }
-    public void RageMethod()
+    public void RageMethod(Enemy Target)
     {
         Random rnd = new Random();
 
@@ -18,19 +18,19 @@ class Melee : Enemy
         if(attackIs == "punch")
         {
             DamageAmount = 30;
-            Health -= DamageAmount;
+            Target.Health -= DamageAmount;
         }
         if (attackIs == "kick")
         {
             DamageAmount = 25;
-            Health -= DamageAmount;
+            Target.Health -= DamageAmount;
         }
         if (attackIs == "tackle")
         {
             DamageAmount = 35;
-            Health -= DamageAmount;
+            Target.Health -= DamageAmount;
         }
-        Console.WriteLine($"{attackIs} dealing {DamageAmount} damage reducing health by {Health}!!");
+        Console.WriteLine($"{attackIs} dealing {DamageAmount} damage reducing health by {Target.Health}!!");
     }
 
     public Melee(string enemyName, string attackName, int damageAmount) : base(enemyName, attackName, damageAmount)

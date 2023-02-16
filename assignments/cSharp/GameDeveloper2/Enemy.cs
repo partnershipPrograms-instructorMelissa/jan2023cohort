@@ -19,17 +19,17 @@ class Enemy : Attack
         if (AttackName == "punch")
         {
             DamageAmount = 15;
-            Health -= DamageAmount;
+            Target.Health -= DamageAmount;
         }
         if (AttackName == "throw")
         {
             DamageAmount = 20;
-            Health -= DamageAmount;
+            Target.Health -= DamageAmount;
         }
         if (AttackName == "fireball")
         {
             DamageAmount = 25;
-            Health -= DamageAmount;
+            Target.Health -= DamageAmount;
         }
         Console.WriteLine($"{EnemyName} attacks {Target}, dealing {DamageAmount} damage {AttackName} and reducing {Target}'s health to {Target.Health}!!");
     }

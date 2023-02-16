@@ -14,8 +14,8 @@ Melee player3 = new Melee("Sam", "fireball", 25);
 player3.AttackList.Add(attack.AttackName);
 player3.AttackList.Add(attack1.AttackName);
 player3.AttackList.Add(attack2.AttackName);
-player3.Target = "Ranged Character";
-Console.WriteLine(player3.Target);
+// player3.Target = "Ranged Character";
+// Console.WriteLine(player3.Target);
 
 // foreach(String Attack in player3.AttackList)
 // {
@@ -32,7 +32,14 @@ Magic player5 = new Magic("Sarah", "fireball", 25);
 // player5.HealMethod(player3);
 
 // Kicker.PerformAttack(player4);
+// Console.WriteLine(player4.Health);
 // player4.PerformAttack(player3);
+// player3.RageMethod(player5);
+// player4.DashMethod();
+// player4.PerformAttack(player3);
+// player5.PerformAttack(player3);
+// player5.HealMethod(player4);
+
 
 
 
