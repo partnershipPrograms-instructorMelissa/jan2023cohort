@@ -1,7 +1,7 @@
 class Ranged : Enemy
 {
     public int Distance;
-    public override void PerformAttack()
+    public override void PerformAttack(Enemy Target)
     {
         int myDistance = Distance;
 
@@ -13,14 +13,14 @@ class Ranged : Enemy
             if (AttackName == "arrow")
             {
                 DamageAmount = 20;
-                Health -= DamageAmount;
+                Target.Health -= DamageAmount;
             }
             if (AttackName == "knife")
             {
                 DamageAmount = 15;
-                Health -= DamageAmount;
+                Target.Health -= DamageAmount;
             }
-            Console.WriteLine($"{EnemyName} dealt {DamageAmount} damage {AttackName} reducing health to {Health}!!");
+            Console.WriteLine($"{EnemyName} dealt {DamageAmount} damage {AttackName} reducing health to {Target.Health}!!");
         }
     }
 

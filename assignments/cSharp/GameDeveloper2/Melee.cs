@@ -1,6 +1,11 @@
 class Melee : Enemy
 {
-    public override void RandomAttack()
+
+    public override void PerformAttack(Enemy Target)
+    {
+        base.PerformAttack(Target);
+    }
+    public void RageMethod()
     {
         Random rnd = new Random();
 
