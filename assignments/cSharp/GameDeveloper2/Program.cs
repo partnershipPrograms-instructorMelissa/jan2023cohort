@@ -39,6 +39,7 @@ Magic player5 = new Magic("Sarah", "fireball", 25);
 // player4.PerformAttack(player3);
 // player5.PerformAttack(player3);
 // player5.HealMethod(player4);
+// player5.HealMethod(player5);
 
 
 
