@@ -1,0 +1,32 @@
+
+Emily@DESKTOP-VSEH4O1 MINGW64 ~/Desktop/code-dojo/jan2023cohort/assignments/cSharp (main)
+$ dotnet --version
+6.0.405
+
+
+Emily@DESKTOP-VSEH4O1 MINGW64 ~/Desktop/code-dojo/jan2023cohort/assignments/cSharp (main)
+$ mkdir HelloWorld
+
+
+
+Emily@DESKTOP-VSEH4O1 MINGW64 ~/Desktop/code-dojo/jan2023cohort/assignments/cSharp (main)
+$ cd HelloWorld/
+
+
+
+Emily@DESKTOP-VSEH4O1 MINGW64 ~/Desktop/code-dojo/jan2023cohort/assignments/cSharp/HelloWorld (main)
+$ dotnet new console
+
+The template "Console App" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\HelloWorld\HelloWorld.csproj...
+  Determining projects to restore...
+  Restored C:\Users\Emily\Desktop\code-dojo\jan2023cohort\assignments\cSharp\HelloWorld\HelloWorld.csproj (in 64 ms).
+Restore succeeded.
+
+
+
+Emily@DESKTOP-VSEH4O1 MINGW64 ~/Desktop/code-dojo/jan2023cohort/assignments/cSharp/HelloWorld (main)
+$ dotnet run
+Hello, World!
