@@ -19,7 +19,10 @@ player3.AttackList.Add(attack2.AttackName);
 //     Console.WriteLine(Attack);
 // }
 
-player3.RandomAttack();
+// player3.RandomAttack();
+
+Ranged player4 = new Ranged("Sue", "arrow", 20);
+player4.PerformAttack();
 
 
 

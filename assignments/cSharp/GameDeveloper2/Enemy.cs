@@ -14,7 +14,7 @@ class Enemy : Attack
 
         Console.WriteLine($"Your Attack is: {attackChoices[fIndex]}");
     }
-    public void PerformAttack()
+    public virtual void PerformAttack()
     {
         if(AttackName == "punch")
         {
