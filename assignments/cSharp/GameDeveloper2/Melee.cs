@@ -1,9 +1,9 @@
 class Melee : Enemy
 {
 
-    public override void PerformAttack(Enemy Target)
+    public override void PerformAttack(Enemy Target, Attack ChosenAttack)
     {
-        base.PerformAttack(Target);
+        base.PerformAttack(Target, ChosenAttack);
     }
     public void RageMethod(Enemy Target)
     {

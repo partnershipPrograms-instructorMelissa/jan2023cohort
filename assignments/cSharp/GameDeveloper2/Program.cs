@@ -31,15 +31,15 @@ Ranged player4 = new Ranged("Sue", "arrow", 20);
 Magic player5 = new Magic("Sarah", "fireball", 25);
 // player5.HealMethod(player3);
 
-// Kicker.PerformAttack(player4);
-// Console.WriteLine(player4.Health);
-// player4.PerformAttack(player3);
-// player3.RageMethod(player5);
-// player4.DashMethod();
-// player4.PerformAttack(player3);
-// player5.PerformAttack(player3);
-// player5.HealMethod(player4);
-// player5.HealMethod(player5);
+Console.WriteLine(player4.Health);
+Kicker.PerformAttack(player4, attack);
+player4.PerformAttack(player3, attack2);
+player3.RageMethod(player5);
+player4.DashMethod();
+player4.PerformAttack(player3, attack1);
+player5.PerformAttack(player3, attack);
+player5.HealMethod(player4);
+player5.HealMethod(player5);
 
 
 

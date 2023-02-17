@@ -1,24 +1,24 @@
 class Magic : Enemy
 {
     public int Heal;
-    public override void PerformAttack(Enemy Target)
+    public override void PerformAttack(Enemy Target, Attack ChosenAttack)
     {
-        if (AttackName == "fireball")
+        if (ChosenAttack.AttackName == "punch")
         {
             DamageAmount = 25;
             Target.Health -= DamageAmount;
         }
-        if (AttackName == "lighting bolt")
+        if (ChosenAttack.AttackName == "throw")
         {
             DamageAmount = 20;
             Target.Health -= DamageAmount;
         }
-        if (AttackName == "staff strike")
+        if (ChosenAttack.AttackName == "fireball")
         {
             DamageAmount = 10;
             Target.Health -= DamageAmount;
         }
-        Console.WriteLine($"{EnemyName} attacks {Target}, dealing {DamageAmount} damage {AttackName} and reducing {Target}'s health to {Target.Health}!!");
+        Console.WriteLine($"{EnemyName} attacks {Target.EnemyName}, dealing {DamageAmount} damage {AttackName} and reducing {Target.EnemyName}'s health to {Target.Health}!!");
     }
     public void HealMethod(Enemy Target)
     {
