@@ -31,6 +31,6 @@ class Magic : Enemy
     {
         EnemyName = enemyName;
         Health = 80;
-        AttackList = new List<string>();
+        // AttackList = new List<string>();
     }
 }
