@@ -12,17 +12,7 @@ class Ranged : Enemy
         }
         else
         {
-            if (ChosenAttack.AttackName == "arrow")
-            {
-                DamageAmount = 20;
-                Target.Health -= DamageAmount;
-            }
-            if (ChosenAttack.AttackName == "knife")
-            {
-                DamageAmount = 15;
-                Target.Health -= DamageAmount;
-            }
-            Console.WriteLine($"{EnemyName} dealt {DamageAmount} damage {ChosenAttack.AttackName} to {Target.EnemyName} reducing health to {Target.Health}!!");
+            base.PerformAttack(Target, ChosenAttack);
         }
     }
 
@@ -37,5 +27,10 @@ class Ranged : Enemy
     public Ranged(string enemyName, string attackName, int damageAmount) : base(enemyName, attackName, damageAmount)
     {
         Distance = 5;
+        AttackList = new List<Attack>()
+        {
+            new Attack("arrow", 20),
+            new Attack("knife", 15)
+         };
     }
 }

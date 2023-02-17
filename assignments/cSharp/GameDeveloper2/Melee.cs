@@ -7,36 +7,20 @@ class Melee : Enemy
     }
     public void RageMethod(Enemy Target)
     {
-        Random rnd = new Random();
-
-        List<string> attackChoices = AttackList;
-
-        int fIndex = rnd.Next(attackChoices.Count);
-
-        string attackIs = attackChoices[fIndex];
-
-        if(attackIs == "punch")
-        {
-            DamageAmount = 30;
-            Target.Health -= DamageAmount;
-        }
-        if (attackIs == "kick")
-        {
-            DamageAmount = 25;
-            Target.Health -= DamageAmount;
-        }
-        if (attackIs == "tackle")
-        {
-            DamageAmount = 35;
-            Target.Health -= DamageAmount;
-        }
-        Console.WriteLine($"{attackIs} dealing {DamageAmount} damage reducing health by {Target.Health}!!");
+        Attack rage = base.RandomAttack();
+        rage.DamageAmount += 10;
     }
 
     public Melee(string enemyName, string attackName, int damageAmount) : base(enemyName, attackName, damageAmount)
     {
         EnemyName = enemyName;
         Health = 120;
-        AttackList = new List<string>();
+        AttackList = new List<Attack>()
+        {
+            new Attack("punch", 20),
+            new Attack("kick", 15),
+            new Attack("tackle", 25)
+
+        };
     }
 }

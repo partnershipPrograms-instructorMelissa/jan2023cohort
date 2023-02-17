@@ -11,9 +11,9 @@ Melee Kicker = new Melee("Paul", "kick", 25);
 
 Melee player3 = new Melee("Sam", "fireball", 25);
 
-player3.AttackList.Add(attack.AttackName);
-player3.AttackList.Add(attack1.AttackName);
-player3.AttackList.Add(attack2.AttackName);
+// player3.AttackList.Add(attack.AttackName);
+// player3.AttackList.Add(attack1.AttackName);
+// player3.AttackList.Add(attack2.AttackName);
 // player3.Target = "Ranged Character";
 // Console.WriteLine(player3.Target);
 
