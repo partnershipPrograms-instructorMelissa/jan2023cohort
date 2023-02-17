@@ -1,0 +1,15 @@
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\obj\Debug\net6.0\GameDev1.csproj.AssemblyReference.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\obj\Debug\net6.0\GameDev1.GeneratedMSBuildEditorConfig.editorconfig
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\obj\Debug\net6.0\GameDev1.AssemblyInfoInputs.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\obj\Debug\net6.0\GameDev1.AssemblyInfo.cs
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\obj\Debug\net6.0\GameDev1.csproj.CoreCompileInputs.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\bin\Debug\net6.0\GameDev1.exe
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\bin\Debug\net6.0\GameDev1.deps.json
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\bin\Debug\net6.0\GameDev1.runtimeconfig.json
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\bin\Debug\net6.0\GameDev1.dll
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\bin\Debug\net6.0\GameDev1.pdb
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\obj\Debug\net6.0\GameDev1.dll
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\obj\Debug\net6.0\refint\GameDev1.dll
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\obj\Debug\net6.0\GameDev1.pdb
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\obj\Debug\net6.0\GameDev1.genruntimeconfig.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\assignments\cSharp\GameDev1\obj\Debug\net6.0\ref\GameDev1.dll

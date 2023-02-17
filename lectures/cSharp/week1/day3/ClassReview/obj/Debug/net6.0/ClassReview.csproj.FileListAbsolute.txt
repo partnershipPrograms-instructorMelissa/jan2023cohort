@@ -1,0 +1,15 @@
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\bin\Debug\net6.0\ClassReview.exe
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\bin\Debug\net6.0\ClassReview.deps.json
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\bin\Debug\net6.0\ClassReview.runtimeconfig.json
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\bin\Debug\net6.0\ClassReview.dll
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\bin\Debug\net6.0\ClassReview.pdb
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\obj\Debug\net6.0\ClassReview.csproj.AssemblyReference.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\obj\Debug\net6.0\ClassReview.GeneratedMSBuildEditorConfig.editorconfig
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\obj\Debug\net6.0\ClassReview.AssemblyInfoInputs.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\obj\Debug\net6.0\ClassReview.AssemblyInfo.cs
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\obj\Debug\net6.0\ClassReview.csproj.CoreCompileInputs.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\obj\Debug\net6.0\ClassReview.dll
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\obj\Debug\net6.0\refint\ClassReview.dll
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\obj\Debug\net6.0\ClassReview.pdb
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\obj\Debug\net6.0\ClassReview.genruntimeconfig.cache
+\\wsl.localhost\Ubuntu\home\jaysw\jan2023cohort\lectures\cSharp\week1\day3\ClassReview\obj\Debug\net6.0\ref\ClassReview.dll
