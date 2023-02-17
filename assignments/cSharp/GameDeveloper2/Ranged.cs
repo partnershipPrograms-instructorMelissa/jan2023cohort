@@ -1,13 +1,14 @@
 class Ranged : Enemy
 {
     public int Distance;
+    public int Dash;
     public override void PerformAttack(Enemy Target)
     {
-        int myDistance = Distance;
+        
 
-        if(myDistance < 10)
+        if(this.Distance < 10)
         {
-            Console.WriteLine($"Cannot perform attack! Your distance is too low. Current distance is {myDistance}");
+            Console.WriteLine($"Cannot perform attack! Your distance is too low. Current distance is {this.Distance}");
             
         } else {
             if (AttackName == "arrow")
@@ -26,14 +27,15 @@ class Ranged : Enemy
 
     public void DashMethod()
     {
-        int currentDash = 20;
-        Distance += currentDash;
+      
+        this.Distance += this.Dash;
 
-        Console.WriteLine($"Your dash amount is {currentDash}, you now have a distance of {Distance}");  
+        Console.WriteLine($"Your dash amount is {this.Dash}, you now have a distance of {this.Distance}");  
     }
 
     public Ranged(string enemyName, string attackName, int damageAmount) : base(enemyName, attackName, damageAmount)
     {
         Distance = 5;
+        Dash = 20;
     }
 }

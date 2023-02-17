@@ -1,5 +1,6 @@
 class Magic : Enemy
 {
+    public int Heal;
     public override void PerformAttack(Enemy Target)
     {
         if (AttackName == "fireball")
@@ -21,16 +22,15 @@ class Magic : Enemy
     }
     public void HealMethod(Enemy Target)
     {
-        int targetEnemy = Target.Health;
-             
-        targetEnemy += 40;
-
-        Console.WriteLine($"your new health total is {targetEnemy}");
+        Target.Health += this.Heal;
+    
+        Console.WriteLine($"your new health total is {Target.Health}");
     }
     public Magic(string enemyName, string attackName, int damageAmount) : base(enemyName, attackName, damageAmount)
     {
         EnemyName = enemyName;
         Health = 80;
+        Heal = 40;
         // AttackList = new List<string>();
     }
 }
