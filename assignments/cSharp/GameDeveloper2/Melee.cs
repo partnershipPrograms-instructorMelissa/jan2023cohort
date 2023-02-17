@@ -9,6 +9,8 @@ class Melee : Enemy
     {
         Attack rage = base.RandomAttack();
         rage.DamageAmount += 10;
+
+        Console.WriteLine($"{EnemyName} attacks {Target.EnemyName}, dealing {rage.DamageAmount} damage {rage.AttackName} and reducing {Target.EnemyName}'s health to {Target.Health}!!");
     }
 
     public Melee(string enemyName, string attackName, int damageAmount) : base(enemyName, attackName, damageAmount)

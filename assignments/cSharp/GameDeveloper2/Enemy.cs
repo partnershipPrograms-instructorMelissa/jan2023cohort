@@ -18,7 +18,7 @@ class Enemy : Attack
     {
         Target.Health -= ChosenAttack.DamageAmount;
 
-        Console.WriteLine($"{EnemyName} attacks {Target.EnemyName}, dealing {DamageAmount} damage {ChosenAttack.AttackName} and reducing {Target.EnemyName}'s health to {Target.Health}!!");
+        Console.WriteLine($"{EnemyName} attacks {Target.EnemyName}, dealing {ChosenAttack.DamageAmount} damage {ChosenAttack.AttackName} and reducing {Target.EnemyName}'s health to {Target.Health}!!");
     }
 
     public Enemy(string enemyName, string attackName, int damageAmount) : base(attackName, damageAmount)
