@@ -1,4 +1,4 @@
-class Vehicle 
+abstract class Vehicle 
 {
     public string Name;
     public int NumberOfPassengers;

@@ -1,11 +1,10 @@
 class Bicycle : Vehicle
 {
-    public Bicycle(string name, string color) : base(name, color)
+    public Bicycle(string name, int numberOfPassengers, string color, bool engine) : base(name, 1, color, engine)
     {
         Name = name;
-        NumberOfPassengers = 1;
         Color = color;
-        Engine = false;
+        Engine = engine;
         MilesTraveled = 0;
     }
 }
