@@ -28,7 +28,7 @@ class Vehicle
     public void Travel(int distance)
     {
         distance += this.MilesTraveled;
-        Console.WriteLine($"You have now traveled {distance}");       
+        Console.WriteLine($"Your {Name} has now traveled {distance}");       
     }
     
 }

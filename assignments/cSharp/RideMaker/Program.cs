@@ -10,7 +10,9 @@ allVehicles.Add(nissan);
 allVehicles.Add(suburban);
 allVehicles.Add(suburu);
 
-foreach(Vehicle vehicle in allVehicles)
-{
-    vehicle.ShowInfo();   
-}
+// foreach(Vehicle vehicle in allVehicles)
+// {
+//     vehicle.ShowInfo();   
+// }
+
+tesla.Travel(100);
