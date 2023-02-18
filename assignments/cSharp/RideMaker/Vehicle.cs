@@ -22,8 +22,13 @@ class Vehicle
     }
     public void ShowInfo()
     {
-        Console.WriteLine($"Your vehicle name is {Name}, it holds {NumberOfPassengers}, the color is {Color}, it has an Engine {Engine},and it has {MilesTraveled} miles");
-        
+        Console.WriteLine($"Your vehicle name is {Name}, it holds {NumberOfPassengers}, the color is {Color}, it has an Engine {Engine},and it has {MilesTraveled} miles");    
+    }
+
+    public void Travel(int distance)
+    {
+        distance += this.MilesTraveled;
+        Console.WriteLine($"You have now traveled {distance}");       
     }
     
 }
