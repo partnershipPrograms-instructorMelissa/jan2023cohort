@@ -1,0 +1,5 @@
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/RideMaker.csproj.AssemblyReference.cache
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/RideMaker.GeneratedMSBuildEditorConfig.editorconfig
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/RideMaker.AssemblyInfoInputs.cache
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/RideMaker.AssemblyInfo.cs
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/RideMaker.csproj.CoreCompileInputs.cache
