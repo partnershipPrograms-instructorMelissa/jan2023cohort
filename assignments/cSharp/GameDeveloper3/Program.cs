@@ -27,7 +27,7 @@ Magic player5 = new Magic("Sarah", "fireball", 25);
 // player5.HealMethod(player3);
 
 // Console.WriteLine(player4.Health);
-Kicker.PerformAttack(player4, attack);
+// Kicker.PerformAttack(player4, attack);
 // player4.PerformAttack(player3, attack2);
 // player3.RageMethod(player5);
 // player4.DashMethod();
@@ -39,6 +39,9 @@ Kicker.PerformAttack(player4, attack);
 Player newPlayer = new Player();
 
 newPlayer.startGame();
+
+
+
 
 
 
