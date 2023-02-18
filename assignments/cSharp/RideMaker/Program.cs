@@ -18,7 +18,23 @@
 // tesla.Travel(100);
 
 Car ford = new Car("Ford", 2, "black", true, "gas");
-ford.GiveFuel(50);
+Car nissan = new Car("Nissan", 4, "white", true, "gas");
+Car tesla = new Car("Tesla", 2, "blue", false, "electric");
+// ford.GiveFuel(50);
 
 Horse sandy = new Horse("Sandy", 1, "black");
-sandy.GiveFuel(10);
+// sandy.GiveFuel(10);
+
+Bicycle schwinn = new Bicycle("Schwinn", 1, "pink", false);
+
+List<Vehicle> vehicleList = new List<Vehicle>();
+vehicleList.Add(ford);
+vehicleList.Add(nissan);
+vehicleList.Add(tesla);
+
+List<INeedFuel> fuelList = new List<INeedFuel>();
+
+foreach(Vehicle item in vehicleList)
+{
+    item.ShowInfo();
+}
