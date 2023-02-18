@@ -1,8 +1,34 @@
 class Player : Enemy
 {
     public string Name;
+    public List<Melee> EnemyList;
+    public string startGame()
+    {
+        Console.WriteLine("Welcome! Please enter your player name: ");
+        this.Name = Console.ReadLine();
+        Console.WriteLine($"Your player name is {this.Name}");
+        return this.Name;  
+    }
+    public Melee RandomEnemy()
+    {
+        Random rnd = new Random();
 
-    public Player() : base("Sam", "punch", 15)
+        List<Melee> enemyChoices = EnemyList;
+
+        int eIndex = rnd.Next(enemyChoices.Count);
+
+        Console.WriteLine(enemyChoices[eIndex]);
+
+        return enemyChoices[eIndex];
+    }
+    public void EnemyChosen()
+    {
+        Melee rage = RandomEnemy();
+        rage.Health -= rage.DamageAmount;
+
+        Console.WriteLine($"{EnemyName} attacks {rage.EnemyName}, dealing {rage.DamageAmount} damage {rage.AttackName} and reducing {rage.EnemyName}'s health to {rage.Health}!!");
+    }
+    public Player() : base("Susan", "punch", 15)
     {
         Name = Name;
         Health = 100;
@@ -13,12 +39,11 @@ class Player : Enemy
             new Attack("boomerang", 10),
             new Attack("speed punch",15)
         };
-    }
-    public string startGame()
-    {
-        Console.WriteLine("Welcome! Please enter your player name: ");
-        this.Name = Console.ReadLine();
-        Console.WriteLine($"Your player name is {this.Name}");
-        return this.Name;  
+        EnemyList = new List<Melee>()
+        {
+            new Melee("Keith", "kick", 20),
+            new Melee("randall", "punch", 20),
+            new Melee("Seth", "fireball", 25),
+        };
     }
 }

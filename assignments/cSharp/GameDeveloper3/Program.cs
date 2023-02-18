@@ -38,7 +38,9 @@ Magic player5 = new Magic("Sarah", "fireball", 25);
 
 Player newPlayer = new Player();
 
-newPlayer.startGame();
+// newPlayer.startGame();
+
+newPlayer.EnemyChosen();
 
 
 
