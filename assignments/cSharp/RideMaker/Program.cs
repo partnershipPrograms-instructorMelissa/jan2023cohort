@@ -27,14 +27,21 @@ Horse sandy = new Horse("Sandy", 1, "black");
 
 Bicycle schwinn = new Bicycle("Schwinn", 1, "pink", false);
 
-List<Vehicle> vehicleList = new List<Vehicle>();
-vehicleList.Add(ford);
-vehicleList.Add(nissan);
-vehicleList.Add(tesla);
+// List<Vehicle> vehicleList = new List<Vehicle>();
+// vehicleList.Add(ford);
+// vehicleList.Add(nissan);
+// vehicleList.Add(tesla);
+
+// foreach(Vehicle item in vehicleList)
+// {
+//     item.ShowInfo();
+// }
 
 List<INeedFuel> fuelList = new List<INeedFuel>();
+fuelList.Add(tesla);
+fuelList.Add(sandy);
 
-foreach(Vehicle item in vehicleList)
+foreach(INeedFuel item in fuelList)
 {
-    item.ShowInfo();
+    item.GiveFuel(10);
 }
