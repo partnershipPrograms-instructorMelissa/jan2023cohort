@@ -3,3 +3,13 @@
 /Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/RideMaker.AssemblyInfoInputs.cache
 /Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/RideMaker.AssemblyInfo.cs
 /Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/RideMaker.csproj.CoreCompileInputs.cache
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/bin/Debug/net6.0/RideMaker
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/bin/Debug/net6.0/RideMaker.deps.json
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/bin/Debug/net6.0/RideMaker.runtimeconfig.json
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/bin/Debug/net6.0/RideMaker.dll
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/bin/Debug/net6.0/RideMaker.pdb
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/RideMaker.dll
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/refint/RideMaker.dll
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/RideMaker.pdb
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/RideMaker.genruntimeconfig.cache
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/RideMaker/obj/Debug/net6.0/ref/RideMaker.dll
