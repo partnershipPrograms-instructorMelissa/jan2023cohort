@@ -44,14 +44,16 @@ class Player : Enemy, RestartGame
         }
         else
         {
+            Console.WriteLine($"Gameover! Your current health is {this.Health} which is too low to fight! {Target.EnemyName} won! ");
+
             RePlay();
         }
         return Target.Health;
     }
 
-    public void RePlay()
+    public override void RePlay()
     {
-        Console.WriteLine($"Gameover! Your current health is {this.Health} which is too low to fight! {EnemyName} won! Would you like to play again? Enter (yes) to start or (no) to end the game!");
+        Console.WriteLine($"Would you like to play again? Enter (yes) to start or (no) to end the game!");
        
         string inputLine = Console.ReadLine();
         if(inputLine == "yes")
@@ -65,7 +67,7 @@ class Player : Enemy, RestartGame
     }
     public Player() : base("Susan", "punch", 15)
     {
-        Name = Name;
+        Name = "Harry Potter";
         Health = 100;
         AttackList = new List<Attack>()
         {

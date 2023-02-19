@@ -45,7 +45,7 @@ class Enemy : Attack, RestartGame
         return Target.Health;
     }
 
-    public void RePlay()
+    public virtual void RePlay()
     {
         Console.WriteLine($"Would you like to play again? Enter (yes) to start or (no) to end the game!");
 
