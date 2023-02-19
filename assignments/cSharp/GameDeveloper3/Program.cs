@@ -1,4 +1,4 @@
-﻿Enemy Player1 = new Enemy("Bandit", "throw", 15);
+﻿Enemy player1 = new Enemy("Bandit", "throw", 15);
 Attack Player2 = new Attack("Punch", 20);
 // Console.WriteLine(Player1._Health);
 
@@ -10,6 +10,7 @@ Melee attack2 = new Melee("Saul","tackle", 20);
 Melee Kicker = new Melee("Paul", "kick", 25);
 
 Melee player3 = new Melee("Sam", "fireball", 25);
+Melee player6 = new Melee("Bob", "fireball", 25);
 
 // player3.AttackList.Add(attack);
 // player3.AttackList.Add(attack1);
@@ -30,7 +31,7 @@ Magic player5 = new Magic("Sarah", "fireball", 25);
 // Kicker.PerformAttack(player4, attack);
 // player4.PerformAttack(player3, attack2);
 // player3.RageMethod(player5);
-// player4.DashMethod();
+player4.DashMethod();
 // player4.PerformAttack(player3, attack1);
 // player5.PerformAttack(player3, attack);
 // player5.HealMethod(player4);
@@ -40,7 +41,25 @@ Player newPlayer = new Player();
 
 // newPlayer.startGame();
 
-newPlayer.EnemyChosen();
+// newPlayer.EnemyChosen();
+
+// newPlayer.PlayGame(player1, attack2);
+// newPlayer.PlayGame(player1, attack2);
+// newPlayer.PlayGame(player1, attack2);
+// newPlayer.PlayGame(player1, attack2);
+player1.PlayGame(newPlayer, attack1);
+// newPlayer.PlayGame(player1, attack2);
+// player1.PlayGame(newPlayer, attack1);
+// newPlayer.PlayGame(player1, attack2);
+// player1.PlayGame(newPlayer, attack1);
+// newPlayer.PlayGame(player1, attack2);
+// player1.PlayGame(newPlayer, attack1);
+// newPlayer.PlayGame(player1, attack2);
+// player1.PlayGame(newPlayer, attack1);
+// newPlayer.PlayGame(player1, attack2);
+// player1.PlayGame(newPlayer, attack1);
+
+
 
 
 

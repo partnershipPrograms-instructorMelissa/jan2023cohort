@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/GameDeveloper2.csproj",
-      "projectName": "GameDeveloper2",
-      "projectPath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/GameDeveloper2.csproj",
+      "projectUniqueName": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/GameDeveloper3.csproj",
+      "projectName": "GameDeveloper3",
+      "projectPath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/GameDeveloper3.csproj",
       "packagesPath": "/Users/markebtaligon/.nuget/packages/",
       "outputPath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/obj/",
       "projectStyle": "PackageReference",

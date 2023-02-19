@@ -1,0 +1,15 @@
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/bin/Debug/net6.0/GameDeveloper3
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/bin/Debug/net6.0/GameDeveloper3.deps.json
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/bin/Debug/net6.0/GameDeveloper3.runtimeconfig.json
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/bin/Debug/net6.0/GameDeveloper3.dll
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/bin/Debug/net6.0/GameDeveloper3.pdb
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/obj/Debug/net6.0/GameDeveloper3.csproj.AssemblyReference.cache
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/obj/Debug/net6.0/GameDeveloper3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/obj/Debug/net6.0/GameDeveloper3.AssemblyInfoInputs.cache
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/obj/Debug/net6.0/GameDeveloper3.AssemblyInfo.cs
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/obj/Debug/net6.0/GameDeveloper3.csproj.CoreCompileInputs.cache
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/obj/Debug/net6.0/GameDeveloper3.dll
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/obj/Debug/net6.0/refint/GameDeveloper3.dll
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/obj/Debug/net6.0/GameDeveloper3.pdb
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/obj/Debug/net6.0/GameDeveloper3.genruntimeconfig.cache
+/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/GameDeveloper3/obj/Debug/net6.0/ref/GameDeveloper3.dll

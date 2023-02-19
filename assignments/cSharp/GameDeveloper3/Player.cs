@@ -1,13 +1,13 @@
-class Player : Enemy
+class Player : Enemy, RestartGame
 {
     public string Name;
     public List<Melee> EnemyList;
-    public string startGame()
+    public string StartGame()
     {
         Console.WriteLine("Welcome! Please enter your player name: ");
         this.Name = Console.ReadLine();
         Console.WriteLine($"Your player name is {this.Name}");
-        return this.Name;  
+        return this.Name;
     }
     public Melee RandomEnemy()
     {
@@ -27,6 +27,40 @@ class Player : Enemy
         rage.Health -= rage.DamageAmount;
 
         Console.WriteLine($"{EnemyName} attacks {rage.EnemyName}, dealing {rage.DamageAmount} damage {rage.AttackName} and reducing {rage.EnemyName}'s health to {rage.Health}!!");
+    }
+    public override void PerformAttack(Enemy Target, Attack ChosenAttack)
+    {
+        base.PerformAttack(Target, ChosenAttack);
+
+        // Console.WriteLine($"{EnemyName} attacks {Target.EnemyName}, dealing {ChosenAttack.DamageAmount} damage {ChosenAttack.AttackName} and reducing {Target.EnemyName}'s health to {Target.Health}!!");
+    }
+
+    public override int PlayGame(Enemy Target, Attack ChosenAttack)
+    {
+        if (this.Health != 0)
+        {
+            PerformAttack(Target, ChosenAttack);
+        }
+        else
+        {
+            RePlay();
+        }
+        return Target.Health;
+    }
+
+    public void RePlay()
+    {
+        Console.WriteLine($"Gameover! Your current health is {this.Health} which is too low to fight! {EnemyName} won! Would you like to play again? Enter (yes) to start or (no) to end the game!");
+       
+        string inputLine = Console.ReadLine();
+        if(inputLine == "yes")
+        {
+            StartGame();
+        }
+        else if(inputLine == "no")
+        {
+            Console.WriteLine("Thanks for playing!");    
+        }       
     }
     public Player() : base("Susan", "punch", 15)
     {
