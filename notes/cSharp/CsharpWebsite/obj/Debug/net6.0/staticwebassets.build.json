@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "TAIZtrKuRCJgpzl6SdodhHXBjY4OEXCDaqQWyPcJiSo=",
+  "Source": "cSharpWebsite",
+  "BasePath": "_content/cSharpWebsite",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
