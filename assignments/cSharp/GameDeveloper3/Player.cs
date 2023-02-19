@@ -7,6 +7,7 @@ class Player : Enemy, RestartGame
         Console.WriteLine("Welcome! Please enter your player name: ");
         this.Name = Console.ReadLine();
         Console.WriteLine($"Your player name is {this.Name}");
+        this.Health = 100;
         return this.Name;
     }
     public Melee RandomEnemy()

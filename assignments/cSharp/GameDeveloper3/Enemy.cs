@@ -27,6 +27,7 @@ class Enemy : Attack, RestartGame
         Console.WriteLine("Welcome! Please enter your player name: ");
         this.EnemyName = Console.ReadLine();
         Console.WriteLine($"Your player name is {this.EnemyName}");
+        this.Health = 100;
         return this.EnemyName;
     }
     public virtual int PlayGame(Enemy Target, Attack ChosenAttack)
@@ -37,6 +38,8 @@ class Enemy : Attack, RestartGame
         }
         else
         {
+            Console.WriteLine($"Gameover! Your current health is {this.Health} which is too low to fight! {Target.EnemyName} won! ");
+            
             RePlay();
         }
         return Target.Health;
@@ -44,7 +47,7 @@ class Enemy : Attack, RestartGame
 
     public void RePlay()
     {
-        Console.WriteLine($"Gameover! Your current health is {this.Health} which is too low to fight! {EnemyName} won! Would you like to play again? Enter (yes) to start or (no) to end the game!");
+        Console.WriteLine($"Would you like to play again? Enter (yes) to start or (no) to end the game!");
 
         string inputLine = Console.ReadLine();
         if (inputLine == "yes")

@@ -43,21 +43,19 @@ Player newPlayer = new Player();
 
 // newPlayer.EnemyChosen();
 
-// newPlayer.PlayGame(player1, attack2);
-// newPlayer.PlayGame(player1, attack2);
-// newPlayer.PlayGame(player1, attack2);
-// newPlayer.PlayGame(player1, attack2);
+
+newPlayer.PlayGame(player1, attack2);
 player1.PlayGame(newPlayer, attack1);
-// newPlayer.PlayGame(player1, attack2);
-// player1.PlayGame(newPlayer, attack1);
-// newPlayer.PlayGame(player1, attack2);
-// player1.PlayGame(newPlayer, attack1);
-// newPlayer.PlayGame(player1, attack2);
-// player1.PlayGame(newPlayer, attack1);
-// newPlayer.PlayGame(player1, attack2);
-// player1.PlayGame(newPlayer, attack1);
-// newPlayer.PlayGame(player1, attack2);
-// player1.PlayGame(newPlayer, attack1);
+newPlayer.PlayGame(player1, attack2);
+player1.PlayGame(newPlayer, attack1);
+newPlayer.PlayGame(player1, attack2);
+player1.PlayGame(newPlayer, attack1);
+newPlayer.PlayGame(player1, attack2);
+player1.PlayGame(newPlayer, attack1);
+newPlayer.PlayGame(player1, attack2);
+player1.PlayGame(newPlayer, attack1);
+newPlayer.PlayGame(player1, attack2);
+player1.PlayGame(newPlayer, attack1);
 
 
 
