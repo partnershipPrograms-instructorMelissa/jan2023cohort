@@ -1,0 +1,127 @@
+* {
+  margin: auto;
+}
+.columnPreset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rowPreset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  display: flex;
+}
+body header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body header nav a {
+  padding: 10px;
+}
+body header nav hr {
+  height: 25px;
+  width: 1px;
+  background-color: black;
+}
+body img {
+  border: 2px solid black;
+}
+body main {
+  margin-top: 10px;
+}
+body main.home {
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main.home p {
+  width: 60%;
+  text-align: left;
+}
+body main.contact {
+  width: 70%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main.contact form {
+  width: 60% display: flex; flex-direction: column; justify-content: center; align-items: center;;
+}
+body main.contact form div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+body main.contact form div label {
+  width: fit-content;
+  margin: 0;
+}
+body main.contact form div input {
+  margin: 10px;
+  border: 1px solid black;
+}
+body main.contact form div textarea {
+  margin: 10px;
+  border: 1px solid black;
+}
+body main.contact button {
+  margin: 10px;
+}
+body main.projects {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+body main.projects div {
+  margin: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main.projects div img {
+  margin: 5px;
+  width: 500px;
+  height: 100px;
+}
+body main.projects div span {
+  margin: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+body main.projects div span h3 {
+  margin: 5px 0;
+}

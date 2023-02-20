@@ -1,0 +1,122 @@
+*{
+    // border: 2px dotted mediumseagreen;
+    margin: auto;
+}
+.columnPreset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rowPreset{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    width: 99%;
+    .columnPreset();
+
+    header{
+        .columnPreset();
+        width: 95%;
+        display: flex;
+
+        nav{
+            .rowPreset();
+
+            
+            a{
+                padding: 10px;
+            }
+            hr{
+                height: 25px;
+                width: 1px;
+                background-color: black;
+            }
+        }
+    }
+
+    img{
+        border: 2px solid black;
+    }
+
+    main{
+        margin-top: 10px;
+    }
+
+    main.home{
+        width: 80%;
+        text-align: center;
+        .rowPreset();
+        
+        p{
+            width: 60%;
+            text-align: left;
+        }
+    }
+
+    main.contact{
+        width: 70%;
+        text-align: left;
+        .columnPreset();
+
+        form{
+            width: 60%
+            .columnPreset();
+
+            div{
+                width: 100%;
+                .rowPreset();
+                justify-content: space-between;
+
+                label{
+                    width: fit-content;
+                    margin: 0;
+                }
+                input{
+                    margin: 10px;
+                    border: 1px solid black;
+                }
+                textarea {
+                    margin: 10px;
+                    border: 1px solid black;
+                }
+            }
+        }
+
+        button{
+            margin: 10px;
+        }
+    }
+
+    main.projects{
+        width: 80%;
+        .columnPreset();
+        border: 2px solid black;
+
+        div{
+            margin: 5px 10px;
+            .rowPreset();
+
+            img{
+                margin: 5px;
+                width: 500px;
+                height: 100px;
+            }
+
+            span{
+                margin: 10px;
+                text-align: left;
+                .columnPreset();
+                align-items: flex-start;
+
+                h3{
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+}
