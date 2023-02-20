@@ -1,0 +1,40 @@
+M - Model : all the data
+V - View : information that is needed, specific information
+C - Controller : only allow certain info to pass on
+
+View -- Request --> Controller <-- Data -- Model
+(UI) <-- Response -- (Logic)  -- New Data --> (Data)
+
+Start web project
+    dotnet new web --no-https -o ProjectName
+
+Run with: (to avoid having to restart terminal command - refresh needed on web page)
+    dotnet watch run
+
+Set to development mode before any routes (basically right after app is called)
+    if (!app.Environment.IsDevelopment())
+    {
+        app.UseExceptionHandler("/Home/Error");
+    }
+
+Shut down server 
+    ctrl + C
+
+Only one Map or else error about multiple endpoints (more than one routes for the same name)
+
+Minimum Folder Structure
+    Project/
+        bin/
+        obj/
+        Properties/
+        Controllers/
+            NameController.cs
+            ExampleController.cs
+        Views/
+            Name/
+                index.cshtml
+            Example/
+                example1.cshtml
+                example2.cshtml
+        Program.cs
+        *.cs
