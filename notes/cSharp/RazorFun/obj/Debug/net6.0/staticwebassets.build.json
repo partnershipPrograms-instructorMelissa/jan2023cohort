@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "f8gJ05xAaIriX02tLyBMudtfu77IjOQBdUDejaizAuw=",
+  "Source": "RazorFun",
+  "BasePath": "_content/RazorFun",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RazorFun/wwwroot",
+      "Source": "RazorFun",
+      "ContentRoot": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/notes/cSharp/RazorFun/wwwroot/",
+      "BasePath": "_content/RazorFun",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/notes/cSharp/RazorFun/wwwroot/css/less.css",
+      "SourceId": "RazorFun",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/notes/cSharp/RazorFun/wwwroot/",
+      "BasePath": "_content/RazorFun",
+      "RelativePath": "css/less.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/less.css"
+    }
+  ]
+}
