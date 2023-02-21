@@ -1,0 +1,20 @@
+{
+  "SerializedFilePath": "c:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week2\\day1\\FirstWebApp\\obj\\Debug\\net7.0\\project.razor.json",
+  "FilePath": "c:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week2\\day1\\FirstWebApp\\FirstWebApp.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "6.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1100
+  },
+  "RootNamespace": "FirstWebApp",
+  "Documents": [],
+  "SerializationFormat": "0.3"
+}
