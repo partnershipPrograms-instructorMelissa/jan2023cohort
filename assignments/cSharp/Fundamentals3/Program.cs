@@ -113,11 +113,11 @@ Console.WriteLine(FindKey(TestDict, "Name"));
 //	"James": 7,
 //	"Monica": 10
 // } 
-List<string> Names = new List<string> ();
-static Dictionary<string,int> GenerateDictionary(List<string> Names, List<int> Numbers)
-{
-    // Your code here
-}
+// List<string> Names = new List<string> ();
+// static Dictionary<string,int> GenerateDictionary(List<string> Names, List<int> Numbers)
+// {
+//     // Your code here
+// }
 // We've shown several examples of how to set your tests up properly, it's your turn to set it up!
 // Your test code here
 

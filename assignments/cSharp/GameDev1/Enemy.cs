@@ -16,4 +16,8 @@ class Enemy {
         return AttackList[RandomAttack];
     }
 
+    public void PerformAttack(Enemy Target, Attack ChosenAttack){
+        Console.WriteLine($"{Name} attacks {Target.Name}, dealing {ChosenAttack.DamageAmount} damage and reducing {Target.Name}'s health to {Target.Health}!!");
+    }
+
 }
