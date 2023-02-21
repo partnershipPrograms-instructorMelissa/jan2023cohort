@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-namespace <ProjectName>.Controllers;    
-    public class <ControllerName> : Controller  
+namespace TimeDisplay.Controllers;    
+    public class HomeController : Controller  
     {
         //for each route this controller is to handle:
         [HttpGet("")]
@@ -9,5 +9,3 @@ namespace <ProjectName>.Controllers;
             return View();
         }
     }
-
-// NOTES: multiple controllers can have issue of same names for functions

@@ -12,4 +12,11 @@ class MeleeFighter: Enemy {
 
         PerformAttack(enemy, attack);
     }
+
 }
+
+// List<int> temp = new List<int>();
+
+// temp.Add(5);
+
+// temp[0];

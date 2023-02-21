@@ -1,7 +1,7 @@
 public class Enemy {
     string Name;
     private int Health;
-    private List<Attack> AttackList = new List<Attack>();
+    private List<Attack> AttackList;
 
     public Enemy(string name){
         Name = name;

@@ -6,7 +6,6 @@ app.UseStaticFiles();
 app.UseRouting(); 
 app.UseAuthorization(); 
 
-// to set to development mode (error templates)
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
