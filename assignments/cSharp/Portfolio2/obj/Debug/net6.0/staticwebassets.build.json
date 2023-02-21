@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ggQemgER9PNLyGFlNk8zvyIMkHXJaVNXgz6PdPslYs0=",
+  "Hash": "9Td4dT4fe/oTFfB+uTDXzaFZGkYDQhJ6zOuRz5IJ6Aw=",
   "Source": "Portfolio2",
   "BasePath": "_content/Portfolio2",
   "Mode": "Default",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/Portfolio2/wwwroot/css/style.css",
+      "SourceId": "Portfolio2",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/Portfolio2/wwwroot/",
+      "BasePath": "_content/Portfolio2",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/style.css"
+    },
+    {
+      "Identity": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/Portfolio2/wwwroot/css/style.less",
+      "SourceId": "Portfolio2",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/Portfolio2/wwwroot/",
+      "BasePath": "_content/Portfolio2",
+      "RelativePath": "css/style.less",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/style.less"
+    },
     {
       "Identity": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/Portfolio2/wwwroot/images/.DS_Store",
       "SourceId": "Portfolio2",
