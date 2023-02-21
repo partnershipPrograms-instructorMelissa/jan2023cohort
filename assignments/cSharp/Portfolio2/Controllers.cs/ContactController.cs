@@ -7,6 +7,6 @@ public class ContactController : Controller
     [Route("/contact")]
     public ViewResult Contact()
     {
-        return View("Contact");
+        return View();
     }
 }

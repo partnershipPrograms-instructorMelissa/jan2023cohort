@@ -7,6 +7,6 @@ public class ProjectController : Controller
     [Route("/projects")]
     public ViewResult Project()
     {
-        return View("Project");
+        return View();
     }
 }

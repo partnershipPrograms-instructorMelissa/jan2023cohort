@@ -1,0 +1,36 @@
+{
+  "SerializedFilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/lectures/cSharp/week2/day1/GitOctoCats/obj/Debug/net7.0/project.razor.json",
+  "FilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/lectures/cSharp/week2/day1/GitOctoCats/GitOctoCats.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "6.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1100
+  },
+  "RootNamespace": "GitOctoCats",
+  "Documents": [
+    {
+      "FilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/lectures/cSharp/week2/day1/GitOctoCats/Views/OctoCat/octocat.cshtml",
+      "TargetPath": "Views\\OctoCat\\octocat.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/lectures/cSharp/week2/day1/GitOctoCats/Views/Home/index.cshtml",
+      "TargetPath": "Views\\Home\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/lectures/cSharp/week2/day1/GitOctoCats/Views/OctoCat/octocats.cshtml",
+      "TargetPath": "Views\\OctoCat\\octocats.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.3"
+}

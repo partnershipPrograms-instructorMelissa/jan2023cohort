@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/Portfolio1/obj/Debug/net6.0/project.razor.json",
-  "FilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/Portfolio1/Portfolio1.csproj",
+  "SerializedFilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/notes/cSharp/RazorFun/obj/Debug/net6.0/project.razor.json",
+  "FilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/notes/cSharp/RazorFun/RazorFun.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -18371,7 +18371,13 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "Portfolio1",
-  "Documents": [],
+  "RootNamespace": "RazorFun",
+  "Documents": [
+    {
+      "FilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/notes/cSharp/RazorFun/Views/Food/Index.cshtml",
+      "TargetPath": "Views\\Food\\Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.3"
 }

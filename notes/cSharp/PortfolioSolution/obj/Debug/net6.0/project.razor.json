@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/Portfolio1/obj/Debug/net6.0/project.razor.json",
-  "FilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/Portfolio1/Portfolio1.csproj",
+  "SerializedFilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/notes/cSharp/PortfolioSolution/obj/Debug/net6.0/project.razor.json",
+  "FilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/notes/cSharp/PortfolioSolution/PortfolioSolution.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -18371,7 +18371,23 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "Portfolio1",
-  "Documents": [],
+  "RootNamespace": "PortfolioSolution",
+  "Documents": [
+    {
+      "FilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/notes/cSharp/PortfolioSolution/Views/Home/Contact.cshtml",
+      "TargetPath": "Views\\Home\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/notes/cSharp/PortfolioSolution/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/notes/cSharp/PortfolioSolution/Views/Home/Projects.cshtml",
+      "TargetPath": "Views\\Home\\Projects.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.3"
 }
