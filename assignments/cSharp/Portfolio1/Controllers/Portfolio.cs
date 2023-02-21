@@ -18,6 +18,6 @@ namespace Portfolio.Controllers;
         [HttpGet]
         [Route("/contacts")]
         public string contacts(){
-            return "This is my contact!";
+            return "hello";
         }
     }
