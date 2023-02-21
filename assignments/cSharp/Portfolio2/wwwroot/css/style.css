@@ -73,3 +73,6 @@ body form section {
 body .message {
   display: flex;
 }
+body .send {
+  margin-left: 19rem;
+}
