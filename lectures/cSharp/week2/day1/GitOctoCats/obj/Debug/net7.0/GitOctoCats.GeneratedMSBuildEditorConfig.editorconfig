@@ -8,6 +8,7 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GitOctoCats
 build_property.RootNamespace = GitOctoCats
+<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\Emily\Desktop\code-dojo\jan2023cohort\lectures\cSharp\week2\day1\GitOctoCats\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
@@ -25,4 +26,23 @@ build_metadata.AdditionalFiles.CssScope =
 
 [c:/Users/Emily/Desktop/code-dojo/jan2023cohort/lectures/cSharp/week2/day1/GitOctoCats/Views/OctoCat/octocats.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2N0b0NhdFxvY3RvY2F0cy5jc2h0bWw=
+=======
+build_property.ProjectDir = /Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day1/GitOctoCats/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day1/GitOctoCats
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day1/GitOctoCats/Views/Home/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day1/GitOctoCats/Views/OctoCat/octocat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2N0b0NhdC9vY3RvY2F0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day1/GitOctoCats/Views/OctoCat/octocats.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2N0b0NhdC9vY3RvY2F0cy5jc2h0bWw=
+>>>>>>> 9b1a8c58c0a09c360b00c44521426e8c3b0a1a39
 build_metadata.AdditionalFiles.CssScope = 

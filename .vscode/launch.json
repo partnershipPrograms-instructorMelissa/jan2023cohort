@@ -10,9 +10,9 @@
       "request": "launch",
       "preLaunchTask": "build",
       // If you have changed target frameworks, make sure to update the program path.
-      "program": "${workspaceFolder}/lectures/cSharp/week1/day1/DayOneCSharp/bin/Debug/net7.0/DayOneCSharp.dll",
+      "program": "${workspaceFolder}/assignments/cSharp/day1/FundamentalsTwo/bin/Debug/net6.0/2Fundamental.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/lectures/cSharp/week1/day1/DayOneCSharp",
+      "cwd": "${workspaceFolder}/assignments/cSharp/day1/FundamentalsTwo",
       // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
       "console": "internalConsole",
       "stopAtEntry": false

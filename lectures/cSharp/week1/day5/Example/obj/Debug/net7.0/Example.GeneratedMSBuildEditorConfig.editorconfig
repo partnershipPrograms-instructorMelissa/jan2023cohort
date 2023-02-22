@@ -7,4 +7,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Example
+<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\Emily\Desktop\code-dojo\jan2023cohort\lectures\cSharp\week1\day5\Example\
+=======
+build_property.ProjectDir = /Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day5/Example/
+>>>>>>> 9b1a8c58c0a09c360b00c44521426e8c3b0a1a39
