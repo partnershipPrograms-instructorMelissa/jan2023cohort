@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Time Display</title>
+</head>
+<body>
+    <h1>The current time and date:</h1>
+    @{
+        DateTime now = DateTime.Now;
+        string[] months = { 
+            "Jan", "Feb", "Mar", "Apr", "May",
+            "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"
+            };
+        {
+            <div>
+                <h1>@months[now.Month - 1] <span>@now.Day,</span> <span>@now.Year</span></h1>
+                <h1><span>@now.ToString("t")</span></h1>
+            </div>
+        }
+    }
+</body>
+</html>
