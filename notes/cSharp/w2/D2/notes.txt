@@ -1,0 +1,2 @@
+New console command!! Presets lots o things
+    dotnet new mvc --no-https -o ProjectName
