@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="~/css/style.css">
 </head>
 <body>
     <main>
         <form action="result" method="post">
             <div>
                 <label for="name">Name:</label>
-                <input type="text">
+                <input type="text" name="name">
             </div>
             <div>
                 <label for="location">Dojo Location:</label>
@@ -29,7 +30,7 @@
             </div>
             <div class="comment">
                 <label for="comment">Comment:</label>
-                <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+                <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
             </div>
             <button type="submit">Submit</button>
         </form>
