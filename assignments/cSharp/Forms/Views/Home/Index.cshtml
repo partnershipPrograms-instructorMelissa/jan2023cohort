@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+        <form action="result" method="post">
+        <div>
+            <label class="move" for="name">Your Name:</label>
+            <input class="res" type="text" name="name" id="">
+        </div>
+        <div>
+            <label class="move" for="location">Dojo Location:</label>
+            <select class="res1" name="location" id="">
+            <option value="Detroit">Detroit</option>
+            <option value="Texas">Texas</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Remote">Remote</option>
+        </select>
+        </div>
+       <div>
+        <label class="move" for="language">Favorite Language:</label>
+        <select class="res2" name="language" id="">
+            <option value="C#">C#</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+        </select>
+      </div>
+      <div>
+        <h3>Comment (optional):</h3>
+        <textarea name="comment" id="" cols="55" rows="7"></textarea>
+      </div>
+       <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

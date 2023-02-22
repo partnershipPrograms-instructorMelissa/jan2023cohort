@@ -1,0 +1,18 @@
+body header h1 {
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+body .para {
+  width: 50%;
+  margin: 0 auto;
+}
+body .numbers {
+  border: 2px solid black;
+  width: 20%;
+}
+body .name {
+  text-align: center;
+  font-size: 45px;
+  padding-top: 75px;
+}

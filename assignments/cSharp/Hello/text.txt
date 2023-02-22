@@ -1,0 +1,16 @@
+$ dotnet --version
+6.0.405
+mkdir Hello
+cd Hello
+dotnet new console
+dotnet new console
+The template "Console App" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on /Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/Hello/Hello.csproj...
+  Determining projects to restore...
+  Restored /Users/markebtaligon/Desktop/CodingDojo/jan2023cohort/assignments/cSharp/Hello/Hello.csproj (in 120 ms).
+Restore succeeded.
+
+$ dotnet run
+Hello, World!
