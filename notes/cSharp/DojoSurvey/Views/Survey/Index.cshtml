@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Survey";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Survey Here!</h1>
+    <form action="/survey" method="post">
+        <section>
+            <label for="Name">Your Name</label>
+            <input type="text" name="Name">
+        </section>
+        <section>
+            <label for="Location">Chose your House</label>
+            <select name="Location" id="">
+                <option value="Detroit">Detroit</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Texas">Texas</option>
+                <option value="Paris">Paris</option>
+            </select>
+        </section>
+        <section>
+            <label for="Language">Chose your House</label>
+            <select name="Language" id="">
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+            </select>
+        </section>
+        <section>
+           <h3>Comment (optional):</h3>
+            <textarea name="Comment" id="" cols="55" rows="7"></textarea>
+        </section>
+        <button type="submit">Submit</button>
+    </form>    
+</div>
