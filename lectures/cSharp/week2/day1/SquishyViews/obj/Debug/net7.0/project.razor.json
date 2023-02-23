@@ -17,11 +17,6 @@
   "RootNamespace": "SquishyViews",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week2\\day1\\SquishyViews\\Views\\Squishy\\oneSquishy.cshtml",
-      "TargetPath": "Views\\Squishy\\oneSquishy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week2\\day1\\SquishyViews\\Views\\Squishy\\squishy.cshtml",
       "TargetPath": "Views\\Squishy\\squishy.cshtml",
       "FileKind": "mvc"
@@ -29,6 +24,11 @@
     {
       "FilePath": "c:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week2\\day1\\SquishyViews\\Views\\Home\\index.cshtml",
       "TargetPath": "Views\\Home\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week2\\day1\\SquishyViews\\Views\\Squishy\\oneSquishy.cshtml",
+      "TargetPath": "Views\\Squishy\\oneSquishy.cshtml",
       "FileKind": "mvc"
     }
   ],
