@@ -1,17 +1,20 @@
 @{
     ViewData["Title"] = "Survey";
 }
-
+@model Survey
 <div class="text-center">
     <h1 class="display-4">Survey Here!</h1>
     <form action="/survey" method="post">
         <section>
-            <label for="Name">Your Name</label>
-            <input type="text" name="Name">
+            <label asp-for="Name"></label>    
+            <input asp-for="Name">
+            <span asp-validation-for="Name"></span>
         </section>
         <section>
-            <label for="Location">Chose your House</label>
+            <label asp-for="Location"></label> 
+            <span asp-validation-for="Location"></span>
             <select name="Location" id="">
+                <option value=""></option>
                 <option value="Detroit">Detroit</option>
                 <option value="Los Angeles">Los Angeles</option>
                 <option value="Texas">Texas</option>
@@ -19,8 +22,10 @@
             </select>
         </section>
         <section>
-            <label for="Language">Chose your House</label>
+            <label asp-for="Language"></label> 
+            <span asp-validation-for="Language"></span>
             <select name="Language" id="">
+                <option value=""></option>
                 <option value="C#">C#</option>
                 <option value="Java">Java</option>
                 <option value="JavaScript">JavaScript</option>
