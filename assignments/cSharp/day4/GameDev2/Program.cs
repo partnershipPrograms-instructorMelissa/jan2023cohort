@@ -1,13 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Hello, World!");
 
-Enemy Scarecrow = new Enemy("Scarecrow");
-Attack Gas = new Attack("Fear Gas", 25);
-Attack Needle = new Attack("Poison Shot", 15);
-Attack Scythe = new Attack("Scythe Swipe", 10);
+Melee Penguin = new Melee("The Penguin");
+Ranged Rag = new Ranged("Ra's al Ghul");
+MagicCaster Poison = new MagicCaster("Poison Ivy");
 
-Scarecrow.NewAttack(Gas);
-Scarecrow.NewAttack(Needle);
-Scarecrow.NewAttack(Scythe);
-
-Scarecrow.RandomAttack();
+// Penguin.PerformAttack(Rag, Penguin.AttackList[1]);
+// Penguin.PerformAttack(Rag, Penguin.AttackList[2]);
+Penguin.Rage(Poison);
+// Rag.PerformAttack(Penguin, Rag.AttackList[0]);
+// Rag.Dash();
+// Rag.PerformAttack(Penguin, Rag.AttackList[0]);
+// Poison.PerformAttack(Penguin, Poison.AttackList[0]);
+// Poison.Heal(Rag);
+Poison.Heal(Poison);

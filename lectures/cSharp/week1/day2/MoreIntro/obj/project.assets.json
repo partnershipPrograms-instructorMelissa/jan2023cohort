@@ -8,23 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\irish\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Emily\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\irish\\Documents\\coding\\work\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\MoreIntro.csproj",
+      "projectUniqueName": "C:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\MoreIntro.csproj",
       "projectName": "MoreIntro",
-      "projectPath": "C:\\Users\\irish\\Documents\\coding\\work\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\MoreIntro.csproj",
-      "packagesPath": "C:\\Users\\irish\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\irish\\Documents\\coding\\work\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\obj\\",
+      "projectPath": "C:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\MoreIntro.csproj",
+      "packagesPath": "C:\\Users\\Emily\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\irish\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Emily\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -63,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
       }
     }
   }
