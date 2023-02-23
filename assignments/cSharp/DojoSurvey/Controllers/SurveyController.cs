@@ -18,7 +18,7 @@ public class SurveyController : Controller
         {
             // Do somethng! Maybe insert into a database or log data to the console  
             // Then we will redirect to a new page        
-            return View("Result", yourSurvey);
+            return RedirectToAction("Result", yourSurvey);
         }
         else
         {
@@ -28,9 +28,9 @@ public class SurveyController : Controller
         }
     }
 
-    // [HttpPost("survey")]
-    // public IActionResult Submission(Survey yourSurvey)
-    // {
-    //     return View("Result", yourSurvey);
-    // }
+    [HttpPost("result")]
+    public IActionResult Result(Survey yourSurvey)
+    {
+        return View(yourSurvey);
+    }
 }
