@@ -14,10 +14,4 @@ public class UserController : Controller
 
         return View(user);
     }
-    // public RedirectToActionResult User(){
-    //     return RedirectToAction("SingleUser", "user");
-    // }
-    // public ViewResult User(){
-    //     return View();
-    // }
 }
