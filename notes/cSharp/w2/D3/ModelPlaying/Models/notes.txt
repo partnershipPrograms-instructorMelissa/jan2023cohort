@@ -1,0 +1,5 @@
+to avoid having to null out multiple required fields (DRY)
+    #pragma warning disable CS8618
+
+to make an optional type, add ? after datatype
+    public string? location { get; set; }

@@ -5,25 +5,24 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NewBasicWeb
 build_property.RootNamespace = NewBasicWeb
-build_property.ProjectDir = /Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day2/NewBasicWeb/
-build_property.RazorLangVersion = 7.0
+build_property.ProjectDir = c:\Users\NightKing\Documents\CodingDojo\jan2023cohort\lectures\cSharp\week2\day2\NewBasicWeb\
+build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day2/NewBasicWeb
+build_property.MSBuildProjectDirectory = c:\Users\NightKing\Documents\CodingDojo\jan2023cohort\lectures\cSharp\week2\day2\NewBasicWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day2/NewBasicWeb/Views/Form/result.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9ybS9yZXN1bHQuY3NodG1s
+[c:/Users/NightKing/Documents/CodingDojo/jan2023cohort/lectures/cSharp/week2/day2/NewBasicWeb/Views/Form/result.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxyZXN1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day2/NewBasicWeb/Views/Root/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vdC9pbmRleC5jc2h0bWw=
+[c:/Users/NightKing/Documents/CodingDojo/jan2023cohort/lectures/cSharp/week2/day2/NewBasicWeb/Views/Root/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vdFxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day2/NewBasicWeb/Views/Root/realRoute.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vdC9yZWFsUm91dGUuY3NodG1s
+[c:/Users/NightKing/Documents/CodingDojo/jan2023cohort/lectures/cSharp/week2/day2/NewBasicWeb/Views/Root/realRoute.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vdFxyZWFsUm91dGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

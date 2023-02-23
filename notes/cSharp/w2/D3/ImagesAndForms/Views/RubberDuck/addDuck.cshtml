@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Rubber Ducks";
+}
+
+<div class="text-center">
+    <form action="/rubber_duck/create" method="post">
+        <section>
+            <label for="Name">Name:</label>
+            <input type="text" name="Name">
+        </section>
+        <section>
+            <label for="Img">Image:</label>
+            <input type="text" name="Img">
+        </section>
+        <button type="submit">Create</button>
+    </form>
+</div>

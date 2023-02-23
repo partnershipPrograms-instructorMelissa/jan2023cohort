@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Words"; // title for tab
+}
+@model string[];
+
+<div class="text-center">
+    @{
+        @* for(int i=0; i<Model.length; i++){
+            <h5>@Model[i]</h5>
+        } *@
+
+        foreach(string word in Model){
+            <h3>@word</h3>
+        }
+    }
+</div>
