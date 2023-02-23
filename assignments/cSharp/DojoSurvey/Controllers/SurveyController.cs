@@ -18,7 +18,7 @@ public class SurveyController : Controller
         {
             // Do somethng! Maybe insert into a database or log data to the console  
             // Then we will redirect to a new page        
-            return RedirectToAction("Result", yourSurvey);
+            return View("Result", yourSurvey);
         }
         else
         {
