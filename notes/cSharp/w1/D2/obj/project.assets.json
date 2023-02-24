@@ -59,7 +59,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD:notes/cSharp/w1/D2/obj/project.assets.json
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
+>>>>>>> cd42990dbecdd502a7628bb65eadf2c144963fb0:lectures/cSharp/week1/day3/Extras/obj/project.assets.json
       }
     }
   }

@@ -8,7 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NewBasicWeb
 build_property.RootNamespace = NewBasicWeb
+<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\NightKing\Documents\CodingDojo\jan2023cohort\lectures\cSharp\week2\day2\NewBasicWeb\
+=======
+build_property.ProjectDir = /Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day2/NewBasicWeb/
+>>>>>>> cd42990dbecdd502a7628bb65eadf2c144963fb0
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 

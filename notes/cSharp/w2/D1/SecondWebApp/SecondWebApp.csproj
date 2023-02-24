@@ -1,3 +1,4 @@
+<<<<<<< HEAD:notes/cSharp/w2/D1/SecondWebApp/SecondWebApp.csproj
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
@@ -7,3 +8,14 @@
   </PropertyGroup>
 
 </Project>
+=======
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>
+>>>>>>> cd42990dbecdd502a7628bb65eadf2c144963fb0:lectures/cSharp/week2/day1/SquishyViews/SquishyViews.csproj
