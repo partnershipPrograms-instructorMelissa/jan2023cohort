@@ -10,19 +10,12 @@
   justify-content: center;
   align-items: center;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-body main {
+main {
   width: 50%;
   margin: 20px;
   border: 2px solid black;
 }
-body main form {
+main form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,7 +23,7 @@ body main form {
   flex-wrap: wrap;
   padding: 20px 0;
 }
-body main form div {
+main form div {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -38,17 +31,17 @@ body main form div {
   align-items: center;
   justify-content: space-between;
 }
-body main form div label {
+main form div label {
   padding: 5px 10px;
 }
-body main form button {
+main form button {
   margin: 20px 0;
 }
-body main h2 {
+main h2 {
   text-decoration: underline;
   padding: 0 10px;
 }
-body main div {
+main div {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -57,6 +50,6 @@ body main div {
   margin: 0 40px;
   justify-content: space-between;
 }
-body main div h3 {
+main div h3 {
   margin: 5px 0;
 }

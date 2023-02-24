@@ -2,19 +2,18 @@ using Microsoft.AspNetCore.Mvc;
 namespace DojoSurvey.Controllers;    
     public class FormController : Controller  
     {
-        //for each route this controller is to handle:
-        [HttpGet("/result")]
-        public ViewResult Result(){
-            return View("result");
+        [HttpGet("")]
+        public ViewResult Index(){
+            return View();
         }
 
-        [HttpPost("/result")]
+        [HttpPost("create")]
         public IActionResult Result(Form form){
-            return View(form);
+            return View("ViewResult", form);
         }
 
-        [HttpPost("/")]
-        public RedirectToActionResult Method(){
-            return RedirectToAction("");
+        [HttpGet("viewResult")]
+        public ViewResult ViewResult(){
+            return View();
         }
     }

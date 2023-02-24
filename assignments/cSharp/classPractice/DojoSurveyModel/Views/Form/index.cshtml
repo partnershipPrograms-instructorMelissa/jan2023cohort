@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Form";
+}
+
+@model Form
+<form class="text-center" action="/create" method="post">
+    <div>
+        <label asp-for="Name">Name:</label>
+        <input asp-for="Name">
+    </div>
+    <div>
+        <label asp-for="Location">Dojo Location:</label>
+        <select asp-for="Location" id="">
+            <option value="San Jose">San Jose</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Dallas">Dallas</option>
+        </select>
+    </div>
+    <div>
+        <label asp-for="Language">Favorite Language:</label>
+        <select asp-for="Language" id="">
+            <option value="C#">C#</option>
+            <option value="JS">JS</option>
+            <option value="HTML">HTML</option>
+        </select>
+    </div>
+    <div>
+        <label asp-for="Comment">Comment:</label>
+        <textarea asp-for="Comment" id="" cols="20" rows="5"></textarea>
+    </div>
+    <button type="submit">Submit</button>
+</form>
