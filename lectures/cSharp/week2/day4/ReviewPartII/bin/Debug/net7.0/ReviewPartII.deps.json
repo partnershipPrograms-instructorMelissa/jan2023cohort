@@ -1,31 +1,20 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v6.0",
+    "name": ".NETCoreApp,Version=v7.0",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-<<<<<<<< HEAD:assignments/cSharp/Fundamentals1/bin/Debug/net6.0/Fundamentals1.deps.json
-    ".NETCoreApp,Version=v6.0": {
-      "Fundamentals1/1.0.0": {
-        "runtime": {
-          "Fundamentals1.dll": {}
-========
     ".NETCoreApp,Version=v7.0": {
       "ReviewPartII/1.0.0": {
         "runtime": {
           "ReviewPartII.dll": {}
->>>>>>>> cd42990dbecdd502a7628bb65eadf2c144963fb0:lectures/cSharp/week2/day4/ReviewPartII/bin/Debug/net7.0/ReviewPartII.deps.json
         }
       }
     }
   },
   "libraries": {
-<<<<<<<< HEAD:assignments/cSharp/Fundamentals1/bin/Debug/net6.0/Fundamentals1.deps.json
-    "Fundamentals1/1.0.0": {
-========
     "ReviewPartII/1.0.0": {
->>>>>>>> cd42990dbecdd502a7628bb65eadf2c144963fb0:lectures/cSharp/week2/day4/ReviewPartII/bin/Debug/net7.0/ReviewPartII.deps.json
       "type": "project",
       "serviceable": false,
       "sha512": ""
