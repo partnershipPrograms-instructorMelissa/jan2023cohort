@@ -1,0 +1,60 @@
+.rowPreset{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.columnPreset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    .columnPreset();
+    width: 100%;
+
+    main{
+        width: 50%;
+        margin: 20px;
+        border: 2px solid black;
+
+        form{
+            .columnPreset();
+            
+            flex-wrap: wrap;
+            padding: 20px 0;
+
+            div{
+                width: 80%;
+                .rowPreset();
+                justify-content: space-between;
+
+                label{
+                    padding: 5px 10px;
+                }
+                
+            }
+            button{
+                margin: 20px 0;
+            }
+        }
+
+        h2{
+            text-decoration: underline;
+            padding: 0 10px;
+        }
+        div{
+            .rowPreset();
+            width: 80%;
+            margin: 0 40px;
+            justify-content: space-between;
+
+            h3{
+                margin: 5px 0;
+            }
+        }
+    }
+}

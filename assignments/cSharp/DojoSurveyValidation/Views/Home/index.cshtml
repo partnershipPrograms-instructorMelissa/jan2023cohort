@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    <main>
+        @model Form
+        <form action="form/result" method="post">
+            <div>
+                <label asp-for="Name"></label>
+                <input asp-for="Name">
+                <span asp-validation-for="Name"></span>
+            </div>
+            <div>
+                <label asp-for="Location"></label>
+                <select name="location" id="location">
+                    <option value="San Jose">San Jose</option>
+                    <option value="Norfolk">Norfolk</option>
+                </select>
+                <span asp-validation-for="Location"></span>
+            </div>
+            <div>
+                <label asp-for="Language"></label>
+                <select name="language" id="language">
+                    <option value="C#">C#</option>
+                    <option value="JS">JS</option>
+                </select>
+                <span asp-validation-for="Language"></span>
+            </div>
+            <div class="comment">
+                <label asp-for="Comment"></label>
+                <textarea asp-for="Comment" id="comment" cols="20" rows="5"></textarea>
+                <span asp-validation-for="Comment"></span>
+            </div>
+            <button type="submit" >Submit</button>
+        </form>
+    </main>
+</body>
+</html>
