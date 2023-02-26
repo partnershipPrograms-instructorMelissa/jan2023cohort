@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "View Date and Time";
+}
+
+@model TimeDate
+<div class="text-center">
+    <h2>@Model.date_time.ToString("MMMM dd, yyyy")</h2>
+    <h3>@Model.date_time.ToString("T")</h3>
+</div>
+<form action="/">
+    <button href="/">Enter Another Date</button>
+</form>

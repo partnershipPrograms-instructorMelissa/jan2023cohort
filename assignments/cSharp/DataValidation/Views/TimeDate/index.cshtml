@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Insert Time";
+}
+
+<form action="checkTimeDate" class="text-center">
+    @model TimeDate
+    <span asp-validation-for="date_time"></span>
+    <br>
+    <label asp-for="date_time">Input a Date and Time:</label>
+    <input type="datetime-local" asp-for="date_time">
+    <button>Check Date</button>
+</form>
