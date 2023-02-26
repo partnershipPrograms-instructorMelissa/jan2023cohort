@@ -1,20 +1,23 @@
-var builder = WebApplication.CreateBuilder(args); 
-builder.Services.AddControllersWithViews(); 
-var app = builder.Build(); 
+var builder = WebApplication.CreateBuilder(args);
 
-app.UseStaticFiles(); 
-app.UseRouting(); 
-app.UseAuthorization(); 
+// Add services to the container.
+builder.Services.AddControllersWithViews();
 
-// to set to development mode (error templates)
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}" 
-);
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.Run(); 
+app.Run();

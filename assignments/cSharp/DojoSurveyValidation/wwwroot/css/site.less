@@ -1,0 +1,89 @@
+.rowPreset{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.columnPreset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+html {
+    font-size: 16px;
+}
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+
+main{
+    width: 80%;
+    margin: 20px;
+    border: 2px solid black;
+
+    form{
+        width: 100%;
+        .columnPreset();
+        padding: 20px 0;
+
+        div{
+            width: 80%;
+            .rowPreset();
+            justify-content: space-between;
+
+            label{
+                padding: 10px;
+            }            
+        }
+        button{
+            margin: 20px 0;
+        }
+    }
+
+    h1{
+        margin: 10px;
+    }
+    #results{
+        .columnPreset();       
+        flex-wrap: wrap;
+        width: 100%;
+
+        div{
+            .rowPreset();
+            width: 80%;
+            justify-content: space-between;
+
+            h2{
+                margin: 5px 0;
+            }
+            h3{
+                max-width: 60%;
+                margin: 5px 0;
+            }
+
+        }
+        button{
+            margin: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
