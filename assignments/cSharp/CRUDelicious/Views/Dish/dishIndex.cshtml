@@ -2,17 +2,21 @@
     ViewData["Title"] = "Dishes";
 }
 
-<h1 class="display-4">Welcome to CRUDelicious</h1>
-<nav>
-    <a href="/">Home</a>
-    <hr>
-    <a href="dishes/new">Add a Dish</a>
-</nav>
+<div class="text-center">
+    <h1 class="display-4">Welcome to CRUDelicious</h1>
+    <nav class="nav align-items-center justify-content-center">
+        <a href="/">Home</a>
+        <hr class="vr mx-2">
+        <a href="dishes/new">Add a Dish</a>
+    </nav>
+</div>
+
+@model List<Dish>
 
 <div class="text-left">
     <h4>Check out some recent dishes</h4>
     <hr>
     @foreach(Dish d in Model){
-        <h4><a href="">@d.Name</a> by @d.Chef</h4>
+        <h5><a href="dishes/@d.DishId/view">@d.Name</a> by @d.Chef</h5>
     }
 </div>
