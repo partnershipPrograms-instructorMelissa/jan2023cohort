@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Randoomly Generated";
+}
+@model string
+
+<div class="text-center">
+    <h1 class="display-4">Random Generator #@Context.Session.GetInt32("value")</h1>
+    
+    <input value="@Model">
+    <button><a href="generate">Generate</a></button>
+</div>
