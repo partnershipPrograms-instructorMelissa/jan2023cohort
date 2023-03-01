@@ -1,0 +1,8 @@
+terminal:
+    dotnet add package Pomelo.EntityFrameworkCore.MySql --version 6.0.1
+    dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.3
+Verify through .csproj file
+
+after adding things in file:
+    dotnet ef migrations add FirstMigration
+    

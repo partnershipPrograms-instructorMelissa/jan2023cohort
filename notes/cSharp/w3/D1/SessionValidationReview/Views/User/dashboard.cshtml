@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model User
+
+<a href="logout">Logout</a>
+<h1>Welcome @Context.Session.GetString("FirstName")!</h1>
+
+<h2>@Model.FirstName @Model.LastName</h2>
+<h3>@Model.UserName & @Model.Email</h3>
+<h4>@Model.Birthday</h4>

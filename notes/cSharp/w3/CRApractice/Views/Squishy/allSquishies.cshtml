@@ -1,0 +1,9 @@
+@{
+    ViewData["Title"] = "All Toons";
+}
+@model List<Squishy>
+
+@foreach(Squishy t in Model){
+    <h2>@t.Name</h2>
+    <img src="@t.Img" alt="@t.Name">
+}

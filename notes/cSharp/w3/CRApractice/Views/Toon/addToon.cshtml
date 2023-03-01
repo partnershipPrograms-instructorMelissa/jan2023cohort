@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Add New Toon";
+}
+@model Toon
+
+<h1 class="text-center">Add a new Toon</h1>
+<form action="createToon" class="text-center" method="post">
+    <section>
+        <label asp-for="Name">Toon Name:</label>
+        <input asp-for="Name">
+        <span asp-validation-for="Name"></span>
+    </section>
+    <section>
+        <label asp-for="Img">Link to Toon Image:</label>
+        <input asp-for="Img">
+        <span asp-validation-for="Img"></span>
+    </section>
+    <button>Add Toon</button>
+</form>

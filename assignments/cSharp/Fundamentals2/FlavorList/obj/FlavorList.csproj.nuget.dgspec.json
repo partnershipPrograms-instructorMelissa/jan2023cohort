@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\FlavorList\\FlavorList.csproj": {}
+    "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\FlavorList\\FlavorList.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\FlavorList\\FlavorList.csproj": {
+    "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\FlavorList\\FlavorList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\FlavorList\\FlavorList.csproj",
+        "projectUniqueName": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\FlavorList\\FlavorList.csproj",
         "projectName": "FlavorList",
-        "projectPath": "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\FlavorList\\FlavorList.csproj",
+        "projectPath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\FlavorList\\FlavorList.csproj",
         "packagesPath": "C:\\Users\\NightKing\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\FlavorList\\obj\\",
+        "outputPath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\FlavorList\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NightKing\\AppData\\Roaming\\NuGet\\NuGet.Config"

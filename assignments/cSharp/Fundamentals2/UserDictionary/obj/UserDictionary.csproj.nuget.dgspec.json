@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\UserDictionary\\UserDictionary.csproj": {}
+    "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\UserDictionary\\UserDictionary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\UserDictionary\\UserDictionary.csproj": {
+    "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\UserDictionary\\UserDictionary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\UserDictionary\\UserDictionary.csproj",
+        "projectUniqueName": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\UserDictionary\\UserDictionary.csproj",
         "projectName": "UserDictionary",
-        "projectPath": "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\UserDictionary\\UserDictionary.csproj",
+        "projectPath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\UserDictionary\\UserDictionary.csproj",
         "packagesPath": "C:\\Users\\NightKing\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\UserDictionary\\obj\\",
+        "outputPath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\UserDictionary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NightKing\\AppData\\Roaming\\NuGet\\NuGet.Config"

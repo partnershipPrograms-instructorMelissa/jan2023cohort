@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day2/MoreIntro/MoreIntro.csproj": {}
+    "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\MoreIntro.csproj": {}
   },
   "projects": {
-    "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day2/MoreIntro/MoreIntro.csproj": {
+    "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\MoreIntro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day2/MoreIntro/MoreIntro.csproj",
+        "projectUniqueName": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\MoreIntro.csproj",
         "projectName": "MoreIntro",
-        "projectPath": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day2/MoreIntro/MoreIntro.csproj",
-        "packagesPath": "/Users/irish/.nuget/packages/",
-        "outputPath": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day2/MoreIntro/obj/",
+        "projectPath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\MoreIntro.csproj",
+        "packagesPath": "C:\\Users\\NightKing\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/irish/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\NightKing\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -31,3 +31,6 @@ key.js
 *classProject/
 *bin/
 *.csproj
+
+# .json files to ignore
+appsettings.json

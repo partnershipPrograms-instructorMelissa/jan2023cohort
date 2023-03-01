@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\ThreeBasicArrays\\ThreeBasicArrays.csproj": {}
+    "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\ThreeBasicArrays\\ThreeBasicArrays.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\ThreeBasicArrays\\ThreeBasicArrays.csproj": {
+    "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\ThreeBasicArrays\\ThreeBasicArrays.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\ThreeBasicArrays\\ThreeBasicArrays.csproj",
+        "projectUniqueName": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\ThreeBasicArrays\\ThreeBasicArrays.csproj",
         "projectName": "ThreeBasicArrays",
-        "projectPath": "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\ThreeBasicArrays\\ThreeBasicArrays.csproj",
+        "projectPath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\ThreeBasicArrays\\ThreeBasicArrays.csproj",
         "packagesPath": "C:\\Users\\NightKing\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\ThreeBasicArrays\\obj\\",
+        "outputPath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\assignments\\cSharp\\Fundamentals2\\ThreeBasicArrays\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NightKing\\AppData\\Roaming\\NuGet\\NuGet.Config"
