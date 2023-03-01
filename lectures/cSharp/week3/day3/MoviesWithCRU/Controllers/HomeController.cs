@@ -1,21 +1,24 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using DApp.Models;
+using MoviesWithCRU.Models;
 
-namespace DApp.Controllers;
+namespace MoviesWithCRU.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    private MyContext db;  // or use _context instead of db
+
+    public HomeController(ILogger<HomeController> logger, MyContext context)
     {
         _logger = logger;
+        db = context; // if you use _context above use it here too
     }
 
     public IActionResult Index()
     {
-        return View();
+        return View("Dashboard");  
     }
 
     public IActionResult Privacy()

@@ -1,4 +1,4 @@
-namespace DApp.Models;
+namespace MoviesWithCRU.Models;
 
 public class ErrorViewModel
 {
