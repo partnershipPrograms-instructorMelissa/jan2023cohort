@@ -1,19 +1,21 @@
 @model LoginUser
-<div class="text-center">
-    <div class="text-center">
-    <h1 class="display-4">Login</h1>
+<div class="column">
+    <h2>Login</h2>
     <form action="/login" method="post">
         <section>
-            <label asp-for="Email"></label>    
-            <input type="email" asp-for="Email">
-            <span asp-validation-for="Email"></span>
+            <label for="LoginEmail">Email</label>
+            <input type="email" name="LoginEmail" id="">
+            <span asp-validation-for="LoginEmail"></span>
         </section>
         <section>
-            <label asp-for="Password"></label>    
-            <input type="password" asp-for="Password">
-            <span asp-validation-for="Password"></span>
+            <label for="LoginPassword">Password</label>
+            <input asp-for="LoginPassword">
+            <span asp-validation-for="LoginPassword"></span>
         </section>
-    <button type="submit">Login</button>
-    </form>    
-    </div>
+        <button>Login</button>
+    </form>
+
+
+
+
 </div>

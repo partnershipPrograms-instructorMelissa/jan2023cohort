@@ -2,7 +2,9 @@
 using System.ComponentModel.DataAnnotations;
 // Add this using statement to access NotMapped
 using System.ComponentModel.DataAnnotations.Schema;
-namespace LoginRegistration.models;
+
+namespace LoginRegistration.Models;
+
 public class User
 {
     [Key]
@@ -30,6 +32,7 @@ public class User
     // This does not need to be moved to the bottom
     // But it helps make it clear what is being mapped and what is not
     [NotMapped]
+    [DataType(DataType.Password)]
     // There is also a built-in attribute for comparing two fields we can use!
     [Compare("Password")]
     public string PasswordConfirm { get; set; }

@@ -62,7 +62,7 @@ public class UserController : Controller
         }
         else
         {
-            User? userInDb = db.Users.FirstOrDefault(u => u.Email == getUser.LoginEmail);
+            User? userInDb = _context.Users.FirstOrDefault(u => u.Email == getUser.LoginEmail);
             // Please go to db and see if there is an email that matched the email coming from the form
             if (userInDb == null)
             {
@@ -90,7 +90,7 @@ public class UserController : Controller
         }
     }
 
-    [HttpGet("logout")]
+    [HttpGet("success/logout")]
     public IActionResult Logout()
     {
         HttpContext.Session.Clear();
