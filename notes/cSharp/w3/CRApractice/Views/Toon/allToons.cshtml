@@ -3,6 +3,7 @@
 }
 @model List<Toon>
 
+<a href="addToon">Add Toon</a>
 @foreach(Toon t in Model){
     <h2>@t.Name</h2>
     <img src="@t.Img" alt="@t.Name">

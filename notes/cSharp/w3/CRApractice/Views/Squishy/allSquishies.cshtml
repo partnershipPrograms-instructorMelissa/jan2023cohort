@@ -3,7 +3,9 @@
 }
 @model List<Squishy>
 
+<a href="addSquishy">Add Squishy</a>
 @foreach(Squishy t in Model){
     <h2>@t.Name</h2>
     <img src="@t.Img" alt="@t.Name">
+    <a href="/squishy/@t.ID/view">View</a>
 }

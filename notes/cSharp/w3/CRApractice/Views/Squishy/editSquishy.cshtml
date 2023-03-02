@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Edit Squishy";
+}
+@model Squishy
+
+<div class="text-center">
+    <h2>Edit Squishy @Model.Name Information</h2>
+    <form action="/squishy/@Model.ID/update" method="post">
+        <div>
+            <label asp-for="Name">Name:</label>
+            <input asp-for="Name" value="@Model.Name">
+            <span asp-validation-for="Name"></span>
+        </div>
+        <div>
+            <label asp-for="Img">Image:</label>
+            <input asp-for="Img" value="@Model.Img">
+            <span asp-validation-for="Img"></span>
+        </div>
+        <div>
+            <label asp-for="Location">Location:</label>
+            <input asp-for="Location" value="@Model.Location">
+            <span asp-validation-for="Location"></span>
+        </div>
+        <button>Save Changes</button>
+    </form>
+</div>

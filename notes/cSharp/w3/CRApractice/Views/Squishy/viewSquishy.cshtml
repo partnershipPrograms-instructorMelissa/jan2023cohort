@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "View Squishy";
+}
+@model Squishy
+
+<div class="text-center">
+    <a href="/allSquishies">Back to Squishies</a>
+    <img src="@Model.Img" alt="@Model.Name">
+    <h4>@Model.Name</h4>
+    <h5>@Model.Location</h5>
+    <a href="edit">Edit</a>
+    <a href="delete">Delete</a>
+</div>
