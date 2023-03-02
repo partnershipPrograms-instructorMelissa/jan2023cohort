@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Clicker</title>
+</head>
+<body>
+    <header>
+        <h2 id="dojonary">Dojonary</h2>
+        <input id="searchbar" type="text" placeholder="Search">
+        <button onclick=changeText(this) id="login">Login</button>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="ninja">
+                <h4>ninja</h4>
+                <h6 class="noun">noun</h6>
+                <h6>Plural: <span class="span">ninjas</span></h6>
+                <section class="likes">
+                    <button onclick="ninjaLiked(this)" class="button">13 likes</button>
+                </section>
+                <section class="para">
+                    <p>
+                        A practitioner skilled in the <span id="blue">Japanese</span> art of <span id="blue">ninjutsu</span>
+                    </p>
+                </section>
+            </div>
+            <div onclick=hideMe(this) class="definition">
+                <h3>
+                    Dojonary is defined by <span id="you">You</span>
+                </h3>
+                <button id="definitionbutton">Add Definition</button>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="ninja ninja2">
+                <h4>ninja</h4>
+                <h6 class="noun">noun</h6>
+                <h6>Plural: <span class="span">ninjas</span></h6>
+                <section class="likes">
+                    <button onclick="ninjaLiked(this)" class="button">37 likes</button>
+                </section>
+                <section class="para">
+                    <p>
+                        A <span id="blue">programmer</span> who breaks down problems with <span id="blueline">zen</span>-like focus
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

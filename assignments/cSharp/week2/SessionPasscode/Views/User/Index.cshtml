@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model User
+<div class="text-center">
+    <h1 class="display-4">Add User</h1>
+    <div class="text-center">
+   
+    <form action="/result" method="post">
+        <section>
+            <label asp-for="FirstName"></label>    
+            <input asp-for="FirstName">
+            <span asp-validation-for="FirstName"></span>
+        </section>
+        <button type="submit">Submit</button>
+    </form>  
+    <div class="div">
+        <h1>Is currently logged in</h1>
+         <h3>@Context.Session.GetString("FirstName")</h3>
+    </div>  
+</div>
+</div>

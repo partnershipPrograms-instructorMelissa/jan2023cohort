@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/less.css">
+    <title>Delicious Food</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Here are some delicious foods!
+        </h1>
+    </header>
+    @{
+        var StringList = new List<string>
+            {
+                "Apple Pie",
+                "Pizza",
+                "Cinnamon Rolls",
+                "Lasagna",
+                "Donuts",
+                "Chocolate Cake",
+                "Burritos"
+            };
+        foreach(var food in StringList)
+        {
+            <div class="food">
+                
+                @if(food.StartsWith("C"))
+                {
+                    <p style="color:red;">@food</p>
+                } else {
+                    <p>@food</p>
+                }
+            </div>
+        }
+    }
+</body>
+</html>

@@ -1,0 +1,42 @@
+.row {
+    display: flex;
+    margin: 100px;
+}
+
+.column {
+    flex: 50%;
+}
+
+.profile_photo {
+    width: 300px;
+    height: 300px;
+}
+
+.proj-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.proj-col-left {
+    flex: 10%
+}
+
+.proj-col-right {
+    flex: 90%
+}
+
+.projectBox {
+    margin-left: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form {
+    margin-bottom: 20px;
+}

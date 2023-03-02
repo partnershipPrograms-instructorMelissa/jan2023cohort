@@ -1,0 +1,96 @@
+body {
+    font-family: 'Itim', cursive;
+}
+.header {
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+.nav {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.cityNav {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin: 0 auto;
+}
+
+.col {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+img {
+    border-radius: 20rem;
+}
+
+#red {
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
+
+.degrees {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cookie {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    align-items: center;
+    background-color: silver;
+    padding: 2px;
+    justify-content: space-evenly;
+    border: 3px solid black;
+}
+
+.cookie button {
+    width: 100px;
+    background-color: lightblue;
+    margin: 1.5rem;
+    padding: 2px;
+}
+
+p {
+    width: 75%;
+}
+
+span a {
+    color: blue;
+    text-decoration: underline;
+}
