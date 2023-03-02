@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\NightKing\\.nuget\\packages\\": {}
+    "/Users/irish/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week1\\day4\\OopIntroTwo\\OopIntroTwo.csproj",
+      "projectUniqueName": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day4/OopIntroTwo/OopIntroTwo.csproj",
       "projectName": "OopIntroTwo",
-      "projectPath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week1\\day4\\OopIntroTwo\\OopIntroTwo.csproj",
-      "packagesPath": "C:\\Users\\NightKing\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week1\\day4\\OopIntroTwo\\obj\\",
+      "projectPath": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day4/OopIntroTwo/OopIntroTwo.csproj",
+      "packagesPath": "/Users/irish/.nuget/packages/",
+      "outputPath": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day4/OopIntroTwo/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NightKing\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/irish/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
       }
     }
   }

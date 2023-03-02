@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S+bxHdZGTDUahJhGwQ3VoIrwd2NH1ZXAzgB2oItWOmhQvTamEkwSChi+xkNtr6CItKGnNFCjE9sINIghqfsueA==",
+  "dgSpecHash": "UcoQWMVI8RqtqkdU9x1kcdDLNVgyGGZFT+5BCRsVZPSsmRrfZy/TeP9YVFf7d28cKptbdFpaCn2eY584IZqcdA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\ConsoleApp\\ConsoleApp.csproj",
+  "projectFilePath": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day2/ConsoleApp/ConsoleApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

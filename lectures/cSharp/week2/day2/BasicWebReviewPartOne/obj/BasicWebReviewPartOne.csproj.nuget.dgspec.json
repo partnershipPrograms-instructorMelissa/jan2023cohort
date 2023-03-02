@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week2\\day2\\BasicWebReviewPartOne\\BasicWebReviewPartOne.csproj": {}
+    "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day2/BasicWebReviewPartOne/BasicWebReviewPartOne.csproj": {}
   },
   "projects": {
-    "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week2\\day2\\BasicWebReviewPartOne\\BasicWebReviewPartOne.csproj": {
+    "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day2/BasicWebReviewPartOne/BasicWebReviewPartOne.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week2\\day2\\BasicWebReviewPartOne\\BasicWebReviewPartOne.csproj",
+        "projectUniqueName": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day2/BasicWebReviewPartOne/BasicWebReviewPartOne.csproj",
         "projectName": "BasicWebReviewPartOne",
-        "projectPath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week2\\day2\\BasicWebReviewPartOne\\BasicWebReviewPartOne.csproj",
-        "packagesPath": "C:\\Users\\NightKing\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\NightKing\\Documents\\CodingDojo\\jan2023cohort\\lectures\\cSharp\\week2\\day2\\BasicWebReviewPartOne\\obj\\",
+        "projectPath": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day2/BasicWebReviewPartOne/BasicWebReviewPartOne.csproj",
+        "packagesPath": "/Users/irish/.nuget/packages/",
+        "outputPath": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day2/BasicWebReviewPartOne/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\NightKing\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/irish/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -56,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
         }
       }
     }
