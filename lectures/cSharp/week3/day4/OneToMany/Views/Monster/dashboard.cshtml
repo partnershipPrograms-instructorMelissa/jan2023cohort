@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+@model List<Monster>
+<h1>Welcome back to Monster's Inc, @Context.Session.GetString("name")</h1>
+
+@foreach(Monster m in Model) {
+    <div class="column">
+        <h2>@m.Name</h2>
+    </div>
+}
