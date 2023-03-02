@@ -1,6 +1,4 @@
 @model User;
     <h3>Success! @Context.Session.GetString("name")</h3>
 
-    <form asp-action="DestroyDish" asp-controller="Dish" asp-route-id="@Model.UserId" method="post">
-    <input type="submit" value="Delete">
-    </form>
+  <button><a href="/logout">Logout</a></button>

@@ -90,7 +90,7 @@ public class UserController : Controller
         }
     }
 
-    [HttpGet("success/logout")]
+    [HttpGet("logout")]
     public IActionResult Logout()
     {
         HttpContext.Session.Clear();
