@@ -35,14 +35,20 @@ a {
     justify-content: center;
     align-items: center;
 }
+a {
+    color: #a3a1a1;
+}
 img {
-    max-width: 200px;
+    max-width: 400px;
 }
 
 body {
     .fontThree();
     .flexcolumn();
     width: 95%;
+    background-color: #4d0537;
+    color: #a3a1a1;
+    ;
 
     header {
         .flexcolumn();
@@ -54,7 +60,7 @@ body {
             .flexrow();
             padding: .5em 0;
             justify-content: flex-start;
-            box-shadow: 0 .25em .75em rgba(0, 255, 255, 0.433);
+            box-shadow: 0 .25em .75em #00ffff6e;
             margin: 1em 0;
             width: 85%;
 
@@ -63,8 +69,7 @@ body {
                 margin: 0 1em;
                 font-size: 1.6em;
                 text-decoration: none;
-                color: black;
-                .fontOne();
+                .fontTwo();
             }
             nav {
                 padding: 0 .75em;
@@ -75,7 +80,6 @@ body {
                     display: block;
                     padding: .5em 1em;
                     text-decoration: none;
-                    color: black;
                 }
             }
         }
@@ -83,9 +87,31 @@ body {
     main {
         .flexcolumn();
         width: 95%;
+        margin: 0 0 2em 0;
+        min-height: 600px;
+        justify-content: flex-start;
+
+        .headUser {
+            align-self: flex-end;
+        }
 
         h1 {
-            .fontOne();
+            .fontTwo();
+            margin: 0 1em;
+        }
+        .photo {
+            .flexcolumn();
+            margin: 1em;
+        }
+        .post {
+            .flexcolumn();
+            margin: .5em;
+            width: 85%;
+
+            .row {
+                .flexrow();
+                justify-content: space-between;
+            }
         }
 
         .row {
@@ -125,10 +151,10 @@ body {
     }
     footer {
         .flexrow();
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        // line-height: 60px;
+        width: 95%;
+        // position: absolute;
+        // bottom: 0;
+        // // line-height: 60px;
         border-top: 1px solid #00ffff6e;
         color: #6c757d;
 

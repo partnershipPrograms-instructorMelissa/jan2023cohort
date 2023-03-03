@@ -28,7 +28,10 @@ public class MonsterController : Controller
         // if(HttpContext.Session.GetInt32("uid") == null){
         //     return RedirectToAction("Index", "User");
         // }
-        List<Monster> allMonsters = db.Monsters.ToList();
+        List<Monster> allMonsters = db.Monsters
+        .Include(m => m.Owner) //allows us to render the usersname not just id
+        .Where(m => m.Hidden == "no") // this only pulls the monsters that are public
+        .ToList();
         return View("Dashboard", allMonsters);
     }
     [HttpGet("/monster/addMonster")]
@@ -54,5 +57,16 @@ public class MonsterController : Controller
             Console.WriteLine($"danger error {m.Name}, {m.UserId}, {m.Hidden}");
             return View("AddMonster");
         }
+    }
+    [HttpGet("/monster/yourMonsters")]
+    public IActionResult PrivateMonsters() {
+        // if(HttpContext.Session.GetInt32("uid") == null){
+        //     return RedirectToAction("Index", "User");
+        // }
+        List<Monster> allMonsters = db.Monsters
+        .Include(m => m.Owner) //allows us to render the usersname not just id
+        .Where(m => m.UserId == (int)uid) // this only pulls the monsters that are public
+        .ToList();
+        return View("Dashboard", allMonsters);
     }
 }
