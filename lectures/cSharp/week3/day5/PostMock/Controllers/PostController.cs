@@ -43,6 +43,7 @@ public class PostController : Controller
             return View("ViewPost", item);
         }
     }
+
     // [HttpGet()]
     // public IActionResult () {
         
