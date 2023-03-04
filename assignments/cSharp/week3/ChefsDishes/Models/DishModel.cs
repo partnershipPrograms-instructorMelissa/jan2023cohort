@@ -3,5 +3,5 @@ namespace ChefsDishes.Models;
 
 public class Dish
 {
-    public
+    public string Name { get; set; }
 }
