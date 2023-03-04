@@ -27,7 +27,7 @@ public class PostController : Controller
     public IActionResult Dashboard() {
         List<Post> allPosts = db.Posts
         .Include(p => p.Comment)
-        .ThenInclude(p => p.Author)
+        // .ThenInclude(p => p.Author)
         .OrderByDescending(p => p.CreatedAt)
         .ToList();
 

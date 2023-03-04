@@ -14,5 +14,8 @@
         <p>@p.Content</p>
         <p>@p.Author</p>
         <a href="/reply/@p.PostId/addReply">Reply to Post</a>
+        @foreach(var r in p.Comment) {
+            <p>@r.Word</p>
+        }
     </div>
 }
