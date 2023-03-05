@@ -1,13 +1,14 @@
-@model List<Dish>
+@model List<Chef>
 
             <section>
             <label></label>
             <span></span>
             <select  id="">
-@foreach (Dish item in Model)
+@foreach (Chef item in Model)
 {
-                <option asp-route-id="@item.ChefId">@item.Creator.FirstName @item.Creator.LastName</option>
-  
+ 
+        <option >@item.FirstName @item.LastName</option>
+    
 }
             </select>
         </section>

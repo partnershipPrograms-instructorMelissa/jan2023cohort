@@ -51,14 +51,18 @@ public class DishController : Controller
     [HttpGet("dishes/list")]
     public IActionResult CreateList()
     {
-        List<Dish> CreatorDish = _context.Dishes.Include(c => c.Creator).ToList();
-        return View(CreatorDish);
+        List<Chef> allChefs = _context.Chefs.ToList();
+
+        return View(allChefs);
     }
 
     [HttpGet("dishes")]
     public IActionResult Dishes()
     {
-        List<Dish> CreatorDish = _context.Dishes.Include(c => c.Creator).ToList();
+        List<Dish> CreatorDish = _context.Dishes
+        .Include(c => c.Creator)
+        .ToList();
+
         return View(CreatorDish);
     }
 }
