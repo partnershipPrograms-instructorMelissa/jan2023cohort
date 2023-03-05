@@ -22,9 +22,7 @@ public class DishController : Controller
     [HttpGet("dishes/new")]
     public IActionResult Create()
     {
-        List<Dish> allDishes = _context.Dishes
-        .Include(item => item.Creator)
-        .ToList();
+        List<Dish> allDishes = _context.Dishes.ToList();
         return View();
     }
 
@@ -35,7 +33,7 @@ public class DishController : Controller
         {
             _context.Add(newDish);
             _context.SaveChanges();
-            return RedirectToAction("Dishes");
+            return RedirectToAction("dishes");
         }
         else
         {

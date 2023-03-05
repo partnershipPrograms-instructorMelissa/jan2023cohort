@@ -1,0 +1,14 @@
+@model List<Chef>
+<div class="main">
+    <h1 class="display-4">Welcome to CRUDelicious</h1>
+    @* <nav>
+        <a href="/">Home</a><span> | </span><a href="/create">Add A Dish</a>
+    </nav> *@
+    <h4>Check out some recent dishes</h4>
+    @foreach(Chef c in Model)
+{
+    <h3>@c.FirstName @c.LastName</h3>
+    <h3>@c.BirtDate</h3>
+   
+}   
+</div>
