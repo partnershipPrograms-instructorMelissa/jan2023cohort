@@ -18,6 +18,12 @@ public class ChefController : Controller
         _logger = logger;
         _context = context;
     }
+    [HttpGet("list")]
+    public IActionResult Index()
+    {
+        List<Chef> allChefs = _context.Chefs.ToList();
+        return View("Index", allChefs);
+    }
 
     [HttpGet("chefs")]
     public IActionResult Create()

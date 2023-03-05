@@ -25,6 +25,12 @@ public class Chef
     {
         return FirstName + " " + LastName;
     }
+    public int Age()
+    {
+        var today = DateTime.Today;
+        var chefAge = today.Year - BirtDate.Year;
+        return chefAge;
+    }
 }
 public class FutureDateAttribute : ValidationAttribute
 {
