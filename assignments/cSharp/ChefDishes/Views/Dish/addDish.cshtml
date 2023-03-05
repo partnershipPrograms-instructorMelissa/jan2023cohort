@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Add a Dish";
+}
+@model Dish
+<div class="text-center">
+    <h1>Add a chef</h1>
+    <hr>
+     <form action="create" method="post" class="row">
+        <section class="col">
+            <label asp-for="Name" class=" m-1">Name of dish:</label>
+            <input asp-for="Name" class=" m-1">
+            <span asp-validation-for="Name"></span>
+            <br>
+            <label asp-for="Calories" class=" m-1"># of Calories:</label>
+            <input asp-for="Calories" type="number" class=" m-1">
+            <span asp-validation-for="Calories"></span>
+        </section>
+        <section class="col m-1">
+            <label asp-for="ChefID">Chef's Name:</label>
+            <select asp-for="ChefID">
+                @foreach(Chef c in ViewBag.Chefs){
+                    <option value="@c.ID">@c.FullName()</option>
+                }
+            </select>
+        </section>
+        <section class="col m-1">
+            <label asp-for="Tastiness">Tastiness:</label>
+            <select asp-for="Tastiness">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <span asp-validation-for="Tastiness"></span>
+        </section>
+        <button  class="btn btn-dark m-1">Add Dish</button>
+    </form> 
+</div>

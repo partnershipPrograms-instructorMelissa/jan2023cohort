@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "View Chefs";
+}
+@model List<Chef>
+
+<div class="text-center">
+    <h1>Check out our roster of chefs!</h1>
+    <hr>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col"># of Dishes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(Chef c in Model){
+                <tr>
+                    <th scope="row">@c.FullName()</th>
+                    <td>@c.Age()</td>
+                    <td>@c.AllDishes.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
