@@ -40,7 +40,7 @@ public class DishController : Controller
         {
             _context.Add(newDish);
             _context.SaveChanges();
-            return RedirectToAction("Index", "Chef");
+            return RedirectToAction("Dishes");
         }
         else
         {
@@ -50,6 +50,13 @@ public class DishController : Controller
 
     [HttpGet("dishes/list")]
     public IActionResult CreateList()
+    {
+        List<Dish> CreatorDish = _context.Dishes.Include(c => c.Creator).ToList();
+        return View(CreatorDish);
+    }
+
+    [HttpGet("dishes")]
+    public IActionResult Dishes()
     {
         List<Dish> CreatorDish = _context.Dishes.Include(c => c.Creator).ToList();
         return View(CreatorDish);
