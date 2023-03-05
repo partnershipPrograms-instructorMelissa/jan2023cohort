@@ -1,5 +1,6 @@
 #pragma warning disable CS8618
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ChefsDishes.Models;
 
@@ -14,11 +15,16 @@ public class Chef
     [Required]
     public string LastName { get; set; }
 
+    [Required]
     [FutureDate]
     public DateTime BirtDate { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
-    public List<Dish> AllChefs { get; set; } = new List<Dish>();
+    public List<Dish> CreatorDish { get; set; } = new List<Dish>();
+    public string FullName()
+    {
+        return FirstName + " " + LastName;
+    }
 }
 public class FutureDateAttribute : ValidationAttribute
 {
