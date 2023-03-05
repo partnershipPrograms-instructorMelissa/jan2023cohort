@@ -8,7 +8,10 @@
     @foreach(Chef c in Model)
 {
     <h3>@c.FullName()</h3>
-    <h3>@c.Age()</h3>
-   
+    <h3>@c.Age()</h3>  
+    @foreach (var d in c.CreatorDish)
+    {
+        <p>@d.Name</p>
+    }
 }   
 </div>

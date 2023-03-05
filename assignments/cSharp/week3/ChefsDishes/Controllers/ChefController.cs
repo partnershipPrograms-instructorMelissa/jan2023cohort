@@ -19,9 +19,11 @@ public class ChefController : Controller
         _context = context;
     }
     [HttpGet("list")]
-    public IActionResult Index()
+    public IActionResult Index(Dish d)
     {
-        List<Chef> allChefs = _context.Chefs.ToList();
+        List<Chef> allChefs = _context.Chefs
+        .Include(item => item.CreatorDish)
+        .ToList();
         return View("Index", allChefs);
     }
 
