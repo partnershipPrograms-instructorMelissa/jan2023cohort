@@ -19,6 +19,13 @@ public class DishController : Controller
         _context = context;
     }
 
+    // [HttpGet("dishes")]
+    // public IActionResult Index()
+    // {
+    //     List<Dish> allDishes = _context.Dishes.ToList();
+    //     return View("Index");
+    // }
+
     [HttpGet("dishes/new")]
     public IActionResult Create()
     {
@@ -33,11 +40,18 @@ public class DishController : Controller
         {
             _context.Add(newDish);
             _context.SaveChanges();
-            return RedirectToAction("dishes");
+            return RedirectToAction("Index", "Chef");
         }
         else
         {
             return View("Create");
         }
+    }
+
+    [HttpGet("dishes/list")]
+    public IActionResult CreateList()
+    {
+        List<Dish> CreatorDish = _context.Dishes.Include(c => c.Creator).ToList();
+        return View(CreatorDish);
     }
 }

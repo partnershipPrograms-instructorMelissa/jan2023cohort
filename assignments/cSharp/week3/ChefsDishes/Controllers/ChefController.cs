@@ -13,12 +13,14 @@ public class ChefController : Controller
 
     private MyContext _context;
 
+    public object CreatorDish { get; private set; }
+
     public ChefController(ILogger<ChefController> logger, MyContext context)
     {
         _logger = logger;
         _context = context;
     }
-    [HttpGet("list")]
+    [HttpGet("")]
     public IActionResult Index(Dish d)
     {
         List<Chef> allChefs = _context.Chefs
