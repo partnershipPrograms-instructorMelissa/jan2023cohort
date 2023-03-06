@@ -1,6 +1,6 @@
 @model List<Chef>
 <section>
-    <select name="Creator" id="">
+    <select name="ChefId" id="">
         @foreach(Chef c in Model) {
             <option value="@c.ChefId">@c.FullName()</option>
         }

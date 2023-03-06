@@ -19,11 +19,24 @@ public class DishController : Controller
         _context = context;
     }
 
+    [HttpGet("dishes")]
+    public IActionResult Dishes()
+    {
+        List<Dish> CreatorDish = _context.Dishes
+        .Include(c => c.Creator)
+        .ToList();
+
+        return View(CreatorDish);
+    }
+
     [HttpGet("dishes/new")]
     public IActionResult Create()
     {
-        List<Dish> allDishes = _context.Dishes.ToList();
-        return View();
+        MyViewModel theChefs = new MyViewModel
+        {
+            AllChefs = _context.Chefs.ToList()
+        };
+        return View(theChefs);
     }
 
     [HttpPost("dishes/new")]
@@ -41,21 +54,11 @@ public class DishController : Controller
         }
     }
 
-    [HttpGet("dishes/list")]
-    public IActionResult CreateList()
-    {
-        List<Chef> allChefs = _context.Chefs.ToList();
+    // [HttpGet("dishes/list")]
+    // public IActionResult CreateList()
+    // {
+    //     List<Chef> allChefs = _context.Chefs.ToList();
 
-        return View(allChefs);
-    }
-
-    [HttpGet("dishes")]
-    public IActionResult Dishes()
-    {
-        List<Dish> CreatorDish = _context.Dishes
-        .Include(c => c.Creator)
-        .ToList();
-
-        return View(CreatorDish);
-    }
+    //     return View(allChefs);
+    // }
 }

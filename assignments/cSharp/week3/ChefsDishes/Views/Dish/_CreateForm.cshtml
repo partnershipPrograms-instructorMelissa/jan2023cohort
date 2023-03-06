@@ -5,12 +5,6 @@
      @* <nav>
         <a href="/">Home</a><span> | </span><a href="/create">Add A Dish</a>
     </nav> *@
-   
-        <section>
-            <label asp-for="ChefId"></label>    
-            <input asp-for="ChefId">
-            <span asp-validation-for="ChefId"></span>
-        </section>
        <section>
             <label asp-for="Name">Name of Dish</label>    
             <input asp-for="Name">
@@ -33,7 +27,7 @@
             <input type="number" asp-for="Calories">
             <span asp-validation-for="Calories"></span>
         </section>
-        <button type="submit">Add Dish</button>
+
 
 </div>
 </div>

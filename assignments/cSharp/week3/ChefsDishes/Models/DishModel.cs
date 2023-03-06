@@ -9,7 +9,7 @@ public class Dish
     public int DishId { get; set; }
 
     [Required(ErrorMessage = "The name of the dish is required!")]
-    public string Name { get; set; }
+    public string? Name { get; set; }
 
     [Required(ErrorMessage = "Calories are Required")]
     [Range(1, int.MaxValue)]
