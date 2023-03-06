@@ -25,7 +25,6 @@ public class ChefController : Controller
     {
         List<Chef> allChefs = _context.Chefs
         .Include(item => item.CreatorDish)
-        // .Count()
         .ToList();
         return View("Index", allChefs);
     }
