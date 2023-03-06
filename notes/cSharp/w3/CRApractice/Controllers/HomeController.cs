@@ -17,9 +17,12 @@ public class HomeController : Controller
         _context = context; 
     }
 
-    public IActionResult Index()
+    public IActionResult Dashboard()
     {
         //  List<ClassName> All<ClassName> = _context.<VarOnContextFile>.ToList();
+        if(HttpContext.Session.GetInt32("uid") == null){
+            return RedirectToAction("Index", "User");
+        }
         return View();
     }
 
