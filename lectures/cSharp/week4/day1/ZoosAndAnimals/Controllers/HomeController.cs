@@ -103,7 +103,7 @@ public class SessionCheckAttribute : ActionFilterAttribute
         {
             // Redirect to the Index page if there was nothing in session
             // "Home" here is referring to "HomeController", you can use any controller that is appropriate here
-            context.Result = new RedirectToActionResult("Index", "User", null);
+            context.Result = new RedirectToActionResult("Index", "Home", null);
         }
     }
 }
