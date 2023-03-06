@@ -37,15 +37,21 @@ public class ZooController : Controller
     [SessionCheck]
     [HttpGet("/zoo/addZoo")]
     public IActionResult AddZoo() {
-        List<User> allUsers = db.Users
-        .OrderBy(u => u.LastName)
-        .ToList();
-        return View("AddZoo");
+        MyViewModel theUsers = new MyViewModel {
+            AllUsers = db.Users.ToList()
+        };
+        return View("AddZoo", theUsers);
+        // return View("AddZoo");
     }
+
+
+    // All other code
+
     [SessionCheck]
-    [HttpGet()]
+    [HttpPost("/zoo/createZoo")]
     public IActionResult CreateZoo(Zoo z) {
-        z.UserId = (int)uid;
+        Console.WriteLine($"uid: {uid}, z.Name: {z.Name}, z.Location: {z.Location}");
+        // z.UserId = (int)uid;
         if(ModelState.IsValid) {
             db.Zoos.Add(z);
             db.SaveChanges();
