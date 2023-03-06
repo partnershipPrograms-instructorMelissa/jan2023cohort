@@ -35,10 +35,22 @@ public class ZooController : Controller
         return View("Dashboard", allTheZoos);
     }
     [SessionCheck]
-    [HttpGet("/zoo")]
+    [HttpGet("/zoo/addZoo")]
     public IActionResult AddZoo() {
+        List<User> allUsers = db.Users
+        .OrderBy(u => u.LastName)
+        .ToList();
         return View("AddZoo");
     }
-    
-    
+    [SessionCheck]
+    [HttpGet()]
+    public IActionResult CreateZoo(Zoo z) {
+        z.UserId = (int)uid;
+        if(ModelState.IsValid) {
+            db.Zoos.Add(z);
+            db.SaveChanges();
+            return Redirect("Dashboard");
+        }
+        return View("AddZoo");
+    }
 }

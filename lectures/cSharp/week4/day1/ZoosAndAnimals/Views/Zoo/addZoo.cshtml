@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Zoo
+<h1>Add a new Zoo</h1>
+<form action="/zoo/addZoo" method="post">
+    <section>
+        <label for="Name">Title</label>
+        <input type="text" name="Name" id="">
+        <span asp-validation-for="Name"></span>
+    </section>
+    <section>
+        <label for="Location">Post Content</label>
+        <textarea name="Location" id="" cols="30" rows="10"></textarea>
+        <span asp-validation-for="Location"></span>
+    </section>
+    
+    <button>Add Post</button>
+</form>
