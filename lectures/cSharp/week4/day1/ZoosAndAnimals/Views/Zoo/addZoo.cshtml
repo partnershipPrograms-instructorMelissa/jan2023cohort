@@ -14,6 +14,6 @@
         <textarea name="Location" id="" cols="30" rows="10"></textarea>
         <span asp-validation-for="Location"></span>
     </section>
-    
+    @await Html.PartialAsync("_Users")
     <button>Add Post</button>
 </form>
