@@ -1,5 +1,9 @@
 @model List<Dish>
 
+    <nav>
+        <a href="/">Home</a><span> | </span><a href="/dishes/new">Add A Dish</a><span> | </span><a href="/dishes">Dishes</a><span> | </span><a href="/chefs">Add a Chef</a>
+    </nav>
+
 @foreach (Dish d in Model)
 {
     <h4>Name: @d.Name</h4>

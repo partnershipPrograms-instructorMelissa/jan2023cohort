@@ -1,9 +1,9 @@
 @model List<Chef>
 <div class="main">
     <h1 class="display-4">Welcome to CRUDelicious</h1>
-    @* <nav>
-        <a href="/">Home</a><span> | </span><a href="/create">Add A Dish</a>
-    </nav> *@
+    <nav>
+        <a href="/">Home</a><span> | </span><a href="/dishes/new">Add A Dish</a><span> | </span><a href="/dishes">Dishes</a><span> | </span><a href="/chefs">Add a Chef</a>
+    </nav>
     <h4>Check out some recent dishes</h4>
     @foreach(Chef c in Model)
 {
