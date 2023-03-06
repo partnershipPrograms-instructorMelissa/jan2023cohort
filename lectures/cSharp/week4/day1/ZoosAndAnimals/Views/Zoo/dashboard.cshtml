@@ -4,6 +4,10 @@
 @model List<Zoo>
 <div class="text-center">
     <h1>Welcome to our Zoo App, @Context.Session.GetString("name")</h1>
+    <nav>
+        <a href="/zoo/addZoo">Add New Zoo</a>
+        <a href="/animal/dashboard">The Animals</a>
+    </nav>
     <table>
         <tr>
             <th>Zoo Name</th>
@@ -17,8 +21,8 @@
                 <td>@z.Name</td>
                 <td>@z.Location</td>
                 <td></td>
-                <td>@z.Owner</td>
-                <td><a href="/zoo/{@z.ZooId}/view">View</a> | <a href="#">Edit</a> | <a href="#">Delete</a></td>
+                <td>@z.Owner.FullName()</td>
+                <td><a href="/zoo/@z.ZooId/view">View</a> | <a href="#">Edit</a> | <a href="#">Delete</a></td>
             </tr>
         }
     </table>
