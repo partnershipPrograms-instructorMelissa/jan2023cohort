@@ -7,8 +7,10 @@
 </head>
 <body>
  <main>
+     <form action="/dishes/new"  method="post">
         @await Html.PartialAsync("_CreateForm")
-        @* @await Html.PartialAsync("_CreateList") *@
+        @await Html.PartialAsync("_CreateList")
+    </form>
     </main>
 </body>
 </html>
