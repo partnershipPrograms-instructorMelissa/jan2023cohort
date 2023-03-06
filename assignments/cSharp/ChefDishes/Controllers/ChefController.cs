@@ -18,7 +18,7 @@ public class ChefController : Controller
     [HttpGet("chef")]
     public IActionResult ViewChefs(){
         //! To get all posts from a user: User? MyUser = _context.Users.Include(p => p.AllPosts).FirstOrDefault(i => i.UserId == id)
-        List<Chef> chefs = _context.Chefs.ToList();
+        List<Chef> chefs = _context.Chefs.Include(c => c.AllDishes).ToList();
         return View(chefs);
     }
 
