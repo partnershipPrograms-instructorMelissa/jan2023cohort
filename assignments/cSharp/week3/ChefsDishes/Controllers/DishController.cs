@@ -26,14 +26,7 @@ public class DishController : Controller
         return View();
     }
 
-    [HttpGet("addDish")]
-    public IActionResult CreateForm()
-    {
-        List<Dish> allDishes = _context.Dishes.ToList();
-        return View();
-    }
-
-    [HttpPost("addDish")]
+    [HttpPost("dishes/new")]
     public IActionResult AddDish(Dish newDish)
     {
         if (ModelState.IsValid)
