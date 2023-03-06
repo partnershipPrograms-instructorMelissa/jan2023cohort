@@ -1,39 +1,14 @@
-@model Dish
-<div class="text-center">
-    <div class="text-center">
-    <h1 class="display-4">Add a Dish!</h1>
-     @* <nav>
-        <a href="/">Home</a><span> | </span><a href="/create">Add A Dish</a>
-    </nav> *@
-    <form action="/dishes/new"  method="post">
-        <section>
-            <label asp-for="ChefId"></label>    
-            <input asp-for="ChefId">
-            <span asp-validation-for="ChefId"></span>
-        </section>
-      <section>
-            <label asp-for="Name">Name of Dish</label>    
-            <input asp-for="Name">
-            <span asp-validation-for="Name"></span>
-        </section>
-        <section>
-            <label asp-for="Tastiness"></label> 
-            <span asp-validation-for="Tastiness"></span>
-            <select asp-for="Tastiness" name="Tastiness" id="">
-                <option value=""></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </section>
-        <section>
-            <label asp-for="Calories"># of Calories</label>    
-            <input type="number" asp-for="Calories">
-            <span asp-validation-for="Calories"></span>
-        </section>
-        <button type="submit">Add Dish</button>
-    </form>    
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <main>
+        @await Html.PartialAsync("_CreateForm")
+        @* @await Html.PartialAsync("_CreateList") *@
+    </main>
+</body>
+</html>
