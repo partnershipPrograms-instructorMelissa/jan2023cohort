@@ -39,9 +39,9 @@
 // IEnumerable<Eruption> allEruptions = eruptions.Where(e => e.ElevationInMeters > 2000);
 // PrintEach(allEruptions);
 
-// IEnumerable<Eruption> listEruptions = eruptions.Where(v => v.Volcano.StartsWith("L"));
+IEnumerable<Eruption> listEruptions = eruptions.Where(v => v.Volcano.StartsWith("L"));
 // PrintEach(listEruptions);
-// int countList = listEruptions.Where(v => v.Volcano.StartsWith("L")).Count();
+int countList = listEruptions.Where(v => v.Volcano.StartsWith("L")).Count();
 // Console.WriteLine(countList);
 
 // int maxElevation = eruptions.Max(e => e.ElevationInMeters);

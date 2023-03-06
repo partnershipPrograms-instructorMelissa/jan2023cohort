@@ -35,7 +35,7 @@
       "[HttpPost()]": {
         "prefix": "hp",
         "body": [
-            "[HttpPost($1)])",
+            "[HttpPost($1)]",
             "$2"
         ],
         "description": "Post Route"
