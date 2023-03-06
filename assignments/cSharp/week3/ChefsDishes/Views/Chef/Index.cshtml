@@ -11,10 +11,15 @@
     <h3>@c.Age()</h3>
   
  
-    @foreach (var d in c.CreatorDish)
+    @* @foreach (var d in c.CreatorDish)
     {
-
         <p>@d.Name</p>
-    }
+    } *@
+
+        int numDishes = @c.CreatorDish.Count;
+        <p>@numDishes</p>
+        Console.WriteLine(numDishes);
+        
+
 }   
 </div>

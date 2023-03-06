@@ -19,12 +19,6 @@ public class DishController : Controller
         _context = context;
     }
 
-    // [HttpGet("dishes")]
-    // public IActionResult Index()
-    // {
-    //     List<Dish> allDishes = _context.Dishes.ToList();
-    //     return View("Index");
-    // }
 
     [HttpGet("dishes/new")]
     public IActionResult Create()

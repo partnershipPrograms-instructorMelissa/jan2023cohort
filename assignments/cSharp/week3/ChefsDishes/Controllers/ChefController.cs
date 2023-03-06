@@ -21,10 +21,11 @@ public class ChefController : Controller
         _context = context;
     }
     [HttpGet("")]
-    public IActionResult Index(Dish d)
+    public IActionResult Index()
     {
         List<Chef> allChefs = _context.Chefs
         .Include(item => item.CreatorDish)
+        // .Count()
         .ToList();
         return View("Index", allChefs);
     }
