@@ -23,10 +23,25 @@ public class AnimalController : Controller
     
     // Recommend routeName and FunctionName be the same
     
-    // [HttpGet("/ClassName/routeName")]
-    // public IActionResult FunctionName() {
+    [HttpGet("/animal/dashboard")]
+    public IActionResult AnimalDashboard() {
+        List<Animal> allTheAnimals = db.Animals
+            .OrderBy(a => a.Habitat)
+            .ToList();
+        return View("AnimalDashboard", allTheAnimals);
+    }
+    [HttpGet("/animal/addAnimal")]
+    public IActionResult AddAnimal() {
+        return View("AddAnimal");
+    }
     
-    // }
-    
-    
+    [HttpPost("/animal/createAnimal")]
+    public IActionResult CreateAnimal(Animal a) {
+        if(ModelState.IsValid) {
+            db.Animals.Add(a);
+            db.SaveChanges();
+            return Redirect("/animal/dashboard");
+        }
+        return View("AddAnimal");
+    }
 }

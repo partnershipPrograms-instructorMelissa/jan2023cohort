@@ -26,6 +26,7 @@ public class ZooController : Controller
     [HttpGet("/zoo/dashboard")]
     public IActionResult Dashboard() {
         List<Zoo> allTheZoos = db.Zoos
+            .Include(o => o.Owner)
             .Include(z => z.AllAnimals)
             .ThenInclude(a => a.TheAnimal)
             // .ThenInclude(theA => theA.AllZoos)
@@ -44,9 +45,6 @@ public class ZooController : Controller
         // return View("AddZoo");
     }
 
-
-    // All other code
-
     [SessionCheck]
     [HttpPost("/zoo/createZoo")]
     public IActionResult CreateZoo(Zoo z) {
@@ -59,4 +57,33 @@ public class ZooController : Controller
         }
         return View("AddZoo");
     }
+
+    [SessionCheck]
+    [HttpGet("/zoo/{zooId}/viewZoo")]
+    public IActionResult ViewZoo(int theZoo) {
+        MyViewModel zooInfo = new MyViewModel {
+            Zoo? aZoo = db.Zoos
+                .Include(o => o.Owner)
+                // .Include(m => m.AllAnimals)
+                // .Where(z => (int)z.ZooId)
+                .ToList()
+        };
+        return View("ViewZoo");
+    }
+
+    // [SessionCheck]
+    // [HttpGet("/zoo/{zooId}/editZoo")]
+    // public IActionResult EditZoo() {
+        
+    // }
+    // [SessionCheck]
+    // [HttpPost("/zoo/{zooId}/updateZoo")]
+    // public IActionResult UpdateZoo() {
+        
+    // }
+    // [SessionCheck]
+    // [HttpGet("/zoo/{zooId}/deleteZoo")]
+    // public IActionResult DeleteZoo() {
+        
+    // }
 }
