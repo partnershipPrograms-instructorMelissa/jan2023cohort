@@ -1,3 +1,4 @@
+<<<<<<<< HEAD:assignments/cSharp/CRUDelicious/Properties/launchSettings.json
 ﻿{
   "iisSettings": {
     "windowsAuthentication": false,
@@ -26,3 +27,33 @@
     }
   }
 }
+========
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:9833",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "LogReg": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5073",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+>>>>>>>> f1b5886614331e29c1fab28cc575282f9ae330fe:lectures/cSharp/week3/day4/LogReg/Properties/launchSettings.json
