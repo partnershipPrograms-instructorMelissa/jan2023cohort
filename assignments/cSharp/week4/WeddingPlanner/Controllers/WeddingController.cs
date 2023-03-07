@@ -24,6 +24,22 @@ public class WeddingController : Controller
     }
 
     // Recommend routeName and FunctionName be the same
+    [SessionCheck]
+    [HttpGet("weddings/{id}")]
+    public IActionResult Details(int id)
+    {
+        Wedding? ViewWedding = _context.Weddings
+        .FirstOrDefault(i => i.WeddingId == id);
+        if (ViewWedding != null)
+        {
+            return View(ViewWedding);
+        }
+        else
+        {
+            return RedirectToAction("WeddingList");
+        }
+    }
+
 
     [SessionCheck]
     [HttpGet("weddings/new")]
