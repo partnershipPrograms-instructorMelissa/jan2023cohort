@@ -20,14 +20,47 @@ public class DevController: Controller
             return HttpContext.Session.GetInt32("uid");
         }
     }
+    private int? level {
+        get {
+            return HttpContext.Session.GetInt32("level");
+        }
+    }
+    private string? name {
+        get {
+            return HttpContext.Session.GetString("name");
+        }
+    }
+    private string? type {
+        get {
+            return HttpContext.Session.GetString("type");
+        }
+    }
     
-    // Recommend routeName and FunctionName be the same
+
+    [SessionCheck]
+    [HttpPost("/Developer/CreateDevId")]
+    public IActionResult CreateDevId(Dev d) {
+        d.UserId = (int)uid;
+        db.Devs.Add(d);
+        db.SaveChanges();
+        return Redirect("/Developer/Dashboard");
+    }
+
+    // [AdminCheck]
     [SessionCheck]
     [HttpGet("/Developer/Dashboard")]
     public IActionResult DevDash() {
         HttpContext.Session.SetString("type", "Dev");
+        User? theUser = db.Users.FirstOrDefault(u => uid == u.UserId);
+        Console.WriteLine($"uid: {uid}, userId {theUser.UserId}, accessLevel: {theUser.AccessLevel}");
+        if(theUser.AccessLevel == 1) {
+            theUser.AccessLevel = 2;
+            db.Users.Update(theUser);
+            db.SaveChanges();
+        }
+        
         return View("DevDash", "Dev");
     }
-    
+
     
 }

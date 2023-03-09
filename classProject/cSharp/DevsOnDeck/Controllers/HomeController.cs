@@ -23,6 +23,21 @@ public class HomeController : Controller
             return HttpContext.Session.GetInt32("uid");
         }
     }
+    private int? level {
+        get {
+            return HttpContext.Session.GetInt32("level");
+        }
+    }
+    private string? name {
+        get {
+            return HttpContext.Session.GetString("name");
+        }
+    }
+    private string? type {
+        get {
+            return HttpContext.Session.GetString("type");
+        }
+    }
 
     [HttpGet("")]
     public IActionResult Index()
@@ -59,6 +74,7 @@ public class HomeController : Controller
         HttpContext.Session.SetInt32("uid", newUser.UserId);
         HttpContext.Session.SetString("name", newUser.FullName());
         HttpContext.Session.SetInt32("level", newUser.AccessLevel);
+        HttpContext.Session.SetString("type", "Gen");
         return RedirectToAction("Dashboard");
     }
     [HttpPost("/login")]
@@ -80,6 +96,7 @@ public class HomeController : Controller
                     HttpContext.Session.SetInt32("uid", userInDb.UserId);
                     HttpContext.Session.SetString("name", userInDb.FullName());
                     HttpContext.Session.SetInt32("level", userInDb.AccessLevel);
+                    HttpContext.Session.SetString("type", "Gen");
                     return RedirectToAction("Dashboard");
                 }
             }   
@@ -97,7 +114,7 @@ public class HomeController : Controller
     [HttpGet("/Dashboard")]
     public IActionResult Dashboard() {
         User? theUser = db.Users.FirstOrDefault(u => uid == u.UserId);
-        Console.WriteLine($"uid: {uid}, userId {theUser.UserId}, accessLevel: {theUser.AccessLevel}");
+        // Console.WriteLine($"uid: {uid}, userId {theUser.UserId}, accessLevel: {theUser.AccessLevel}");
         if(uid == 1 && theUser.AccessLevel == 1) {
             theUser.AccessLevel = 24;
             db.Users.Update(theUser);
@@ -107,7 +124,28 @@ public class HomeController : Controller
         else if(theUser.AccessLevel == 24) {
             ViewBag.Access = "Welcome back Super Admin";
         }
+        User? dev = db.Users
+            .Include(d => d.myDev)
+            .FirstOrDefault(d => d.UserId == uid);
+            // .ToList();
+        if(dev.myDev == null) {
+            Console.WriteLine($"dev: {dev.myDev}, mydevId");
+        } else {
+            Console.WriteLine($"not null");
+        }
         return View("Dashboard");
+    }
+    [SessionCheck]
+    [HttpGet("/Profile")]
+    public IActionResult UserProfile() {
+        User? theUser = db.Users.FirstOrDefault(u => uid == u.UserId);
+        return View("Profile", theUser);
+    }
+
+    [HttpGet("/NotAuth")]
+    public IActionResult NotAuth() {
+
+        return View("NotAuth");
     }
 
 
@@ -130,7 +168,17 @@ public class SessionCheckAttribute : ActionFilterAttribute
         {
             // Redirect to the Index page if there was nothing in session
             // "Home" here is referring to "HomeController", you can use any controller that is appropriate here
-            context.Result = new RedirectToActionResult("Index", "User", null);
+            context.Result = new RedirectToActionResult("NotAuth", "Home", null);
+        }
+    }
+}
+public class AdminCheckAttribute : ActionFilterAttribute {
+    public override void OnActionExecuting(ActionExecutingContext context) {
+        int? level = context.HttpContext.Session.GetInt32("level");
+        if(level < 24) {
+            Console.WriteLine("You are not authorized to view this page");
+            context.Result = new RedirectToActionResult("NotAuth", "Home", 24);
+            // !!!!! Can not have receiving page have view back on load
         }
     }
 }

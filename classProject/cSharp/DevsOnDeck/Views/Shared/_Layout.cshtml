@@ -13,22 +13,28 @@
         <h1>Devs On Deck</h1>
         <nav>
             <a href="/">Home</a>
+            @* if in session *@
             @if(@Context.Session.GetInt32("uid") != null) {
-                <a href="/Developer/Dashboard">Developer</a>
-                @if(@Context.Session.GetString("type") == "Dev") {
-                    <a href="">Dev Test</a>
-                }
-                <a href="/organization">Organization</a>
-                @if(@Context.Session.GetString("type") == "Org") {
-                    <a href="">Org Test</a>
-                }
-                @if(@Context.Session.GetInt32("level") == 24) {
+                <a href="/Profile">Your Profile</a>
+                @* If session user level greater than 1 *@
+                @if(@Context.Session.GetInt32("level") > 1 ) {
+                    <a href="/Developer/Dashboard">Developer</a>
+                    @if(@Context.Session.GetString("type") == "Dev") {
+                        <a href="">Dev Test</a>
+                    }
+                    <a href="/organization">Organization</a>
+                    @if(@Context.Session.GetString("type") == "Org") {
+                        <a href="">Org Test</a>
+                    }
+                    @if(@Context.Session.GetInt32("level") == 24) {
                         <a href="admin">Admin</a>
                         @if(@Context.Session.GetString("type") == "Admin") {
                             <a href="">Admin Test</a>
                         }
                     }
+               }
                 <button><a href="/logout">Logout</a></button>
+            @* if Not in session *@
             } else {
                 <a href="/logreg">Login/Signup</a>
             }
