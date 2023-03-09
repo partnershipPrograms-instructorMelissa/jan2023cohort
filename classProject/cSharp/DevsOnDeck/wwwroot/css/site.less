@@ -1,0 +1,38 @@
+@import './base.less';
+
+body {
+    background-color: @bg;
+    color: @font;
+    .flexcolumn();
+    width: 95%;
+
+    header {
+        .box();
+        .flexrow();
+        width: 85%;
+        justify-content: space-around;
+
+    }
+    main {
+        .flexcolumn();
+        width: 85%;
+    }
+    footer {
+        .flexrow();
+        .box();
+        width: 85%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import './media.less';

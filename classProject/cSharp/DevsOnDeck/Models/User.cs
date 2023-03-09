@@ -1,0 +1,35 @@
+#pragma warning disable CS8618
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+namespace DevsOnDeck.Models;
+
+public class User {
+    [Key]
+    public int UserId {get; set;}
+    [Required]
+    public string FirstName {get; set;}
+    [Required]
+    public string LastName {get; set;}
+    [Required]
+    [EmailAddress]
+    public string Email {get; set;}
+    [Required]
+    public string Username {get; set;}
+    [Required]
+    public string AccessType {get;set;} = "Developer";
+    public int AccessLevel {get;set;} = 1;
+    [Required]
+    [DataType(DataType.Password)]
+    public string Password {get; set;}
+    [NotMapped]
+    [Compare("Password", ErrorMessage="Dang it passwords don't match try your luck again")]
+    public string Confirm {get; set;}
+    
+    public DateTime CreatedAt { get; set; } = DateTime.Now;
+    public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+    // ******** One to one non id side
+    public UserProfile? theProfile {get; set;}
+    public Dev? myDev {get; set;}
+    public Organization? myOrg {get; set;}
+}
