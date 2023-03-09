@@ -13,5 +13,9 @@ public class Skill {
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
-    public List<UserSkill> AllSkills {get; set;} = new List<UserSkill>();
+    // **** Many to many list side
+
+    public List<JobSkill> skilledJobs {get;set;} =  new List<JobSkill>();
+    public List<DevSkill> skilledDevs {get;set;} = new List<DevSkill>();
+
 }

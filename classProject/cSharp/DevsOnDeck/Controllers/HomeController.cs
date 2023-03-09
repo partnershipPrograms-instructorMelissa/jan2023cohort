@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using DevsOnDeck.Models;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace DevsOnDeck.Controllers;
 
@@ -17,16 +18,100 @@ public class HomeController : Controller
         _logger = logger;
         db = context; // if you use _context above use it here too
     }
+    private int? uid {
+        get {
+            return HttpContext.Session.GetInt32("uid");
+        }
+    }
 
+    [HttpGet("")]
     public IActionResult Index()
     {
-        return View();  
+        if(HttpContext.Session.GetInt32("uid") != null) {
+            return RedirectToAction("Dashboard");
+        } else {
+            return View("Index");
+        }
+    }
+    [HttpGet("/logreg")]
+    public IActionResult LogReg() {
+        if(HttpContext.Session.GetInt32("uid") != null) {
+            return RedirectToAction("Dashboard");
+        } else {
+            return View("LogReg");
+        }
     }
 
-    public IActionResult Privacy()
-    {
-        return View();
+    [HttpPost("/register")]
+    public IActionResult Register(User newUser) {
+        if(ModelState.IsValid) {
+            if(db.Users.Any(User => User.Email == newUser.Email)) {
+                ModelState.AddModelError("Email", "is taken");
+            }
+        } 
+        if(ModelState.IsValid == false) {
+            return View("LogReg");
+        }
+        PasswordHasher<User> hash = new PasswordHasher<User>();
+        newUser.Password = hash.HashPassword(newUser, newUser.Password);
+        db.Users.Add(newUser);
+        db.SaveChanges();
+        HttpContext.Session.SetInt32("uid", newUser.UserId);
+        HttpContext.Session.SetString("name", newUser.FullName());
+        HttpContext.Session.SetInt32("level", newUser.AccessLevel);
+        return RedirectToAction("Dashboard");
     }
+    [HttpPost("/login")]
+    public IActionResult Login(Login getUser) {
+        if(!ModelState.IsValid) {
+            return View("LogReg");
+        } else {
+            User? userInDb = db.Users.FirstOrDefault(u => u.Username == getUser.LoginUserName);
+            if(userInDb == null) {
+                ModelState.AddModelError("LoginUserName", "Invalid UserName");
+                return View("LogReg");
+            } else {
+                PasswordHasher<Login> hash = new PasswordHasher<Login>();
+                var result = hash.VerifyHashedPassword(getUser, userInDb.Password, getUser.LoginPassword);
+                if(result == 0)  { 
+                    ModelState.AddModelError("LoginPassword", "Invalid Password");
+                    return View("LogReg");
+                } else {
+                    HttpContext.Session.SetInt32("uid", userInDb.UserId);
+                    HttpContext.Session.SetString("name", userInDb.FullName());
+                    HttpContext.Session.SetInt32("level", userInDb.AccessLevel);
+                    return RedirectToAction("Dashboard");
+                }
+            }   
+        }
+    }
+    [HttpGet("/logout")]
+    public IActionResult Logout()
+    {
+        HttpContext.Session.Clear();
+        return RedirectToAction("Index");
+    }
+
+
+    [SessionCheck]
+    [HttpGet("/Dashboard")]
+    public IActionResult Dashboard() {
+        User? theUser = db.Users.FirstOrDefault(u => uid == u.UserId);
+        Console.WriteLine($"uid: {uid}, userId {theUser.UserId}, accessLevel: {theUser.AccessLevel}");
+        if(uid == 1 && theUser.AccessLevel == 1) {
+            theUser.AccessLevel = 24;
+            db.Users.Update(theUser);
+            db.SaveChanges();
+            ViewBag.Access = "Access updated to SuperAdmin";
+        }
+        else if(theUser.AccessLevel == 24) {
+            ViewBag.Access = "Welcome back Super Admin";
+        }
+        return View("Dashboard");
+    }
+
+
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

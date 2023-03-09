@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Welcome, @Context.Session.GetString("name")</h1>
+<h3>@ViewBag.Access</h3>
+<h2>Please chose which part of the site you wish to use today</h2>
+
+<nav>
+    <a href="/Developer/Dashboard">Developer</a>
+    <a href="/organization">Organization</a>
+    
+</nav>

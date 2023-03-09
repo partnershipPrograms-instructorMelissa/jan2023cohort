@@ -13,6 +13,8 @@ public class Dev {
     // ******* One to One non id side
     public int UserId {get; set;}
     public User? myUser {get; set;}
-    public SkillList? mySkill {get;set;}
+
+    // ****** One to Many non id side
+    public List<DevSkill> MySkills {get;set;} = new List<DevSkill>();
 
 }

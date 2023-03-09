@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace DevsOnDeck.Models;
 
-public class Organization {
+public class Org {
     [Key]
-    public int OganizationId {get; set;}
+    public int OrgId {get; set;}
     [Required]
     public string ContactName {get; set;}
     [Required]
@@ -17,10 +17,13 @@ public class Organization {
     // ***** One to Many non id side
     public List<Job> JobList {get; set;} = new List<Job>();
 
-    // ******** One to Many id side
+    // ******** One to Many id side 
     public int UserId {get; set;}
-    public User? theOrgOwner {get; set;}
+    public User? theOrgCreator {get; set;}
 
     // ******* One to One non id side
-    public OrganizationProfile? orgProfile {get; set;}
+    public OrgProfile? orgProf {get; set;}
+
+    // ******* One to Many List side
+    public List<OrgList> OrgMembers {get; set;} = new List<OrgList>();
 }

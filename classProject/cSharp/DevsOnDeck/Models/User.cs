@@ -31,5 +31,12 @@ public class User {
     // ******** One to one non id side
     public UserProfile? theProfile {get; set;}
     public Dev? myDev {get; set;}
-    public Organization? myOrg {get; set;}
+
+    // ******* One to Many List side
+    public List<Org> createdOrgs {get; set;} = new List<Org>();
+    public List<OrgList> memberOf {get;set;} = new List<OrgList>();
+
+    public string FullName() {
+        return FirstName + " " + LastName;
+    }
 }

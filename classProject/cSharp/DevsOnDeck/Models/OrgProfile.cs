@@ -2,9 +2,9 @@
 using System.ComponentModel.DataAnnotations;
 namespace DevsOnDeck.Models;
 
-public class OrganizationProfile {
+public class OrgProfile {
     [Key]
-    public int OrganizationProfileId {get; set;}
+    public int OrgProfileId {get; set;}
     public string? Address {get; set;}
     public string City {get; set;}
     public string State {get; set;}
@@ -16,7 +16,7 @@ public class OrganizationProfile {
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
     // ******* One to One id side
-    public int OrganizationId {get; set;}
-    public Organization? org {get; set;}
+    public int OrgId {get; set;}
+    public Org? org {get; set;}
 
 }

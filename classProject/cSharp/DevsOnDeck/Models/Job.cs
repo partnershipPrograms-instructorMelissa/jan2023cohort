@@ -16,7 +16,7 @@ public class Job {
     public List<JobSkill> theJobSkills {get; set;} = new List<JobSkill>();
 
     // ****** One to Many id side
-    public int OrganizationId {get; set;}
-    public Organization? theOrg {get; set;}
+    public int OrgId {get; set;}
+    public Org? theOrg {get; set;}
 
 }
