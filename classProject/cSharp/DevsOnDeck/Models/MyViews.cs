@@ -34,4 +34,8 @@ public class MyViews {
     // **** OrgMembers
     public OrgList OrgList {get;set;}
     public List<OrgList> allOrgLists {get;set;}
+
+    // **** Admin
+    public RandKey RandKey {get; set;}
+    public List<RandKey> allKeys {get; set;}
 }

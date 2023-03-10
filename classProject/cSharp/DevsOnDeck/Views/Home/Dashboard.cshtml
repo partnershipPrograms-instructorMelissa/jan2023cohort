@@ -8,6 +8,7 @@
 @* If admin *@
 @if(@Context.Session.GetInt32("level") == 24) {
     <h2>Welcome admin</h2>
+
 }
 @* if not admin and 1st time user *@
 @if(@Context.Session.GetInt32("level") < 2) {

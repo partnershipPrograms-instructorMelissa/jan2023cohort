@@ -9,6 +9,7 @@ public class MyContext : DbContext
    
     public DbSet<User> Users { get; set; } 
     public DbSet<UserProfile> UserProfiles {get; set;}
+    public DbSet<RandKey> RandKeys {get; set;}
     public DbSet<Dev> Devs {get; set;}
     public DbSet<DevSkill> DevSkills {get; set;}
     public DbSet<Skill> Skills {get;set;}

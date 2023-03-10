@@ -35,6 +35,7 @@ public class User {
     // ******* One to Many List side
     public List<Org> createdOrgs {get; set;} = new List<Org>();
     public List<OrgList> memberOf {get;set;} = new List<OrgList>();
+    public List<RandKey> theKeys {get; set;} = new List<RandKey>();
 
     public string FullName() {
         return FirstName + " " + LastName;

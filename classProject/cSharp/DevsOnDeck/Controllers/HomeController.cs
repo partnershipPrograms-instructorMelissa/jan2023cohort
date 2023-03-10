@@ -38,6 +38,11 @@ public class HomeController : Controller
             return HttpContext.Session.GetString("type");
         }
     }
+    private string? role {
+        get {
+            return HttpContext.Session.GetString("role");
+        }
+    }
 
     [HttpGet("")]
     public IActionResult Index()
@@ -75,6 +80,7 @@ public class HomeController : Controller
         HttpContext.Session.SetString("name", newUser.FullName());
         HttpContext.Session.SetInt32("level", newUser.AccessLevel);
         HttpContext.Session.SetString("type", "Gen");
+        HttpContext.Session.SetString("role", newUser.AccessType);
         return RedirectToAction("Dashboard");
     }
     [HttpPost("/login")]
@@ -97,6 +103,7 @@ public class HomeController : Controller
                     HttpContext.Session.SetString("name", userInDb.FullName());
                     HttpContext.Session.SetInt32("level", userInDb.AccessLevel);
                     HttpContext.Session.SetString("type", "Gen");
+                    HttpContext.Session.SetString("role", userInDb.AccessType);
                     return RedirectToAction("Dashboard");
                 }
             }   
@@ -117,11 +124,17 @@ public class HomeController : Controller
         // Console.WriteLine($"uid: {uid}, userId {theUser.UserId}, accessLevel: {theUser.AccessLevel}");
         if(uid == 1 && theUser.AccessLevel == 1) {
             theUser.AccessLevel = 24;
+            theUser.AccessType = "SuperAdmin";
             db.Users.Update(theUser);
             db.SaveChanges();
+            HttpContext.Session.SetString("role", theUser.AccessType);
             ViewBag.Access = "Access updated to SuperAdmin";
         }
         else if(theUser.AccessLevel == 24) {
+            theUser.AccessType = "SuperAdmin";
+            db.Users.Update(theUser);
+            db.SaveChanges();
+            HttpContext.Session.SetString("role", theUser.AccessType);
             ViewBag.Access = "Welcome back Super Admin";
         }
         User? dev = db.Users
@@ -161,13 +174,9 @@ public class SessionCheckAttribute : ActionFilterAttribute
 {
     public override void OnActionExecuting(ActionExecutingContext context)
     {
-        // Find the session, but remember it may be null so we need int?
         int? uid = context.HttpContext.Session.GetInt32("uid");
-        // Check to see if we got back null
         if(uid == null)
         {
-            // Redirect to the Index page if there was nothing in session
-            // "Home" here is referring to "HomeController", you can use any controller that is appropriate here
             context.Result = new RedirectToActionResult("NotAuth", "Home", null);
         }
     }

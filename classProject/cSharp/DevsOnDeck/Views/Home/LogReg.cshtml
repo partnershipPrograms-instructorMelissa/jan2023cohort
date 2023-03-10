@@ -1,8 +1,7 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Login and Registration";
 }
-
-<h1>Welcome</h1>
+<h1>@ViewData["Title"]</h1>
 <div class="row">
     @await Html.PartialAsync("_Register")
     @await Html.PartialAsync("_login")
