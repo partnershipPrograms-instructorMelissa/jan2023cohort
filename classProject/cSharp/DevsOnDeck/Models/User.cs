@@ -1,6 +1,7 @@
 #pragma warning disable CS8618
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using DevsOnDeck.RegCode;
 namespace DevsOnDeck.Models;
 
 public class User {
@@ -24,7 +25,9 @@ public class User {
     [NotMapped]
     [Compare("Password", ErrorMessage="Dang it passwords don't match try your luck again")]
     public string Confirm {get; set;}
-    
+
+    // [NotMapped]
+    // [Compare(RegCode.RegCode, ErrorMessage ="Wrong reg code")]
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
