@@ -1,0 +1,22 @@
+@model List<Chef>
+<div class="main">
+    <h1 class="display-4">Welcome to CRUDelicious</h1>
+    <nav>
+        <a href="/">Home</a><span> | </span><a href="/dishes/new">Add A Dish</a><span> | </span><a href="/dishes">Dishes</a><span> | </span><a href="/chefs">Add a Chef</a>
+    </nav>
+    <h4>Check out some recent dishes</h4>
+    @foreach(Chef c in Model)
+{
+    <h3>@c.FullName()</h3>
+    <h3>@c.Age()</h3>
+  
+ 
+    @* @foreach (var d in c.CreatorDish)
+    {
+        <p>@d.Name</p>
+    } *@
+
+        int numDishes = @c.CreatorDish.Count;
+        <p>@numDishes</p>
+}   
+</div>

@@ -1,0 +1,123 @@
+* {
+    /* border: 1px dotted red; */
+    margin: auto;
+}
+.container {
+    width: 95%;
+    border: 5px solid rgb(21, 90, 21);
+}
+img {
+    max-height: 100px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.column h3 {
+    background-color: rgb(44, 50, 44);
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+header {
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(20, 167, 162);
+    color: white;
+    padding: 10px 10px;
+}
+#cart {
+    color: black;
+}
+.nav {
+    background-color: rgb(44, 50, 44);
+    padding: 20px 20px;
+    width: 97.6%;
+    display: flex;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+header .row {
+    width: 100%;
+}
+header .row img {
+    border-radius: 50%;
+}
+#cart {
+    color: black;
+    font-size: 1.2em;
+}
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2em;    
+}
+header div a {
+    text-decoration: none;
+    padding: 1em;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+.squishyRow {
+    width: 100%;
+}
+main .row .column {
+    padding: 1em;
+}
+
+main .row .column .row .column img {
+    border-radius: 50%;
+}
+p {
+    margin: .5em;
+    font-size: 1.1em;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer img {
+    border-radius: 50%;
+    max-width: 75px;
+}
+#sale {
+    width: 65%;
+    display: flex;
+    border: 5px solid rgb(21, 90, 21);
+    padding: 1em;
+    margin: 1em;
+}
+#sale h3 {
+    max-width: 40%;
+}
+button {
+    background-color: rgb(144, 230, 215);
+}
+.miniSquish {
+    border: 5px solid purple;
+}
+.price {
+    color: purple;
+}
+.footerRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;"><a href="/">Home</a> | Projects | <a href="/Contact">Contact</a></h1>
+
+<h2>Here are some projects of mine!</h2>
+
+<div class="projectBox">
+    @{
+        for (int i = 0; i < 4; i++)
+        {
+            <div class="proj-row">
+                <img src="~/images/bookWorkOctocat.png" width="50" class="proj-col-left" alt="">
+                <div class="proj-col-right">Cool Thing!</div>
+            </div>
+        }
+    }
+
+</div>
+</body>
+</html>

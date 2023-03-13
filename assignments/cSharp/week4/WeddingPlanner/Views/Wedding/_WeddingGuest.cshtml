@@ -1,0 +1,7 @@
+@model List<Wedding>
+<section>
+    @foreach (Wedding w in Model)
+    {
+        <h4 name="@w.WeddingId">@w.Guest</h4>
+    }
+</section>

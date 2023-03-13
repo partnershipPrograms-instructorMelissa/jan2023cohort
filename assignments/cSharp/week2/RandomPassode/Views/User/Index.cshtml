@@ -1,0 +1,17 @@
+ <link rel="stylesheet" href="~/js/site.js">
+@{
+    ViewData["Title"] = "Home Page";
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Your Random Passcdoe is:</h1>
+    <h2>Random Passcode #<span class="counter-display">@Context.Session.GetInt32("Passwords")</span></h2>
+    <input type="text" id="password" value="16Lkpmk#DrpF#c">
+    <section>
+        <button class="counter-plus" onclick="genPassword()">Generate</button>
+    </section>
+</div>
+<script type="text/javascript">
+    genPassword()
+</script>

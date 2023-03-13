@@ -1,0 +1,14 @@
+@model List<Dish>
+
+    <nav>
+        <a href="/">Home</a><span> | </span><a href="/dishes/new">Add A Dish</a><span> | </span><a href="/dishes">Dishes</a><span> | </span><a href="/chefs">Add a Chef</a>
+    </nav>
+
+@foreach (Dish d in Model)
+{
+    <h4>Name: @d.Name</h4>
+    <h4>Chef: @d.Creator.FirstName @d.Creator.LastName</h4>
+    <h4>Tastiness: @d.Tastiness</h4>
+    <h4>Calories: @d.Calories</h4>
+    <br>
+}

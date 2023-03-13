@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Survey Info";
+}
+@model User;
+
+<div class="text-center">
+    <h1 class="display-4">You Are Logged In</h1>
+    <h1>@Context.Session.GetString("FirstName")</h1>
+    <button type="submit"><a href="/clear">Logout</a></button>
+    <button type="submit"><a href="/">Go Back</a></button>
+</div>

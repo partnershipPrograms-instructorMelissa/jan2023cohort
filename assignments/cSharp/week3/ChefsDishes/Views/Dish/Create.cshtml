@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@* @model Zoo *@
+@model MyViewModel
+<h1>Add a Dish</h1>
+     <nav>
+        <a href="/">Home</a><span> | </span><a href="/dishes/new">Add A Dish</a><span> | </span><a href="/dishes">Dishes</a><span> | </span><a href="/chefs">Add a Chef</a>
+    </nav>
+<form action="/dishes/new" method="post">
+    @await Html.PartialAsync("_CreateForm", Model.Dish)
+    @await Html.PartialAsync("_CreateList", Model.AllChefs)
+    @* <section>
+        <label for="Name">Title</label>
+        <input type="text" name="Name" id="">
+        <span asp-validation-for="Name"></span>
+    </section>
+    <section>
+        <label for="Location">Location</label>
+        <input type="text" name="Location" id="">
+        <span asp-validation-for="Location"></span>
+    </section> *@
+    <button>Add Dish</button>
+</form>

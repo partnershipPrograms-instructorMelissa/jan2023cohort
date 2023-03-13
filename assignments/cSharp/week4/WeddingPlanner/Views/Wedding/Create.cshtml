@@ -1,0 +1,35 @@
+@model Wedding
+<header>
+    <h3>Welcome @Context.Session.GetString("name")</h3>
+</header>
+<div class="text-center">
+    <div class="text-center">
+    <h4>Plan a Wedding</h4>
+    @* <nav>
+        <a href="/">Home</a><span> | </span><a href="/dishes/new">Add A Dish</a><span> | </span><a href="/dishes">Dishes</a><span> | </span><a href="/chefs">Add a Chef</a>
+    </nav> *@
+    <form action="/weddings/new" method="post">
+        <section>
+            <label asp-for="Bride">Wedder One</label>    
+            <input asp-for="Bride">
+            <span asp-validation-for="Bride"></span>
+        </section>
+        <section>
+            <label asp-for="Groom">Wedder Two</label>    
+            <input asp-for="Groom">
+            <span asp-validation-for="Groom"></span>
+        </section>
+          <section>
+            <label asp-for="EventDate">Date</label>    
+            <input type="date" asp-for="EventDate">
+            <span asp-validation-for="EventDate"></span>
+        </section>
+        <section>
+            <label asp-for="Address"></label>    
+            <input asp-for="Address">
+            <span asp-validation-for="Address"></span>
+        </section>
+        <button type="submit">Create</button>
+    </form>    
+</div>
+</div>

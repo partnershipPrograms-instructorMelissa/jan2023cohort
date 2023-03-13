@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Time";
+}
+@model TimeValidator;
+<div class="text-center">
+    <h1 class="display-4">Survey Here!</h1>
+    <form action="/result" method="post">
+        <section>
+            <label asp-for="FormDate"></label>    
+            <input type="date" asp-for="FormDate">
+            <span asp-validation-for="FormDate"></span>
+        </section>
+         <button type="submit">Submit</button>
+    </form>    
+</div>

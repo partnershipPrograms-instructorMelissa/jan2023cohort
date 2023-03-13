@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Survey Info";
+}
+@model Survey;
+
+<div class="text-center">
+    <h1 class="display-4">Submitted Info</h1>
+    <h3>Name: @Model.Name</h3>
+    <h3>Dojo Location: @Model.Location</h3>
+    <h3>Favorite Language: @Model.Language</h3>
+    <h3>Comment (Optional): @Model.Comment</h3>
+    <button type="submit"><a href="/">Go Back</a></button>
+</div>

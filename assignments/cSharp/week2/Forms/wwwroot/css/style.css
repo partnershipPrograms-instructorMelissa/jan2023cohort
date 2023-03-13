@@ -1,0 +1,68 @@
+body form {
+  width: 30%;
+  padding: 20px 20px;
+  border: 2px solid black;
+  margin: auto;
+  margin-top: 75px;
+}
+body label {
+  font-size: 20px;
+  padding: 10px 10px;
+}
+body div {
+  padding: 10px 10px;
+}
+body input {
+  padding: 10px 10px 10px 50px;
+  font-size: 15px;
+}
+body select {
+  padding: 10px 10px 10px 70px;
+  font-size: 20px;
+}
+body .move {
+  padding-right: 90px;
+}
+body .res {
+  margin-left: 40px;
+}
+body .res1 {
+  margin-left: 20px;
+}
+body .res2 {
+  margin-left: -15px;
+  padding-left: 90px;
+}
+body button {
+  background-color: #0f87d7;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  margin-left: 410px;
+}
+body header {
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+body main {
+  border: 2px solid black;
+  width: 30%;
+  margin: auto;
+  margin-top: 75px;
+  padding: 20px 20px;
+}
+body .span {
+  padding-left: 200px;
+}
+body .span1 {
+  padding-left: 175px;
+}
+body .span2 {
+  padding-left: 140px;
+}
+body .span3 {
+  padding-left: 210px;
+}
+body a {
+  color: white;
+  text-decoration: none;
+}
