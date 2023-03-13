@@ -26,10 +26,11 @@ public class ZooController : Controller
     [HttpGet("/zoo/dashboard")]
     public IActionResult Dashboard() {
         List<Zoo> allTheZoos = db.Zoos
-            .Include(z => z.AllAnimals)
-            .ThenInclude(a => a.TheAnimal)
+            .Include(o => o.Owner)
+            // .Include(z => z.AllAnimals)
+            // .ThenInclude(a => a.TheAnimal)
             // .ThenInclude(theA => theA.AllZoos)
-            .OrderBy(z => z.Location)
+            // .OrderBy(z => z.Location)
             .ToList();
 
         return View("Dashboard", allTheZoos);
@@ -37,15 +38,18 @@ public class ZooController : Controller
     [SessionCheck]
     [HttpGet("/zoo/addZoo")]
     public IActionResult AddZoo() {
-        List<User> allUsers = db.Users
-        .OrderBy(u => u.LastName)
-        .ToList();
-        return View("AddZoo");
+        MyViewModel theUsers = new MyViewModel {
+            AllUsers = db.Users.ToList()
+        };
+        return View("AddZoo", theUsers);
+        // return View("AddZoo");
     }
+
     [SessionCheck]
-    [HttpGet()]
+    [HttpPost("/zoo/createZoo")]
     public IActionResult CreateZoo(Zoo z) {
-        z.UserId = (int)uid;
+        Console.WriteLine($"uid: {uid}, z.Name: {z.Name}, z.Location: {z.Location}");
+        // z.UserId = (int)uid;
         if(ModelState.IsValid) {
             db.Zoos.Add(z);
             db.SaveChanges();
@@ -53,4 +57,33 @@ public class ZooController : Controller
         }
         return View("AddZoo");
     }
+
+    // [SessionCheck]
+    // [HttpGet("/zoo/{zooId}/viewZoo")]
+    // public IActionResult ViewZoo(int theZoo) {
+    //     MyViewModel zooInfo = new MyViewModel {
+    //         Zoo? aZoo = db.Zoos
+    //             .Include(o => o.Owner)
+    //             // .Include(m => m.AllAnimals)
+    //             // .Where(z => (int)z.ZooId)
+    //             .ToList()
+    //     };
+    //     return View("ViewZoo");
+    // }
+
+    // [SessionCheck]
+    // [HttpGet("/zoo/{zooId}/editZoo")]
+    // public IActionResult EditZoo() {
+        
+    // }
+    // [SessionCheck]
+    // [HttpPost("/zoo/{zooId}/updateZoo")]
+    // public IActionResult UpdateZoo() {
+        
+    // }
+    // [SessionCheck]
+    // [HttpGet("/zoo/{zooId}/deleteZoo")]
+    // public IActionResult DeleteZoo() {
+        
+    // }
 }

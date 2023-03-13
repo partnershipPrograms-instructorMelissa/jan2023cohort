@@ -38,7 +38,7 @@ public class DishController : Controller
         // Console.WriteLine(new string('=', 10));
         // Console.WriteLine($"Model State: {ModelState.IsValid} (kw)");
         // Console.WriteLine(new string('=', 10));
-        // ViewBag.Chefs = _context.Chefs.ToList();
+        ViewBag.Chefs = _context.Chefs.ToList();
         return View("AddDish");
     }
 }
