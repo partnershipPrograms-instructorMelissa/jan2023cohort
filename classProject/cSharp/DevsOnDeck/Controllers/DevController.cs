@@ -67,5 +67,10 @@ public class DevController: Controller
         return View("DevDash", "Dev");
     }
 
-    
+    // *** profile
+    // *** update profile
+    // *** add skills page
+    // *** add skills function
+    // *** view jobs - all
+    // *** view jobs - skill based
 }
