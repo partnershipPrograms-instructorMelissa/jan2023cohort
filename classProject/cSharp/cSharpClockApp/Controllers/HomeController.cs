@@ -18,7 +18,7 @@ public class HomeController : Controller
         db = context; // if you use _context above use it here too
     }
 
-    public IActionResult Index()
+    public IActionResult Dashboard()
     {
         return View();  
     }
