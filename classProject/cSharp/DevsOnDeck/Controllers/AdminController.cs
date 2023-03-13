@@ -48,8 +48,17 @@ public class AdminController: Controller
         HttpContext.Session.SetString("type", "Admin");
         return View("AdminDash");
     }
-
-
+// *** Make Super Admin
+// *** Make Admin
+// *** Create Org code
+// *** Remove User
+// *** Remove Org
+// *** Downgrade Admin
+// *** Downgrade Super Admin
+// *** All Users
+// *** Update Password Link (/user/{key}/updatePassword)
+    // [AdminCheck]
+    // [SessionCheck]
 
     
 }

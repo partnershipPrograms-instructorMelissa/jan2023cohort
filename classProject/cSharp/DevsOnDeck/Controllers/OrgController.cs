@@ -67,5 +67,14 @@ public class OrgController: Controller
     //     return View("OrgDash", "Org");
     // }
 
-    
+    // *** view profile
+    // *** update profile
+    // *** add jobs form
+    // *** create job
+    // *** add skills form
+    // *** create skills
+    // *** all jobs
+    // *** all jobs with matched dev
+    // *** delete job
+    // *** update job
 }
